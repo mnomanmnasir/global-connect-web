@@ -8873,4 +8873,28 @@ body {
   }
 
   /* Optional: Make the span stand out more */
-  
+  /* Custom responsive adjustments */
+.btn-responsive {
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Hover effect */
+.btn-responsive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Active state */
+.btn-responsive:active {
+  transform: translateY(0);
+}
+
+/* Icon animation */
+.btn-responsive i {
+  transition: transform 0.3s;
+}
+
+.btn-responsive:hover i {
+  transform: translateX(3px);
+}
