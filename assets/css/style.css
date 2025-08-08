@@ -2416,6 +2416,7 @@ input[type=radio] {
 .contact-list li {
   font-size: 14px;
   margin-bottom: 5px;
+  margin-left: 2px;
 }
 
 .contact-list li:last-child {
