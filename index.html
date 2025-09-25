@@ -13,12 +13,14 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="assets/css/banner-styles.css"> -->
+  <link rel="stylesheet" href="assets/css/banner-image-fix.css">
   <style>
     .stats-wrapper {
       display: flex;
@@ -110,7 +112,7 @@
       height: 60px;
       /* border: 2px solid #e63946; */
       /* background: rgba(255, 255, 255, 0.9); */
-      border-radius: 50%;
+      /* border-radius: 50%; */
       display: flex;
       flex: end;
       align-items: center;
@@ -494,7 +496,7 @@
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
             <div class="feature-item">
               <div class="feature__icon">
-                <img src="./assets/images/svg/colocation.svg" class="icon-software" />
+                <img src="./assets/images/svg/colocation.svg" class="icon-software" style="width: 30%;" />
                 <!-- <i class="fa-solid fa-video"></i> -->
               </div>
               <h4 class="feature__title">Co Location</h4>
@@ -510,7 +512,7 @@
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
             <div class="feature-item">
               <div class="feature__icon">
-                <img src="./assets/images/svg/GIS.svg" class="icon-software" />
+                <img src="./assets/images/svg/GIS.svg" class="icon-software" style="width: 30%;" />
                 <!-- <i class="icon-software"></i> -->
               </div>
               <h4 class="feature__title">Data Connectivity</h4>
@@ -525,7 +527,7 @@
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
             <div class="feature-item">
               <div class="feature__icon">
-                <img src="./assets/images/svg/camera.svg" class="icon-software" />
+                <img src="./assets/images/svg/camera.svg" class="icon-software" style="width: 30%;" />
                 <!-- <i class="icon-website"></i> -->
               </div>
               <h4 class="feature__title">Geographical Information System</h4>
@@ -540,7 +542,8 @@
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
             <div class="feature-item">
               <div class="feature__icon">
-                <img src="./assets/images/svg/noun-data-connection-4176089.svg" class="icon-software" />
+                <img src="./assets/images/svg/noun-data-connection-4176089.svg" class="icon-software"
+                  style="width: 30%;" />
                 <!-- <i class="icon-management"></i> -->
               </div>
               <h4 class="feature__title">Security & Surveillance</h4>
@@ -651,7 +654,7 @@
       <!-- Custom Arrow Navigation -->
 
 
-      <div class="container" style="padding: 30px 0" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="container" data-aos="zoom-in" data-aos-duration="1000">
         <!-- Navigation Arrows -->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
@@ -670,7 +673,7 @@
                 </button> -->
           <!-- </div> -->
         </div><!-- /.row -->
-        <div class='container d-flex justify-content-end'>
+        <div class='container d-flex justify-content-end' style="margin: 0px 30px auto;">
           <button class="custom-arrow" id="servicesPrev" title="Previous">
             <i class="fas fa-chevron-left"></i>
           </button>
@@ -685,23 +688,23 @@
               <button class="custom-arrow" id="servicesNext" title="Next">
                 <i class="fas fa-chevron-right"></i>
               </button> -->
-          <div class="col-12" style="padding: 30px; border-radius: 8px;">
+          <div class="col-12" style="border-radius: 8px;">
             <div class="slick-carousel" data-slick='{
-                  "slidesToShow": 3,
-                  "slidesToScroll": 1,
-                  "autoplay": true,
-                  "autoplaySpeed": 3000,
-                  "pauseOnHover": false,
-                  "infinite": true,
-                  "pauseOnFocus": false,
-                  "arrows": false,
-                  "dots": false,
-                  "responsive": [
-                    {"breakpoint": 992, "settings": {"slidesToShow": 3}},
-                    {"breakpoint": 767, "settings": {"slidesToShow": 2}},
-                    {"breakpoint": 480, "settings": {"slidesToShow": 1}}
-                  ]
-                }'>
+              "slidesToShow": 3,
+              "slidesToScroll": 1,
+              "autoplay": true,
+              "autoplaySpeed": 3000,
+              "pauseOnHover": false,
+              "infinite": true,
+              "pauseOnFocus": false,
+              "arrows": false,
+              "dots": true,
+              "responsive": [
+                  {"breakpoint": 992, "settings": {"slidesToShow": 3}},
+                  {"breakpoint": 767, "settings": {"slidesToShow": 2}},
+                  {"breakpoint": 480, "settings": {"slidesToShow": 1}}
+              ]
+          }'>
               <!-- service item #1 -->
               <div class="service-item" style="
                   background: #ffffff;
@@ -721,7 +724,7 @@
                     tempor
                     incididunt ut labore et dolore magna aliqua.
                   </p>
-                  <a href="it-solutions-single.html" class="btn btn__primary">
+                  <a href="#" class="btn btn__primary">
                     <span style="font-weight: 500 !important;">Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
@@ -745,7 +748,7 @@
                   <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor
                     incididunt ut labore et dolore magna aliqua. </p>
-                  <a href="it-solutions-single.html" class="btn btn__primary">
+                  <a href="#" class="btn btn__primary">
                     <!-- <span>Read More</span> -->
                     <span style="font-weight: 500 !important;">Read More</span>
 
@@ -771,7 +774,7 @@
                   <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
-                  <a href="it-solutions-single.html" class="btn btn__primary">
+                  <a href="#" class="btn btn__primary">
                     <!-- <span>Read More</span> -->
                     <span style="font-weight: 500 !important;">Read More</span>
 
@@ -793,12 +796,12 @@
                 </div><!-- /.service__icon -->
                 <h4 class="service__title">Internet</h4>
                 <br>
-                <div class="mt-2 service__content">
+                <div class=" service__content">
                   <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor
                     incididunt ut labore et dolore magna aliqua.
                   </p>
-                  <a href="it-solutions-single.html" class="btn btn__primary">
+                  <a href="#" class="btn btn__primary">
                     <!-- <span>Read More</span> -->
                     <span style="font-weight: 500 !important;">Read More</span>
 
@@ -823,7 +826,7 @@
                 <div class="service__content">
                   <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="it-solutions-single.html" class="btn btn__primary">
+                  <a href="#" class="btn btn__primary">
                     <!-- <span>Read More</span> -->
                     <span style="font-weight: 500 !important;">Read More</span>
 
@@ -874,7 +877,7 @@
 
       <div class="row">
         <div class="col-12 text-center">
-          <p class="text__link mt-20 mb-0"> <a href="#" class="btn btn__secondary btn__link mx-1">
+          <p class="text__link mt-4 mb-0"> <a href="#" class="btn btn__secondary btn__link mx-1">
               <span>Explore All Services</span> <i class="icon-arrow-right icon-outlined"></i>
             </a>
           </p>
@@ -890,22 +893,20 @@
     <div class="container-fluid px-0">
       <div class="row row-no-gutter align-items-center">
         <div class="col-sm-12 col-md-12 col-lg-8">
-          <div class="banner-text inner-padding">
+          <div class="banner-text inner-padding" style="padding-left: 8%;">
             <div class="heading-layout2">
-              <!-- <h2 class="heading__subtitle">Keep Your Business Safe & Ensure High Availability.</h2> -->
               <h2 class="color-white clients">Smart Infrastructure. Seamless Support.</h2>
-              <p class="heading__desc text-white">We deliver real-time monitoring, secure connectivity, and customized
-                IT solutions
-                that keep your network running — 24/7, without fail.
+              <p class="heading__desc text-white">
+                We deliver real-time monitoring, secure connectivity, and customized
+                IT solutions that keep your network running — 24/7, without fail.
               </p>
             </div><!-- /.heading -->
             <div class="row fancybox-light">
               <div class="col-sm-6">
                 <!-- fancybox item #1 -->
                 <div class="fancybox-item">
-                  <div class="fancybox__icon">
-                    <img src="./assets/images/svg/24by7.svg" style="margin-left: -4%" alt="">
-                    <!-- <i class="icon -website"></i> -->
+                  <div class="fancybox__icon" style="margin-left: -4%;">
+                    <img src="./assets/images/svg/24by7.svg" alt="">
                   </div><!-- /.fancybox__icon -->
                   <div class="fancybox__content">
                     <h4 class="fancybox__title">24/7 <br> Network Monitoring</h4>
@@ -916,17 +917,24 @@
                     </a>
                   </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
-              </div><!-- /.col-lg-3 -->
+              </div><!-- /.col-sm-6 -->
               <div class="col-sm-6">
                 <!-- fancybox item #2 -->
                 <div class="fancybox-item">
-                  <div class="fancybox__icon">
-                    <img src="./assets/images/svg/fiber network 1.svg" style="margin-left: -4%;" alt="">
-                    <!-- <i class="icon-Primary"></i> -->
+                  <div class="fancybox__icon" style="margin-left: -4%;">
+                    <img src="./assets/images/svg/fiber network 1.svg" alt="">
                   </div><!-- /.fancybox__icon -->
                   <div class="fancybox__content">
                     <h4 class="fancybox__title">Customized IT & <br> Fiber Solutions</h4>
-                    <p class="fancybox__desc">From fiber deployment to security systems, we tailor every service to your
+                    <p class="fancybox__desc" style="
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: 1.4;  
+                  ">
+                      From fiber deployment to security systems, we tailor every service to your
                       operational needs — for businesses, ISPs, and government.
                     </p>
                     <a href="#" class="read-more-link"><i class="icon-arrow-right icon-outlined"></i>
@@ -934,19 +942,16 @@
                     </a>
                   </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
-              </div><!-- /.col-lg-3 -->
+              </div><!-- /.col-sm-6 -->
             </div><!-- /.row -->
           </div>
-        </div><!-- /.col-xl-6 -->
+        </div><!-- /.col-lg-8 -->
         <div class="col-sm-12 col-md-12 col-lg-4">
-          <div class="banner-img">
-            <img src="assets/images/banners/3.jpg" alt="banner" class="w-100">
-          </div>
-        </div><!-- /.col-xl-6 -->
+          <img src="assets/images/banners/img (1).webp" alt="banner" class="img-fluid">
+        </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </div><!-- /.container -->
   </section><!-- /.Banner layout 2 -->
-
 
   <!-- =========================== 
       portfolio layout 2
@@ -1480,7 +1485,7 @@
         </div>
       </div>
 
-      <div class='container d-flex justify-content-end'>
+      <div class='container d-flex justify-content-end' style="margin: 0px 30px auto;">
         <button class="custom-arrow" id="servicesPrev" title="Previous">
           <i class="fas fa-chevron-left"></i>
         </button>
@@ -1491,7 +1496,7 @@
 
       <!-- Auto-scrolling Slider Container -->
       <div class="row">
-        <div class="col-12" style="background-color: #f2f2f2; padding: 30px; border-radius: 8px;">
+        <div class="col-12" style="background-color: #f2f2f2; border-radius: 8px;">
           <div class="slick-carousel" data-slick='{
   "slidesToShow": 3,
   "slidesToScroll": 1,

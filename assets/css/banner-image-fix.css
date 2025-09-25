@@ -1,0 +1,70 @@
+/* Banner Image - Responsive */
+.banner-layout2 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image container */
+.banner-layout2 .col-lg-4 {
+    padding: 0;
+    display: flex;
+}
+
+/* Image styles */
+.banner-layout2 .col-lg-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Responsive adjustments */
+@media (min-width: 992px) {
+    .banner-layout2 .col-lg-4 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+    }
+    
+    .banner-layout2 .col-lg-8 {
+        position: relative;
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 991.98px) {
+    .banner-layout2 .col-lg-4 {
+        height: 300px; /* Fixed height on mobile */
+        margin-top: 30px;
+    }
+    
+    .banner-layout2 .col-lg-4 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+    .banner-layout2 .col-lg-4 {
+        height: 250px;
+    }
+}
+
+.banner-layout2 .container-fluid {
+    height: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .banner-layout2 {
+        padding: 60px 0;
+        min-height: auto;
+    }
+    
+    .banner-layout2 .inner-padding {
+        padding: 30px 15px !important;
+    }
+}
