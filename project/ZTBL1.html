@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Global Connect Synergy">
+    <link href="assets/images/favicon/favicon.png" rel="icon">
+    <title>Global Connect Synergy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link rel="stylesheet" href="../assets/css/libraries.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/banner-styles.css"> -->
+    <link rel="stylesheet" href="../assets/css/banner-image-fix.css">
+    <link rel="stylesheet" href="../assets/css/projects.css">
+</head>
+<!-- Custom CSS -->
+<style>
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card:hover .project-img img {
+        transform: scale(1.1);
+    }
+
+    .project-card:hover .overlay {
+        opacity: 1;
+    }
+
+    .btn:hover {
+        background: #ff6b00 !important;
+        color: #fff !important;
+    }
+</style>
+
+<body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <div class="wrapper">
+        <header class="header header-transparent">
+            <!-- <nav class="navbar navbar-expand-lg sticky-navbar mobile-navbar"> -->
+            <nav class="navbar navbar-expand-lg sticky-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/images/logo/logo-light.png" class="logo-light" alt="logo">
+                        <img src="../assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button">
+                        <span class="menu-lines"><span></span></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNavigation">
+                        <!-- Mobile Logo (Only visible on small screens) -->
+                        <ul class="navbar-nav ml-auto">
+                            <div style="text-align: start; margin-top: -15%;" class="d-block d-lg-none">
+                                <a href="#">
+                                    <img src="assets/images/logo/logo-dark.png" alt="Mobile Logo"
+                                        style="max-width: 150px;">
+                                </a>
+                            </div>
+
+
+                            <!-- Mobile Logo -->
+                            <!-- Only visible on mobile -->
+                            <!-- Mobile logo -->
+                            <!-- <nav class="mobile-navbar transparent">
+                      <div class="d-block d-lg-none" style="padding: 5px 15px; text-align: center;">
+                        <a href="#">
+                            style="max-width: 150px;" />
+                        </a>
+                      </div>
+                    </nav> -->
+
+
+
+                            <!-- Mobile Menu Items yahan aayenge -->
+                            <li class="nav__item has-dropdown">
+                                <!-- <a href="#" class="dropdown-toggle nav__item-link active d-none d-lg-block">Home</a> -->
+                                <a href="#" class="dropdown-toggle nav__item-link">Home</a>
+                                <!-- <hr class="mobile-divider"> -->
+
+                                <!-- <ul class="dropdown-menu"> -->
+                                <!-- <li class="nav__item">
+                          <a href="index.html" class="nav__item-link">Home Main</a>
+                        </li> -->
+                                <!-- /.nav-item -->
+                                <!-- <li class="nav__item">
+                          <a href="home-modern.html" class="nav__item-link">Home Modern</a>
+                        </li></.nav-item -->
+                                <!-- <li class="nav__item">
+                          <a href="home-classic.html" class="nav__item-link">Home Classic</a>
+                        </li>  -->
+                                <!-- -->
+                                <!-- /.nav-item -->
+                                <!-- </ul> -->
+                                <!-- /.dropdown-menu -->
+                            </li><!-- /.nav-item -->
+                            <li class="nav__item has-dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Services</a>
+                                <ul class="dropdown-menu wide-dropdown-menu">
+                                    <li class="nav__item">
+                                        <div class="row">
+                                            <div class="col-sm-6 dropdown-menu-col">
+                                                <!-- <a href="it-solutions.html" class="nav__item-link dropdown-menu-title">IT Solutions</a> -->
+                                                <ul class="nav flex-column">
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="co-location.html">Co
+                                                            Location</a>
+                                                    </li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="data-connectivity.html">Data
+                                                            Connectivity</a>
+                                                    </li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="GIS.html">GIS</a>
+                                                    </li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="internet.html">Internet</a>
+                                                    </li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="security-surveillance.html">Security and
+                                                            Surveillance</a>
+                                                    </li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="coverage-network.html">Coverage and
+                                                            Network</a>
+                                                    </li>
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="intelligent-transportation.html">Intelligent
+                                                            Transportation System</a></li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="fibre-optics.html">Fibre
+                                                            Optics</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.col-sm-6 -->
+                                            <div class="col-sm-6 dropdown-menu-col">
+                                                <!-- <a href="industries.html" class="nav__item-link dropdown-menu-title">Industries</a> -->
+                                                <ul class="nav flex-column">
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="industries-single-industry.html">Smart
+                                                            Surveillance</a></li>
+                                                    <!-- /.nav-item -->
+                                                    <!-- <li class="nav__item"><a class="nav__item-link"
+                                    href="industries-single-industry.html">Smart Grid</a></li> -->
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="industries-single-industry.html">Smart
+                                                            City</a></li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="industries-single-industry.html">Internet of
+                                                            Things</a></li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="industries-single-industry.html">Cybersecurity</a>
+                                                    </li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="industries-single-industry.html">Cloud
+                                                            Services</a>
+                                                    </li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="industries-single-industry.html">Data
+                                                            Center</a>
+                                                    </li>
+                                                    <!-- /.nav-item -->
+                                                    <li class="nav__item"><a class="nav__item-link"
+                                                            href="industries-single-industry.html">Infrastructure</a>
+                                                    </li>
+                                                    <!-- /.nav-item -->
+                                                    <!-- <li class="nav__item"><a class="nav__item-link"
+                                    href="industries-single-industry.html">Fibre Optics</a>
+                                </li> -->
+                                                    <!-- /.nav-item -->
+                                                </ul>
+                                            </div>
+                                            <!-- /.col-sm-6 -->
+                                        </div>
+                                        <!-- /.row -->
+                                    </li>
+                                    <!-- /.nav-item -->
+                                </ul>
+                                <!-- /.dropdown-menu -->
+                            </li>
+
+                            <li class="nav__item has-dropdown">
+                                <!-- <li class="nav__item has-dropdown"> -->
+                                <a href="#" data-toggle="dropdown"
+                                    class="dropdown-toggle nav__item-link">Consultancy</a>
+                                <!-- <ul class="dropdown-menu"> -->
+                                <!-- <li class="nav__item"> -->
+                                <!-- <div class="row"> -->
+                                <!-- <div class="col-sm-6 dropdown-menu-col"> -->
+                                <ul class="dropdown-menu">
+                                    <!-- <span class="dropdown-menu-title"
+                                        style="padding: 10px 10px; cursor: default; color: inherit;">Software
+                                        Consultancy</span> -->
+
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">Enterprise
+                                            Applications</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">Track and
+                                            Trace</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">Artifical
+                                            Intelligence</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">Fintech</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">Analytics</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">CRM</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">ERP</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">Access
+                                            Control</a>
+                                    </li>
+                                </ul>
+                                <!-- </div> -->
+                                <!-- /.col-sm-6 -->
+                                <!-- /.col-sm-6 -->
+                                <!-- </div> -->
+                                <!-- /.row -->
+                                <!-- </li> -->
+                                <!-- /.nav-item -->
+                                <!-- </ul> -->
+                                <!-- /.dropdown-menu -->
+                            </li>
+
+                            <li class="nav__item has-dropdown">
+                                <!-- <li class="nav__item has-dropdown"> -->
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Products</a>
+                                <!-- <ul class="dropdown-menu"> -->
+                                <!-- <li class="nav__item"> -->
+                                <!-- <div class="row"> -->
+                                <!-- <div class="col-sm-6 dropdown-menu-col"> -->
+                                <ul class="dropdown-menu">
+                                    <!-- <span class="dropdown-menu-title" style="padding: 10px 10px; cursor: default; color: inherit;">Software Consultancy</span> -->
+
+                                    <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">AI
+                                            Powered Smart
+                                            E-Challan System</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">Smart Surveillance
+                                            System</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Safe
+                                            Cities
+                                            Solutions</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">Smart Cities
+                                            Development</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="it-solutions-single.html">Emergengy and Response
+                                            System</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Call
+                                            Management
+                                            System</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">AI
+                                            Based Attendence
+                                            Management <span class="hide-on-mobile">System</span></a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Site
+                                            Monitoring
+                                            System</a>
+                                    </li>
+                                </ul>
+                                <!-- </div> -->
+                                <!-- /.col-sm-6 -->
+                                <!-- /.col-sm-6 -->
+                                <!-- </div> -->
+                                <!-- /.row -->
+                                <!-- </li> -->
+                                <!-- /.nav-item -->
+                                <!-- </ul> -->
+                                <!-- /.dropdown-menu -->
+                            </li>
+
+                            <li class="nav__item has-dropdown">
+                                <a href="index.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About
+                                    Us</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav__item">
+                                        <a href="about-us.html" class="nav__item-link">About</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item">
+                                        <a href="about-ceo.html" class="nav__item-link">About CEO</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <!-- /.nav-item -->
+                  <!-- <li class="nav__item">
+                    <a href="awards.html" class="nav__item-link">Awards & Achievements</a>
+                  </li> -->
+                                    <!-- /.nav-item -->
+                                    <li class="nav__item">
+                                        <a href="projects.html" class="nav__item-link">Projects</a>
+                                    </li>
+                                    <li class="nav__item">
+                                      <a href="major-clients.html" class="nav__item-link">Major Clients</a
+                                    </li>
+                                    <li class="nav__item">
+                                       <a href="strategic-partners.html" class="nav__item-link">Strategic Partners</a>
+                                    </li>
+                                    <!-- /.nav-item -->
+                                    <!-- <li class="nav__item"> -->
+                                    <!-- <a href="pricing.html" class="nav__item-link">Major Clients</a> -->
+                            </li>
+
+                            <!-- /.nav-item -->
+
+                            <!-- <li class="nav__item"> -->
+                            <!-- <a href="faqs.html" class="nav__item-link">Support</a> -->
+                            </li> <!-- /.nav-item -->
+                            <!-- <li class="nav__item"> -->
+                            <!-- <a href="careers.html" class="nav__item-link">Careers</a> -->
+                            </li><!-- /.nav-item -->
+                        </ul>
+                        <!-- /.dropdown-menu -->
+                        </li><!-- /.nav-item -->
+
+
+
+                        <!-- <li class="nav__item has-dropdown"> -->
+                        <!-- <a href="#" class="dropdown-toggle nav__item-link">Support</a> -->
+                        <!-- <ul class="dropdown-menu"> -->
+                        <!-- <li class="nav__item"> -->
+                        <!-- <a href="blog.html" class="nav__item-link">Our Blog</a> -->
+                        <!-- </li> -->
+                        <!-- /.nav-item -->
+                        <!-- <li class="nav__item"> -->
+                        <!-- <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a> -->
+                        <!-- </li> -->
+                        <!-- /.nav-item -->
+                        <!-- </ul> -->
+                        <!-- /.dropdown-menu -->
+                        <!-- </li> -->
+                        <!-- /.nav-item -->
+                        <!-- <li class="nav__item has-dropdown"> -->
+                        <!-- <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Features</a> -->
+                        <!-- <ul class="dropdown-menu"> -->
+                        <!-- <li class="nav__item"> -->
+                        <!-- <a href="coming-soon.html" class="nav__item-link">Coming Soon</a> -->
+                        <!-- </li> -->
+                        <!-- /.nav-item -->
+                        <!-- <li class="nav__item"> -->
+                        <!-- <a href="404.html" class="nav__item-link">404 Page</a> -->
+                        <!-- </li> -->
+                        <!-- /.nav-item -->
+                        <!-- <li class="nav__item"> -->
+                        <!-- <a href="#" class="nav__item-link  open-register-popup">Register</a> -->
+                        <!-- </li> -->
+                        <!-- /.nav-item -->
+                        <!-- <li class="nav__item"> -->
+                        <!-- <a href="#" class="nav__item-link  open-login-popup">Login</a> -->
+                        <!-- </li> -->
+                        <!-- /.nav-item -->
+                        <!-- </ul> -->
+                        <!-- /.dropdown-menu -->
+                        <!-- </li> -->
+                        <!-- /.nav-item -->
+                        <li class="nav__item has-dropdown">
+                            <a href="careers.html" class="dropdown-toggle nav__item-link">Careers</a>
+                        <li class="nav__item">
+                            <a href="contact-us.html" class="nav__item-link">Contact Us</a>
+                        </li><!-- /.nav-item -->
+                        <!-- Add this inside your mobile menu section (replace the existing social icons div) -->
+                        <!-- <div class="mobile-social-icons d-block d-lg-none"
+                            style="position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 15px 0; text-align: center; border-top: 1px solid #eee; z-index: 1000;">
+                            <a href="https://facebook.com" target="_blank" style="margin: 0 8px;">
+                                <img src="./assets/images/svg/fb.svg" alt="Facebook" style="width: 24px;">
+                            </a>
+                            <a href="https://instagram.com" target="_blank" style="margin: 0 8px;">
+                                <img src="assets/images/svg/insta.svg" alt="Twitter" style="width: 24px;">
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" style="margin: 0 8px;">
+                                <img src="assets/images/svg/linkedin.svg" alt="LinkedIn" style="width: 24px;">
+                            </a>
+                        </div> -->
+                        </li>
+
+                        </ul><!-- /.navbar-nav -->
+                        <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
+                    </div><!-- /.navbar-collapse -->
+                    <!-- <div class="d-flex align-items-center">
+                  <a href="#" class="action__btn action__btn-search ml-30"><i class="icon-search"></i></a>
+                </div> -->
+
+                </div><!-- /.container -->
+            </nav><!-- /.navabr -->
+        </header><!-- /.Header -->
+        <!-- Header Section -->
+        <!-- Sidebar Overlay -->
+        <!-- <div class="sidebar-overlay" id="sidebarOverlay"></div> -->
+
+
+        <!-- Hero Section -->
+        <section class="banner-layout1" id="image-hero-section">
+            <!-- <div class="background-image-main"> -->
+            <div class="background-image-main">
+                <img src="../assets/images/blog-img-new/blog-img-banner.jpg" alt="Background Image">
+            </div>
+            <div class="overlay-image"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-6 col-sm-4 col-xl-12">
+                        <div class="hero-text">
+                            <h1 class="smart-surveillance">
+                                <span> Punjab Prisons
+                                </span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container" style="margin-top: 3%;">
+            <div class="row g-4">
+
+
+                <div class="col-lg-12 col-md-7">
+                    <!-- Blog Content -->
+                    <div class="blog-detail-content">
+                        <!-- <div class="blog-meta">
+                <span><i class="far fa-calendar-alt me-2"></i>September 5, 2025</span>
+                <span class="mx-3">|</span>
+                <span><i class="far fa-user me-2"></i>Global Connect Synergy Team</span>
+            </div> -->
+    
+                        <!-- <div class="blog-detail-section"> -->
+                        <h3 class=" mt-5" style="color: #BF3646;">
+                            Punjab Prisons
+                        </h3>
+                        <p style="color: #2A2A2A; font-size: larger;">
+                            PCO Call Shop
+                        </p>
+                        <!-- <h2 class="service-title">Introduction</h2> -->
+                        <p class="service-desc" style="color: black;"> We deployed Call Center and CRM Solution for PCO Call
+                            Shop – Punjab Prisons,
+                            enabling secure and efficient communication with integrated networking and
+                            application access.
+                        </p>
+                        <!-- </div> -->
+    
+                        <!-- <div class="blog-detail-section">
+                            <img src="../assets/blog-img-new/blog5-supp-img.jpg" alt="" style="width: 100%;">
+                        </div> -->
+                        <!-- <div class="blog-detail-section" style="max-width: 1200px; height: auto;">
+                            <img src="../assets/blog-img-new/Portfolio_SMTA (1).jpg" alt=""
+                                style="width: 100%; max-height: 500px;">
+                        </div> -->
+    
+                        <div class="row">
+    
+                            <div class="col-lg-7">
+    
+                                <!-- <div class="blog-detail-section"> -->
+                                <h3 class="service-title" style="color: black;"> Key Highlights </h3>
+                                <ul class="service-desc" style="color: black;">
+                                    <li>
+                                        Integrated Complaints System with auto call pop up.
+                                    </li>
+                                    <li> SMS Notifications to callers and complaint officers.</li>
+                                    <li> Hidden Identity Feature for secure communication. </li>
+                                    <li> Integrated Soft & Hard Phones within the application.</li>
+                                    <li> Real Time PBX Reports, CDR & Interactive Dashboards.</li>
+                                    <li> Online learning, digital content, smart analytics for student progress.</li>
+                                    <li> Dynamic Roles & Rights Management.</li>
+                                </ul>
+                                <h3 class="service-title" style="color: black;"> Resolution </h3>
+                                <ul class="service-desc" style="color: black;">
+                                    <li>
+                                        Developed & designed a CRM integrated with PBX.
+                                    </li>
+                                    <li>Created a web application integrated with PBX for centralized operations.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="../assets/images/projects-img/projects-img/2x/Punjab Prisons(PCO Call Shop).webp" alt=""
+                                    style="width: 100%; max-height: 500px;">
+                            </div>
+                        </div>
+                        <!-- </div> -->
+    
+                        <!-- <div class="blog-detail-section"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="services-section">
+
+            <div class="container mb-4">
+                <!-- Navigation Arrows -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+                        <div class="heading text-center mb-50">
+                            <!-- <h2 class="heading__subtitle">Nationwide Service, Local Expertise</h2> -->
+                            <h3 class="heading__title">Our Similar Work </h3>
+                        </div><!-- /.heading -->
+                    </div><!-- /.col-lg-6 -->
+                    <!-- Arrow Navigation positioned in top right -->
+                    <!-- <div class="custom-nav-arrows"> -->
+                    <!-- <button class="custom-arrow" id="servicesPrev" title="Previous">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="custom-arrow" id="servicesNext" title="Next">
+                  <i class="fas fa-chevron-right"></i>
+                </button> -->
+                    <!-- </div> -->
+                </div><!-- /.row -->
+                <div class='container d-flex justify-content-end' style="margin: 0px 30px auto;">
+                    <button class="custom-arrow" id="servicesPrev" title="Previous">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="custom-arrow" id="servicesNext" title="Next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="row">
+                    <!-- <button class="custom-arrow" id="servicesPrev" title="Previous">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="custom-arrow" id="servicesNext" title="Next">
+                <i class="fas fa-chevron-right"></i>
+              </button> -->
+                    <div class="col-12" style="border-radius: 8px;">
+                        <div class="slick-carousel" data-slick='{
+              "slidesToShow": 3,
+              "slidesToScroll": 1,
+              "autoplay": true,
+              "autoplaySpeed": 3000,
+              "pauseOnHover": false,
+              "infinite": true,
+              "pauseOnFocus": false,
+              "arrows": false,
+              "dots": true,
+              "responsive": [
+                  {"breakpoint": 992, "settings": {"slidesToShow": 3}},
+                  {"breakpoint": 767, "settings": {"slidesToShow": 2}},
+                  {"breakpoint": 480, "settings": {"slidesToShow": 1}}
+              ]
+          }'>
+                            <!-- service item #1 -->
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Rescue 1122.webp"
+                                        alt="Smart Cities" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title">Rescue 1122 </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        Rescue Emergency Service
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="SIDCL.html" class="product-link" style="margin-top: 8%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask1_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask1_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- service item #2 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/NCC Quetta Smart City.webp"
+                                        alt="Network Innovation" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> NCC Quetta Smart City </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        Feasibility & Implementation Plan
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="NHA.html" class="product-link" style="margin-top: 8%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask5_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask5_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- service item #3 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/NH&MP.webp"
+                                        alt="Smart Cities" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> NH&MP </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc"> 130 Helpline & Emergency Response Center
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="SMTA.html" class="product-link" style="margin-top: 8%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask1_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask1_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- service item #5 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Punjab Prisons( Complaint Management System).webp"
+                                        alt="AI Infrastructure" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> Punjab Prisons </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        Complaint Management System
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="punjab-provision.html" class="product-link" style="margin-top: 8%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask2_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask2_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item # 06 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Lahore Safe City.webp"
+                                        alt="Smart Transportation" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> Lahore Safe City </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        ANPR Cameras Integration
+                                    </p>
+                                    <div style="display: flex">
+                                        <a href="SafeCityLahore.html" class="product-link" style="margin-top: 8%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask3_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask3_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item #7 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Board of Secondary Education Karachi (BSEK).webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> Board of Secondary Education Karachi (BSEK)</h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc" style="margin-bottom: -5px;">
+                                        ERP & Online Management System
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="flagship-projects.html" class="product-link" style="margin-top: 5%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- service item # 08 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Building Management System.webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title">
+                                        National Bank of Pakistan
+                                    </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        Building Management System
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="BuildingManagementSystem.html" class="product-link"
+                                            style="margin-top: 7%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- service item # 09 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Karachi BRT.webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> Karachi BRT </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        Intelligent Integrated Transport System (IITS)
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="karachi-brt.html" class="product-link" style="margin-top: 7%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item # 10 -->
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Citizen Complaint Information System.webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> Citizen Complaint Information System </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        KMC 1339
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="citizen-complaint.html" class="product-link">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item # 11 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/IDEAS Pakistan.webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> IDEAS Pakistan </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        Security & Surveillance Operations
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="ideas-pak.html" class="product-link" style="margin-top: 7%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item # 12 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Pakistan Reinsurance Company.webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> Pakistan Reinsurance Company Limited </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        Data Center & Disaster Recovery Migration
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="pakistan-reinstance-company.html" class="product-link">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item # 13 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Habib Bank Limited.webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> Habib Bank Limited </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        CCTV & Access Control Solution
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="habib-bank-cctv.html" class="product-link" style="margin-top: 7%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item # 14  -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Karachi Metropolitan Corporation (KMC).webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> Karachi Metropolitan Corporation (KMC) </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        Upgradation of Hardware Infrastructure for Payroll
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="Karachi-Metropolitan-Corporation.html" class="product-link">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item # 15 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/State Bank Of Pakistan.webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> State Bank Of Pakistan </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc" style="margin-bottom: 25px;">
+                                        CCTV Surveillance & Security System
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="State-Bank-Pakistan.html" class="product-link" style="margin-top: 5%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item # 16 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/IMARAT & Graana Group of Companies.webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> IMARAT & Graana Group of Companies </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        Implementation of 3CX Enterprise PBX System
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="IMARAT-GRAANA.html" class="product-link">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item # 17 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/KDA.webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> KDA </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc" style="margin-bottom: 25px;">
+                                        Land Management System
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="KDA.html" class="product-link" style="margin-top: 5%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- service item # 18 -->
+                            <div class="product-card h-100">
+                                <div class="product-image">
+                                    <img src="../assets/images/projects-img/projects-img/1x/Rescue 1299.webp"
+                                        alt="Advanced Security" class="img-fluid">
+                                </div>
+                                <div class="product-content">
+                                    <h4 class="product-title"> Rescue 1299 </h4>
+                                    <div class="product-separator"></div>
+                                    <p class="service-desc">
+                                        Complaint Management System
+                                    </p>
+                                    <div style="display: flex;">
+                                        <a href="rescue-1299.html" class="product-link" style="margin-top: 8%">
+                                            Read More <svg width="21" height="21" viewBox="0 0 21 21"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask4_668_225" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                    <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                        fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask4_668_225)">
+                                                    <path
+                                                        d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="service-item">
+                    <div class="service__icon">
+                      <i class="icon-programming"></i>
+                    </div> -->
+                            <!-- /.service__icon -->
+                            <!-- <h4 class="service__title">Software Dev<br> Services</h4>
+                    <div class="service__content">
+                      <p class="service__desc">With shorter product cycles, rapid innovation, and mergers contributing to
+                        constant change, you are faced with making business decisions every day to advance your mission.
+                      </p>
+                      <a href="it-solutions-single.html" class="btn btn__primary">
+                        <span>Read More</span>
+                        <i class="icon-arrow-right"></i>
+                      </a>
+                    </div></.service-content -->
+
+                            <!-- </div> -->
+                            <!-- /.service-item -->
+                            <!-- service item #6 -->
+                            <!-- <div class="service-item">
+                    <div class="service__icon">
+                      <i class="icon-programming"></i>
+                    </div> /.service__icon -->
+                            <!-- <h4 class="service__title">Backup & Recovery<br> Services</h4>
+                    <div class="service__content">
+                      <p class="service__desc">While you can’t predict unexpected events, we’ll ensure the right
+                        precautions
+                        are in place to minimize downtime and keep you moving in the right direction.</p>
+                      <a href="it-solutions-single.html" class="btn btn__primary">
+                        <span>Read More</span>
+                        <i class="icon-arrow-right"></i> -->
+                            <!-- </a> -->
+                            <!-- </div> -->
+                            <!-- /.service-content -->
+                        </div><!-- /.service-item -->
+                    </div><!-- /.carousel -->
+                </div><!-- /.col-12 -->
+
+            </div><!-- /.row -->
+            <!-- Blog Header -->
+            <!-- <header class="blog-header text-center">
+        <div class="container">
+            <h1>Building Smarter Cities</h1>
+            <p class="lead">Transforming Urban Landscapes Through Technology</p>
+        </div>
+    </header> -->
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                new Swiper('.project-swiper', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                    }
+                });
+            });
+        </script>
+
+
+        <!-- Footer Section -->
+        <!-- ========================
+      Footer
+    ========================== -->
+        <footer class="footer bg-secondary">
+            <div class="container">
+                <!-- <div class="footer-top pt-50 pb-30">
+<div class="row"> -->
+                <!-- <div class="col-sm-4 col-md-2 col-lg-4">
+<img src="assets/images/logo/logo-light-small.png" alt="logo" class="mb-30">
+</div> -->
+                <!-- /.col-lg-2 -->
+                <!-- <div class="col-sm-8 col-md-4 col-lg-3">
+    <h6 class="footer-top__title">Sign up for latest IT resources,
+      news and insights from Datasoft!</h6> -->
+                <!-- </div> -->
+                <!-- /.col-lg-3 -->
+                <!-- <div class="col-sm-12 col-md-6 col-lg-5">
+    <form class="footer-form d-flex mb-0">
+      <input type="text" class="form-control mr-20" placeholder="Your Email Address">
+      <button type="submit" class="btn btn__primary btn__primary-style2">
+        <span>Subscribe</span>
+        <i class="icon-arrow-right"></i>
+      </button>
+    </form>
+  </div> -->
+                <!-- /.col-lg-6 -->
+                <!-- </div> -->
+                <!-- /.row -->
+                <!-- </div> -->
+                <!-- /.footer-top -->
+                <div class="footer-primary">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-3 footer-widget footer-widget-about">
+                            <div class="footer-widget__content">
+                                <div class="contact-info">
+                                    <!-- <h6 class="footer-widget__title">Quick Contact</h6> -->
+                                    <ul class="contact-list list-unstyled">
+                                        <!-- <img src="assets/images/logo/logo-light.png" alt="logo" class="mt-4 mb-30" style="margin-left: -5%;"> -->
+                                        <img src="../assets/images/logo/logo-light.png" alt="logo"
+                                            class="footer-logo mt-4 mb-30" style="margin-left: -5px;">
+                                        <!-- <li class="color-gray">If you have any questions or need help, feel free to contact with our team.
+          </li> -->
+                                        <li class="color-body d-flex align-items-start">
+                                            <img src="../assets/images/svg/loc.svg" width="25" alt="" class="mt-1 mr-1">
+                                            <span>
+                                                44-P, Block 6, PECHS
+                                                Razi Road, Karachi,
+                                                Pakistan, 75100
+                                            </span>
+                                        </li>
+                                        <li class="color-body mt-3">
+                                            <img src="../assets/images/svg/email.svg" width="25" alt="">
+                                            <span>
+                                                info@globalconnectsynergy.com
+                                            </span>
+                                        </li>
+                                        <li class="color-body mt-3">
+                                            <img src="../assets/images/svg/fax.svg" width="25" alt="">
+                                            <span>
+                                                +92 (21) 34312454
+                                            </span>
+                                        </li>
+                                        <!-- Contact Us
+          Email: info@globalconnectsynergy.com
+          Phone: +92 (21) 111-222-427
+          Phone: +92 (21) 4520714-5
+          Fax: +92 (21) 34312454 -->
+                                        <li class="color-body mt-3 mb-20">
+                                            <!-- <li class="mt-20 mb-20"> -->
+                                            <a href="tel:01061245741">
+                                                <img src="../assets/images/svg/call.svg" width="25" alt=""> <span
+                                                    class="text-white">01061245741</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div><!-- /.contact-info -->
+                                <ul class="social-icons list-unstyled mb-0">
+                                    <li><a href="#"><img src="../assets/images/svg/fb.svg" alt="" width="20" /></a>
+                                    </li>
+                                    <li><a href="#"><img src="../assets/images/svg/insta.svg" alt="" width="20" /></a>
+                                    </li>
+                                    <li><a href="#"><img src="../assets/images/svg/linkedin.svg" alt=""
+                                                width="20" /></a>
+                                    </li>
+                                    <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                                    <!-- <li><a href="#"><img src="./assets/images/svg/youtube.svg" alt="" width="20" /></a></li> -->
+                                </ul><!-- /.social-icons -->
+                            </div><!-- /.footer-widget__content -->
+                        </div><!-- /.col-xl-2 -->
+                        <div class="col-sm-6 col-md-6 col-lg-3 offset-lg-1 footer-widget footer-widget-nav"
+                            style="margin-top:8.5%; margin-left: 5px;">
+                            <h6 class="footer-widget__title">Service</h6>
+
+                            <div class="footer-widget__content">
+                                <nav>
+                                    <ul class="list-unstyled">
+                                         <li><a href="../data-connectivity.html" class="text-white">Data Connectivity</a></li>
+                                        <li><a href="../internet.html" class="text-white">Internet</a></li>
+                                        <li><a href="../co-location.html" class="text-white">Co-Location</a></li>
+                                        <!-- <li><a href="projects-grid.html">Case Studies</a></li>
+          <li><a href="contacs.html">Contacts</a></li>
+          <li><a href="#">Investors</a></li> -->
+                                    </ul>
+                                </nav>
+                            </div><!-- /.footer-widget__content -->
+                        </div><!-- /.col-lg-2 -->
+                        <div class="col-sm-6 col-md-6 col-lg-3 footer-widget footer-widget-nav"
+                            style="margin-top: 8.5%; margin-left: 5px;">
+                            <h6 class="footer-widget__title">Team</h6>
+                            <div class="footer-widget__content">
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="text-white">Support</a></li>
+                                        <li><a href="#" class="text-white">Optical Fiber Field Team</a></li>
+                                        <li><a href="#" class="text-white">Network Opertion Center</a></li>
+                                        <!-- <li><a href="#">IT Consulting</a></li>
+          <li><a href="#">Software Dev</a></li>
+          <li>  <a href="#">IT Support</a></li> -->
+                                    </ul>
+                                </nav>
+                            </div><!-- /.footer-widget__content -->
+                        </div><!-- /.col-lg-2 -->
+                        <div class="col-sm-6 col-md-6 col-lg-2 footer-widget footer-widget-nav"
+                            style="margin-top: 8.5%; margin-left: 5px;">
+                            <h6 class="footer-widget__title">Company</h6>
+                            <div class="footer-widget__content">
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li><a href="../about-us.html" class="text-white">About Us</a></li>
+                                        <li><a href="../coverage-network.html" class="text-white">Coverage & Network</a></li>
+                                        <li><a href="../major-clients.html" class="text-white">Major Clients</a></li>
+                                        <li><a href="../strategic-partners.html" class="text-white">Strategic Partners</a></li>
+                                        <!-- <li><a href="#">Site map</a></li> -->
+                                    </ul>
+                                </nav>
+                            </div><!-- /.footer-widget__content -->
+                        </div><!-- /.col-lg-2 -->
+                        <!-- <div class="col-sm-6 col-md-6 col-lg-0 footer-widget footer-widget-nav"> -->
+                        <!-- <h6 class="footer-widget__title">Download</h6> -->
+                        <!-- <div class="footer-widget__content"> -->
+                        <!-- <a href="#" class="btn btn__white btn__download mb-20">
+        <i class="fab fa-apple"></i>
+        <span>App Store</span> -->
+                        <!-- </a> -->
+                        <!-- <a href="#" class="btn btn__white btn__download mb-20">
+        <i class="fab fa-google-play"></i>
+        <span>Google Play</span> -->
+                        <!-- </a>
+    </div> -->
+                        <!-- /.footer-widget__content -->
+                        <!-- </div> -->
+                        <!-- /.col-lg-2 -->
+                        <!-- </div> -->
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.footer-primary -->
+                    <hr style="border-color: white; opacity: 0.19;">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 text-center" style="font-size: 14px;">
+                            Global Connect Synergy, All Rights Reserved
+                            <!-- <a class="fz-14 color-primary" href="http://themeforest.net/user/7oroof">7oroof.com</a> -->
+                            <span class="fz-14">&copy; 2025</span>
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                    <!-- /.row -->
+                </div><!-- /.container -->
+        </footer><!-- /.Footer -->
+
+        <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button>
+
+        <div class="login-popup" id="login-popup">
+            <div class="login-popup-wrapper">
+                <form class="login-popup__form">
+                    <h3 class="login-popup__title">Login!</h3>
+                    <p class="login-popup__desc">Connect, organize and get things done to keep your IT business
+                        safe.
+                    </p>
+                    <div class="form-group mb-20">
+                        <i class="icon-mail input-icon"></i>
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group mb-20">
+                        <i class="icon-lock input-icon"></i>
+                        <input type="password" class="form-control" placeholder="********">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-20">
+                        <div class="custom-control custom-checkbox d-flex align-items-center">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Remember Me!</label>
+                        </div>
+                        <a href="#" class="fz-14 font-weight-bold color-secondary">Forget Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn__primary btn__block btn__xl">
+                        <span>Login</span>
+                        <i class="icon-arrow-right"></i>
+                    </button>
+                </form>
+                <div class="d-flex justify-content-center align-items-center mt-20">
+                    <span class="color-white fz-14 font-weight-bold">Don’t Have An Account?</span>
+                    <button id="go-register" class="go-register fz-14 font-weight-bold">
+                        <span>Register Here</span><i class="icon-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div><!-- /.login-popup -->
+
+        <div class="login-popup" id="register-popup">
+            <div class="login-popup-wrapper">
+                <form class="login-popup__form">
+                    <h3 class="login-popup__title">Register!</h3>
+                    <p class="login-popup__desc">Connect, organize and get things done to keep your IT business
+                        safe.
+                    </p>
+                    <div class="form-group mb-20">
+                        <i class="icon-mail input-icon"></i>
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group mb-20">
+                        <i class="icon-lock input-icon"></i>
+                        <input type="password" class="form-control" placeholder="********">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-20">
+                        <div class="custom-control custom-checkbox d-flex align-items-center">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">I read & agree to <a href="#">Terms &
+                                    Conditions</a></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn__primary btn__block btn__xl">
+                        <span>Register</span>
+                        <i class="icon-arrow-right"></i>
+                    </button>
+                </form>
+                <div class="d-flex justify-content-center align-items-center mt-20">
+                    <span class="color-white fz-14 font-weight-bold">Have An Account?</span>
+                    <button id="go-login" class="go-login fz-14 font-weight-bold">
+                        <span>Login Here</span><i class="icon-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div><!-- /.login-popup -->
+
+        <div class="search-popup">
+            <button type="button" class="search-popup__close"><i class="fas fa-times"></i></button>
+            <form class="search-popup__form">
+                <input type="text" class="search-popup__form__input" placeholder="Type Words Then Enter">
+                <button class="search-popup__btn"><i class="icon-search"></i></button>
+            </form>
+        </div><!-- /. search-popup -->
+    </div><!-- /.wrapper -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Your existing AOS initialization
+            AOS.init({
+                offset: 120,
+                delay: 0,
+                duration: 600,
+                easing: 'ease',
+                once: false,
+                mirror: false,
+                anchorPlacement: 'top-bottom',
+            });
+
+            // Add any card hover effects or other interactions here
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+    <script>
+        // Custom Arrow Navigation for Services Carousel
+        document.addEventListener('DOMContentLoaded', function () {
+            const servicesCarousel = document.querySelector('.services-section .slick-carousel');
+            const prevBtn = document.getElementById('servicesPrev');
+            const nextBtn = document.getElementById('servicesNext');
+
+            if (servicesCarousel && prevBtn && nextBtn) {
+                // Wait for Slick to initialize
+                setTimeout(function () {
+                    const $carousel = $(servicesCarousel);
+
+                    // Previous button click handler
+                    prevBtn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        $carousel.slick('slickPrev');
+                    });
+
+                    // Next button click handler
+                    nextBtn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        $carousel.slick('slickNext');
+                    });
+
+                    // Optional: Add keyboard navigation
+                    document.addEventListener('keydown', function (e) {
+                        if (e.key === 'ArrowLeft') {
+                            $carousel.slick('slickPrev');
+                        } else if (e.key === 'ArrowRight') {
+                            $carousel.slick('slickNext');
+                        }
+                    });
+                }, 500); // Wait 500ms for Slick to initialize
+            }
+        });
+
+        // Initialize slick slider with callback
+
+    </script>
+
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <!-- Back to Top Button -->
+
+
+    <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const sidebarLinks = document.querySelectorAll('.services-list a');
+
+    sidebarLinks.forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault(); // prevent page reload
+            sidebarLinks.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+});
+</script> -->
+
+  <script src="assets/js/nav-active.js"></script>
+</body>
+
+</html>

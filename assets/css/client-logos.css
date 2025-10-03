@@ -1,0 +1,80 @@
+/* Client Logos Styling */
+.client-logos {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.client-logos img {
+    max-width: 100%;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    /* object-fit: contain; */
+    /* filter: grayscale(100%); */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.client-logos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.client-logos:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199.98px) {
+    .client-logos {
+        padding: 12px;
+        height: 90px;
+    }
+    
+    .client-logos img {
+        max-height: 60px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .client-logos {
+        height: 80px;
+        padding: 10px;
+    }
+    
+    .client-logos img {
+        max-height: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .client-logos {
+        height: 70px;
+        padding: 8px;
+    }
+    
+    .client-logos img {
+        max-height: 45px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .client-logos {
+        height: 60px;
+        padding: 6px;
+        margin: 3px;
+    }
+    
+    .client-logos img {
+        max-height: 40px;
+    }
+}

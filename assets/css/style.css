@@ -84,7 +84,7 @@ a:hover {
 section {
   position: relative;
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 img {
@@ -2178,7 +2178,7 @@ input[type=radio] {
 
 .nice-select {
   width: 100%;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .nice-select .list {
@@ -2186,7 +2186,7 @@ input[type=radio] {
 }
 
 .nice-select .current {
-  line-height: 60px;
+  /* line-height: 60px; */
   color: #848e9f;
 }
 
@@ -2835,7 +2835,7 @@ input[type=radio] {
   position: relative;
   color: #091d3e;
   line-height: 100px;
-  letter-spacing: .4px;
+  /* letter-spacing: .4px; */
 }
 
 .navbar .nav__item .nav__item-link:before {
@@ -2854,6 +2854,38 @@ input[type=radio] {
 .navbar .nav__item .nav__item-link.active:before,
 .navbar .nav__item .nav__item-link:hover:before {
   width: 100%;
+}
+
+/* Active state for navigation links */
+.navbar .nav__item .nav__item-link.active {
+  color: #e93038 !important;
+  position: relative;
+}
+
+/* Underline effect for active links */
+.navbar .nav__item .nav__item-link.active:after {
+  content: '';
+  position: absolute;
+  /* bottom: 0;
+  left: 0;
+  width: 100%; */
+  /* height: 2px; */
+  background-color: #fff;
+  /* transform: scaleX(1); */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.navbar .nav__item .nav__item-link:hover {
+  color: #e93038 !important;
+}
+
+/* Dropdown menu active state */
+.navbar .dropdown-menu .nav__item .nav__item-link.active {
+  color: #e93038 !important;
+  /* background-color: rgba(233, 48, 56, 0.05); */
+  /* padding-left: 20px !important; */
+  /* border-left: px solid #e93038; */
 }
 
 .navbar .dropdown-toggle:after {
@@ -2913,7 +2945,7 @@ input[type=radio] {
 
 .navbar .dropdown-menu .nav__item .nav__item-link:hover:after {
   opacity: 1;
-  left: -15px;
+  /* left: -15px; */
 }
 
 .navbar .dropdown-menu .dropdown-toggle:after {
@@ -3511,7 +3543,74 @@ input[type=radio] {
   .navbar .navbar-toggler {
     position: absolute;
     right: 15px;
-    height: 13px;
+    top: 30px;
+    height: 18px;
+    width: 24px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .navbar .menu-lines {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .menu-lines:before,
+  .navbar .menu-lines:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .menu-lines:before {
+    top: -8px;
+  }
+
+  .navbar .menu-lines:after {
+    bottom: -8px;
+  }
+
+  .navbar .menu-lines span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+
+  /* Animate the hamburger icon when menu is opened */
+  .navbar .menu-opened .menu-lines {
+    background-color: transparent;
+  }
+
+  .navbar .menu-opened .menu-lines:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .navbar .menu-opened .menu-lines:after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+  .navbar .menu-opened .menu-lines span {
+    opacity: 0;
+    transform: scale(0);
   }
 
   .navbar .collapse:not(.show) {
@@ -3529,7 +3628,13 @@ input[type=radio] {
   .navbar .nav__item .nav__item-link {
     color: #222222;
     line-height: 35px !important;
-    padding-left: 15px;
+    padding: 8px 15px;
+    display: block;
+    position: relative;
+  }
+
+  .navbar .nav__item .dropdown-toggle {
+    padding-right: 30px;
   }
 
   .navbar .nav__item .nav__item-link:hover {
@@ -3553,8 +3658,15 @@ input[type=radio] {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1000;
     padding: 0;
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    transform: translateX(-100%);
+  }
+
+  .navbar .menu-opened {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
   }
 
   .navbar .navbar-collapse .navbar-nav {
@@ -3630,7 +3742,7 @@ input[type=radio] {
     display: none;
   }
 
-  .navbar .nav__item.opened>[data-toggle="dropdown"]:after,
+
   .navbar .nav__item.show>[data-toggle="dropdown"]:after {
     content: "\f107";
   }
@@ -3640,7 +3752,7 @@ input[type=radio] {
   }
 
   .navbar .dropdown-menu .nav__item {
-    padding: 0 15px 0 30px;
+    padding-left: 15px;
   }
 
   .navbar .dropdown-menu .nav__item .nav__item-link {
@@ -3744,7 +3856,7 @@ input[type=radio] {
   .header-transparent .navbar,
   .header-transparent .navbar>.container,
   .header-transparent .navbar>.container-fluid {
-    height: 80px;
+    height: 100px;
   }
 
   .header .header-full .navbar,
@@ -3840,6 +3952,37 @@ input[type=radio] {
     width: 1px;
     height: 100%;
     background-color: #e9e9e9;
+  }
+
+  /* Add Software Consultancy on hover */
+  .navbar .nav__item.has-dropdown:first-child {
+    position: relative;
+    margin-left: 150px;
+  }
+
+  .navbar .nav__item.has-dropdown:first-child>a {
+    position: relative;
+    padding-left: 0;
+  }
+
+  .navbar .nav__item.has-dropdown:first-child>a:before {
+    content: 'Software Consultancy';
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e93038;
+    font-weight: 700;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-right: 15px;
+    text-align: right;
+    width: 140px;
+  }
+
+  .navbar .nav__item.has-dropdown:first-child:hover>a:before {
+    opacity: 1;
   }
 
   .navbar .nav__item.has-dropdown>.dropdown-menu,
@@ -5686,11 +5829,28 @@ input[type=radio] {
   }
 }
 
-/* Mobile Phones */
-@media (max-width: 420px) {
-  .portfolio-item .portfolio__desc {
-    font-size: 13px;
-    line-height: 23px;
+/* Show only 'AI Based Attendance Management' on mobile */
+@media (max-width: 1200px) {
+  .nav__item-link[href="AI-Based-Attendance.html"] {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    /* Hide original text */
+    white-space: nowrap;
+  }
+
+  .nav__item-link[href="AI-Based-Attendance.html"]::before {
+    content: "AI Based Attendance Management";
+    font-size: 16px;
+    color: inherit;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  /* Hide the word 'System' */
+  .nav__item-link[href="AI-Based-Attendance.html"] br,
+  .nav__item-link[href="AI-Based-Attendance.html"] span {
+    display: none;
   }
 }
 
@@ -6956,7 +7116,8 @@ input[type=radio] {
   background-color: #e93038;
 }
 
-.counter-item .counter {
+.counter-item .counter,
+.static-counter {
   color: #091d3e;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 65px;
@@ -6969,7 +7130,7 @@ input[type=radio] {
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 0;
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 .counters-light .counter-item .counter,
@@ -6983,7 +7144,8 @@ input[type=radio] {
     padding-left: 15px;
   }
 
-  .counter-item .counter {
+  .counter-item .counter,
+  .static-counter {
     font-size: 25px;
   }
 
@@ -7308,7 +7470,7 @@ input[type=radio] {
 
 @media (min-width: 1200px) {
   .about-layout2 .about-text-wrapper {
-    margin-left: 50px;
+    margin-left: 10px;
   }
 }
 
@@ -7347,6 +7509,7 @@ input[type=radio] {
     font-size: 12px;
   }
 }
+
 /*-----------------------
     banner
 ------------------------*/
@@ -7879,9 +8042,10 @@ input[type=radio] {
 
 .timeline-item .timeline__desc {
   font-size: 15px;
-  padding-left: 60px;
+  padding-left: 20px;
   margin-bottom: 0;
   padding-bottom: 48px;
+  color: #ffffff;
 }
 
 .timeline-item:hover .timeline__year:before {
@@ -8368,7 +8532,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .section-title {
@@ -8770,7 +8934,7 @@ body {
 
 @media (max-width: 768px) {
   #mainNavigation li {
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
     /* padding: 8px 0; */
   }
 
@@ -8890,6 +9054,8 @@ body {
   transform: translateY(0);
 }
 
+/* Static Counter */
+
 /* Icon animation */
 .btn-responsive i {
   transition: transform 0.3s;
@@ -8911,5 +9077,498 @@ body {
   .banner-text.inner-padding {
     padding-left: 15px !important;
     padding-right: 15px !important;
+  }
+}
+
+
+.stats-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 30px; */
+  max-width: 1297px;
+  margin: 0 auto;
+  /* padding: 40px 20px; */
+  /* justify-content: space-between; */
+}
+
+.stat-card {
+  color: white;
+  border-radius: 12px;
+  padding: 20px 30px;
+  width: 260px;
+  text-align: center;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  /* Add transition to the normal state */
+  /* transition property is not needed here since it's already defined on the normal state */
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.stat-title {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 450;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.stat-description {
+  font-size: 15px;
+  color: #fff;
+  line-height: 1;
+}
+
+/* .stat-card::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #e63946, #f1faee);
+      margin: 20px auto 0;
+      border-radius: 3px;
+    } */
+
+@media (max-width: 768px) {
+  .stat-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Custom Arrow Navigation Styles */
+.services-section {
+  position: relative;
+}
+
+.custom-nav-arrows {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.custom-arrow {
+  width: 60px;
+  height: 60px;
+  /* border: 2px solid #e63946; */
+  /* background: rgba(255, 255, 255, 0.9); */
+  /* border-radius: 50%; */
+  display: flex;
+  flex: end;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #e63946;
+  font-size: 20px;
+}
+
+.custom-arrow:hover {
+  /* background: #; */
+  color: #091d3e;
+  transform: translateY(-2px);
+  /* box-shadow: 0 5px 15px rgba (230, 57, 70, 0.3); */
+}
+
+.custom-arrow:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .custom-nav-arrows {
+    top: 10px;
+    right: 10px;
+  }
+
+  .custom-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+
+/* all page hero section background with inner text */
+#image-hero-section {
+  position: relative;
+  height: 60vh;
+  /* default height for desktop */
+  /* min-height: 300px; */
+  display: flex;
+  align-items: center;
+}
+
+.background-image-main {
+  /* position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          
+          background-image: url('../assets/images/cloud services/banner.752Z.webp');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover; */
+  /* image full cover */
+  /* z-index: -1; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center
+}
+
+.background-image-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* image poora cover kare */
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: -2; */
+
+  background: rgba(0, 0, 0, 0.6);
+  /* optional dark overlay */
+}
+
+.hero-text {
+  text-align: left;
+  color: white;
+}
+
+/* Smart Surveillance hero title */
+.smart-surveillance {
+  color: #FFF;
+  /* font-family: Poppins; */
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  /* 112.5% */
+  text-transform: capitalize;
+  color: #fff;
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+  .smart-surveillance {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    padding-top: 18%;
+  }
+}
+
+
+
+
+/* Slick Dots Styling - Show Only 4 Dots */
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+  display: none;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 50%;
+  /* background: transparent; */
+  /* border: 2px solid #e93038; */
+  text-indent: -9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active {
+  opacity: 1;
+}
+
+/* .slick-dots li.slick-active button {
+  background: #e93038;
+} */
+
+/* Show only first 4 dots */
+.slick-dots li:nth-child(1),
+.slick-dots li:nth-child(2),
+.slick-dots li:nth-child(3),
+.slick-dots li:nth-child(4) {
+  display: inline-block;
+}
+
+
+/* Job Listings Styles */
+#jobContainer {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.career-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #1f314f;
+  padding-bottom: 10px;
+}
+
+.job-card {
+  background: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.tags {
+  margin: 15px 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #f1f1f1;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-right: 10px;
+  color: #666;
+  font-weight: 500;
+  border: 1px solid grey;
+}
+
+.job-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.btn-apply,
+.btn-view {
+  background-color: #1f314f;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  text-decoration: none;
+
+
+}
+
+.btn-apply:hover {
+  background: #1f314f;
+  color: #fff;
+}
+
+.btn-view {
+  background: #fff;
+  color: #1f314f;
+  border: 1px solid #1f314f;
+}
+
+.btn-view:hover {
+  background: #f5f5f5;
+  color: #C94050;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 15px;
+  /* border-bottom: 2px solid #e74c3c; */
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  /* border-bottom: 2px solid #e74c3c; */
+
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 12px 10px;
+  /* border: 2px solid #e0e0e0; */
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  min-width: 300px;
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  /* background-color: #f9f9f9; */
+  transition: all 0.3s ease;
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.05); */
+}
+
+.search-bar button {
+  padding: 12px 25px;
+  background: #C94050;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+  background: #A02E3A;
+}
+
+
+
+/* Hide "System" text on mobile screens */
+@media (max-width: 991px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+/* Ensure dropdown arrow is always visible for active menu items */
+.navbar .nav__item.active>.nav__item-link:after,
+.navbar .nav__item.open>.nav__item-link:after,
+.navbar .nav__item.show>.nav__item-link:after {
+  display: inline-block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Mobile-specific dropdown arrow styles */
+@media (max-width: 991px) {
+  .navbar .nav__item.has-dropdown>.nav__item-link:after {
+    content: "\f107" !important;
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900 !important;
+    border: none !important;
+    position: absolute !important;
+    right: 15px !important;
+    top: 50% !important;
+    /* transform: translateY(-50%) !important; */
+    transition: transform 0.3s ease !important;
+    /* display: inline-block !important; */
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Rotate arrow when dropdown is open */
+  .navbar .nav__item.open>.nav__item-link:after,
+  .navbar .nav__item.show>.nav__item-link:after,
+  .navbar .nav__item.has-active-child>.nav__item-link:after {
+    /* transform: translateY(-50%) rotate(180deg) !important; */
+  }
+
+  /* Ensure active state shows arrow */
+  .navbar .nav__item.active>.nav__item-link:after {
+    display: inline-block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+/* Mobile-specific dropdown arrow styles */
+@media (max-width: 991px) {
+  /* Base styles for dropdown menu items on mobile */
+  .navbar .nav__item.has-dropdown > .nav__item-link {
+      position: relative;
+      padding-right: 30px !important;
+  }
+
+  /* Default arrow (>) for closed/inactive dropdowns on mobile */
+  .navbar .nav__item.has-dropdown > .nav__item-link:after {
+      content: "›" !important;
+      font-family: Arial, sans-serif !important;
+      position: absolute !important;
+      right: 15px !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+      transition: all 0.3s ease !important;
+      /* display: inline-block !important; */
+      opacity: 1 !important;
+      visibility: visible !important;
+      font-size: 14px !important;
+      font-weight: normal !important;
+  }
+
+  /* Active/Open dropdown arrow (v) on mobile */
+  .navbar .nav__item.has-dropdown.open > .nav__item-link:after,
+  .navbar .nav__item.has-dropdown.show > .nav__item-link:after,
+  .navbar .nav__item.has-dropdown.has-active-child > .nav__item-link:after {
+      content: "˅" !important;
+      /* font-weight: bold !important; */
   }
 }

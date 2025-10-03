@@ -40,7 +40,8 @@ $message .= ($senderPhone) ?"<tr><td><strong>Phone:</strong> </td><td>" . $sende
 $message .= ($senderMessage) ?"<tr><td><strong>Email:</strong> </td><td>" . $senderMessage . "</td></tr>" : '';
 
 $message .= "</table>";
-$message .= "</body></html>";
+$message .= "  <script src="assets/js/nav-active.js"></script>
+</body></html>";
 
 $mail->Body = $message;
 

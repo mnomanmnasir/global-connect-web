@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="DataSoft  IT Solutions &  Services Template">
   <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>DataSoft IT Solutions & Services Template</title>
+  <title>Global Connect Synergy</title>
 
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
@@ -1146,6 +1146,135 @@
   <script src="assets/js/jquery-3.5.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+<script>
+    $(document).ready(function () {
+      // Initialize blog posts carousel
+      $('.blog-posts-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 3 } },
+          { breakpoint: 992, settings: { slidesToShow: 2 } },
+          { breakpoint: 768, settings: { slidesToShow: 1 } }
+        ]
+      });
+
+      // Navigation for blog carousel
+      $('#blogPrev').on('click', function (e) {
+        e.preventDefault();
+        $('.blog-posts-carousel').slick('slickPrev');
+      });
+
+      $('#blogNext').on('click', function (e) {
+        e.preventDefault();
+        $('.blog-posts-carousel').slick('slickNext');
+      });
+    });
+
+
+    // Navigation Active State Management
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all navigation links
+      const navLinks = document.querySelectorAll('.navbar .nav__item-link');
+      const currentPath = window.location.pathname;
+      const currentPage = currentPath.split('/').pop() || 'index.html';
+
+      // Function to set active link
+      function setActiveLink(clickedLink) {
+        // Remove active class from all links
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+
+        // Add active class to clicked link
+        clickedLink.classList.add('active');
+
+        // If this is a dropdown item, also activate parent
+        const parentDropdown = clickedLink.closest('.dropdown-menu');
+        if (parentDropdown) {
+          const parentNavItem = parentDropdown.closest('.has-dropdown');
+          if (parentNavItem) {
+            const parentLink = parentNavItem.querySelector('.dropdown-toggle');
+            if (parentLink) {
+              parentLink.classList.add('active');
+            }
+          }
+        }
+
+        // Save to localStorage
+        if (clickedLink.getAttribute('href')) {
+          localStorage.setItem('activeNavLink', clickedLink.getAttribute('href'));
+        }
+      }
+
+      // Set initial active state based on current page
+      navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+        const linkPath = linkHref ? linkHref.split('?')[0] : '';
+        const linkPage = linkPath.split('/').pop() || 'index.html';
+
+        // Check if this link's page matches current page
+        const isCurrentPage = linkPage === currentPage ||
+          (currentPage === '' && linkPage === 'index.html') ||
+          (currentPage.endsWith('/') && linkPage === 'index.html') ||
+          (currentPage === '' && linkHref === 'index.html');
+
+        // Check if this link was previously saved as active
+        const savedLink = localStorage.getItem('activeNavLink');
+        const isSavedLink = savedLink &&
+          (savedLink === linkHref ||
+            savedLink === linkPath ||
+            (savedLink.endsWith('index.html') && linkPage === 'index.html'));
+
+        // Set initial active state
+        if (isCurrentPage || isSavedLink) {
+          setActiveLink(link);
+        }
+
+        // Add click event to update active state
+        link.addEventListener('click', function (e) {
+          const isDropdownToggle = this.classList.contains('dropdown-toggle') ||
+            (this.closest('.has-dropdown')?.querySelector('.dropdown-toggle') === this);
+
+          if (!isDropdownToggle) {
+            setActiveLink(this);
+          }
+        });
+      });
+
+      // Add CSS for active state
+      const style = document.createElement('style');
+      style.textContent = `
+        .navbar .nav__item-link.active {
+            color: #BF3646 !important;
+            font-weight: 600;
+            position: relative;
+        }
+        .navbar .nav__item-link.active:after {
+            content: '';
+            position: absolute;
+            // bottom: -5px;
+            // left: 0;
+            // width: 100%;
+            // height: 2px;
+            background-color: #BF3646;
+        }
+        .dropdown-menu .nav__item-link.active {
+            color: #BF3646 !important;
+            font-weight: 600;
+        }
+        .navbar .nav__item-link:hover {
+            color: #BF3646 !important;
+        }
+    `;
+      document.head.appendChild(style);
+    });
+  </script>
+  <script src="assets/js/nav-active.js"></script>
 </body>
 
 </html>

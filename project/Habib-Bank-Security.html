@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Connect Synergy Pvt Ltd</title>
+    <meta name="description"
+        content="Discover how Global Connect Synergy Pvt Ltd is transforming urban landscapes in Pakistan through smart city technologies and innovative solutions.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+        integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/fav-icon.png">
+
+</head>
+
+<style>
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card:hover .project-img img {
+        transform: scale(1.1);
+    }
+
+    .project-card:hover .overlay {
+        opacity: 1;
+    }
+
+    .btn:hover {
+        background: #ff6b00 !important;
+        color: #fff !important;
+    }
+</style>
+
+<body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <!-- Header Section -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg py-0">
+            <div class="container px-0">
+                <!-- Logo -->
+                <a class="navbar-brand" href="../index.html" id="logo">
+                    <img src="../assets/images/Global Connect Synergy-logo.webp" alt="Global Connect Synergy Logo" class="logo-img" id="logoImg">
+                </a>
+                <button id="menuToggle"
+                    style="background: none; border: none; cursor: pointer; padding: 0; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                    <svg width="80" height="60" viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_412_1366" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="80" height="60">
+                            <rect width="80" height="60" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_412_1366)">
+                            <path
+                                d="M19.7928 38.6603C18.9748 38.6603 18.2892 38.3836 17.7359 37.8303C17.1827 37.277 16.906 36.5914 16.906 35.7735C16.906 34.9556 17.1827 34.27 17.7359 33.7167C18.2892 33.1634 18.9748 32.8868 19.7928 32.8868H60.2073C61.0252 32.8868 61.7108 33.1634 62.2641 33.7167C62.8174 34.27 63.094 34.9556 63.094 35.7735C63.094 36.5914 62.8174 37.277 62.2641 37.8303C61.7108 38.3836 61.0252 38.6603 60.2073 38.6603H19.7928ZM19.7928 27.1132C18.9748 27.1132 18.2892 26.8366 17.7359 26.2833C17.1827 25.73 16.906 25.0444 16.906 24.2265C16.906 23.4086 17.1827 22.723 17.7359 22.1697C18.2892 21.6164 18.9748 21.3397 19.7928 21.3397H60.2073C61.0252 21.3397 61.7108 21.6164 62.2641 22.1697C62.8174 22.723 63.094 23.4086 63.094 24.2265C63.094 25.0444 62.8174 25.73 62.2641 26.2833C61.7108 26.8366 61.0252 27.1132 60.2073 27.1132H19.7928Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <div class="container sidebar-header">
+            <div style="display: flex; justify-content: flex-end;">
+                <button class="close-btn" id="closeSidebar"><svg xmlns="http://www.w3.org/2000/svg" width="40"
+                        height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16 ">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg></button>
+            </div>
+        </div>
+
+        <div class="container sidebar-content">
+            <div class="sidebar-grid">
+                <!-- Column 1 - Main Navigation -->
+                <div class="nav-column main-nav">
+                    <ul class="nav-menu">
+                        <li class="nav-item" data-section="home">
+                            <a href="../index.html" class="nav-link" data-section="home">HOME</a>
+                        </li>
+                        <li class="nav-item" data-section="about">
+                            <a href="#about" class="nav-link">
+                                ABOUT
+                                <span class="nav-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                    </svg></span>
+                            </a>
+                        </li>
+                        <li class="nav-item " data-section="services">
+                            <a href="#services" class="nav-link">
+                                SERVICES & SOLUTIONS
+                                <span class="nav-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                    </svg></span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-section="software">
+                            <a href="#software" class="nav-link">
+                                SOFTWARE & CONSULTANCY
+                                <span class="nav-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                    </svg></span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-section="products">
+                            <a href="#products" class="nav-link">PRODUCTS
+                                <span class="nav-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                    </svg></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/career.html" class="nav-link">CAREERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/contactUs.html" class="nav-link">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Separator Line -->
+                <div class="sidebar-separator"></div>
+
+                <!-- Column 2 & 3 - Services Grid -->
+                <div class="services-grid">
+                    <div class="services-column">
+                        <ul id="dynamicServicesMenu" class="services-menu">
+                            <!-- Services will be populated dynamically -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Social Links - Vertical on Right -->
+                <div class="social-links-vertical effect-1">
+                    <a href="#" class="social-icon-side">
+                        <img src="../assets/images/side-menu-icons/facebook.svg" alt="Facebook" />
+                    </a>
+                    <a href="#" class="social-icon-side">
+                        <img src="../assets/images/side-menu-icons/twitter.svg" alt="Twitter" />
+                    </a>
+                    <a href="#" class="social-icon-side">
+                        <img src="../assets/images/side-menu-icons/insta-icon-2.svg" alt="Instagram" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="heroSection">
+        <div class="image-background">
+            <img src="../assets/blog-img-new/blog-img-banner.jpg" alt="Background Image">
+            <div class="image-overlay"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-6 col-sm-4 col-xl-12">
+                    <div style="margin-top: -300px;">
+                        <h1 class="smart-surveillance">
+                            <span style="font-size: larger"> Habib Bank Limited </span>
+                        </h1>
+                        <!-- <p class="hero-subtitle">
+                                RELIABLE | SCALABLE | IMPACTFUL
+                            </p> -->
+                        <!-- <div class="hero-actions" id="hero-button">
+                                <a href="#" class="btn btn-primary-red">
+                                    Learn More
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Header -->
+    <!-- <header class="blog-header text-center">
+        <div class="container">
+            <h1>Building Smarter Cities</h1>
+            <p class="lead">Transforming Urban Landscapes Through Technology</p>
+        </div>
+    </header> -->
+
+    <div class="container">
+        <div class="row g-4">
+
+
+            <div class="col-lg-12 col-md-7">
+                <!-- Blog Content -->
+                <div class="blog-detail-content">
+                    <!-- <div class="blog-meta">
+            <span><i class="far fa-calendar-alt me-2"></i>September 5, 2025</span>
+            <span class="mx-3">|</span>
+            <span><i class="far fa-user me-2"></i>Global Connect Synergy Team</span>
+        </div> -->
+
+                    <!-- <div class="blog-detail-section"> -->
+                    <h3 class=" mt-5" style="color: #BF3646;">
+                        Habib Bank Limited
+                    </h3>
+                    <p style="color: #2A2A2A; font-size: larger;">
+                        Security & Surveillance Infrastructure
+                    </p>
+                    <!-- <h2 class="service-title">Introduction</h2> -->
+                    <p class="service-desc" style="color: black;"> Global Connect Synergy (Pvt) Ltd implemented a comprehensive security
+                        and surveillance solution
+                        for HBL, covering CCTV, access control, screening systems, and centralized
+                        monitoring infrastructure. The project was designed to strengthen physical
+                        security, optimize access management, and ensure seamless system
+                        performance.
+                    </p>
+                    <!-- </div> -->
+
+                    <!-- <div class="blog-detail-section">
+                        <img src="../assets/blog-img-new/blog5-supp-img.jpg" alt="" style="width: 100%;">
+                    </div> -->
+                    <!-- <div class="blog-detail-section" style="max-width: 1200px; height: auto;">
+                        <img src="../assets/blog-img-new/Portfolio_SMTA (1).jpg" alt=""
+                            style="width: 100%; max-height: 500px;">
+                    </div> -->
+
+                    <div class="row">
+
+                        <div class="col-lg-7">
+
+                            <!-- <div class="blog-detail-section"> -->
+                            <h3 class="service-title" style="color: black;"> Key Highlights </h3>
+                            <ul class="service-desc" style="color: black;">
+                                <li>
+                                    Installed, tested, and commissioned CCTV systems for complete
+                                    surveillance coverage.
+                                </li>
+                                <li>Deployed access control, thermal screening cameras, and speed gates for
+                                    secure and safe entry management.</li>
+                                <li>Provided troubleshooting for road blockers and barriers to maintain
+                                    smooth operations.</li>
+                                <li>Planned deployment of PA systems, UVSS, barrier controls, and
+                                    walkthrough gates for enhanced security.</li>
+                                <li>Commissioned and optimized the central control room for real time
+                                    monitoring and issue resolution.</li>
+                            </ul>
+
+
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="../assets/images/projects-img/projects-img/2x/Habib Bank Limited (2).webp" alt=""
+                                style="width: 100%; max-height: 500px;">
+                        </div>
+                    </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="blog-detail-section"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Blogs Section -->
+    <section class="product-section-detail">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="section-title fs-1">Our Similar Work
+                    </h3>
+                </div>
+            </div>
+            <!-- Custom Navigation Arrows -->
+            <div class="custom-carousel-controls">
+                <button class="custom-carousel-control prev " type="button" id="productsPrev">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_336_2074" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="48" height="49">
+                            <rect x="48" y="48.0044" width="48" height="48" transform="rotate(180 48 48.0044)"
+                                fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_336_2074)">
+                            <path
+                                d="M32.3504 22.0043L22.5504 12.2043C22.1504 11.8043 21.9587 11.3376 21.9754 10.8043C21.9921 10.271 22.2004 9.8043 22.6004 9.4043C23.0004 9.03763 23.4671 8.84596 24.0004 8.8293C24.5337 8.81263 25.0004 9.0043 25.4004 9.4043L38.6004 22.6043C38.8004 22.8043 38.9421 23.021 39.0254 23.2543C39.1087 23.4876 39.1504 23.7376 39.1504 24.0043C39.1504 24.271 39.1087 24.521 39.0254 24.7543C38.9421 24.9876 38.8004 25.2043 38.6004 25.4043L25.4004 38.6043C25.0337 38.971 24.5754 39.1543 24.0254 39.1543C23.4754 39.1543 23.0004 38.971 22.6004 38.6043C22.2004 38.2043 22.0004 37.7293 22.0004 37.1793C22.0004 36.6293 22.2004 36.1543 22.6004 35.7543L32.3504 26.0043L10.0004 26.0043C9.43372 26.0043 8.95872 25.8126 8.57539 25.4293C8.19206 25.046 8.00039 24.571 8.00039 24.0043C8.00039 23.4376 8.19206 22.9626 8.57539 22.5793C8.95872 22.196 9.43372 22.0043 10.0004 22.0043L32.3504 22.0043Z"
+                                fill="#2D2D2D" />
+                        </g>
+                    </svg>
+
+                </button>
+                <button class="custom-carousel-control next" type="button" id="productsNext">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_336_2074" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="48" height="49">
+                            <rect x="48" y="48.0044" width="48" height="48" transform="rotate(180 48 48.0044)"
+                                fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_336_2074)">
+                            <path
+                                d="M32.3504 22.0043L22.5504 12.2043C22.1504 11.8043 21.9587 11.3376 21.9754 10.8043C21.9921 10.271 22.2004 9.8043 22.6004 9.4043C23.0004 9.03763 23.4671 8.84596 24.0004 8.8293C24.5337 8.81263 25.0004 9.0043 25.4004 9.4043L38.6004 22.6043C38.8004 22.8043 38.9421 23.021 39.0254 23.2543C39.1087 23.4876 39.1504 23.7376 39.1504 24.0043C39.1504 24.271 39.1087 24.521 39.0254 24.7543C38.9421 24.9876 38.8004 25.2043 38.6004 25.4043L25.4004 38.6043C25.0337 38.971 24.5754 39.1543 24.0254 39.1543C23.4754 39.1543 23.0004 38.971 22.6004 38.6043C22.2004 38.2043 22.0004 37.7293 22.0004 37.1793C22.0004 36.6293 22.2004 36.1543 22.6004 35.7543L32.3504 26.0043L10.0004 26.0043C9.43372 26.0043 8.95872 25.8126 8.57539 25.4293C8.19206 25.046 8.00039 24.571 8.00039 24.0043C8.00039 23.4376 8.19206 22.9626 8.57539 22.5793C8.95872 22.196 9.43372 22.0043 10.0004 22.0043L32.3504 22.0043Z"
+                                fill="#2D2D2D" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Products Swiper -->
+            <div class="swiper pb-4 pt-4" id="productsSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Product 1 - Smart Cities -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Rescue 1122.webp"
+                                    alt="Smart Cities" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title">Rescue 1122 </h4>
+                                <div class="product-separator"></div>
+                                <p class="service-desc">
+                                    Rescue Emergency Service
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="SIDCL.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask1_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask1_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/NH&MP.webp" alt="Smart Cities"
+                                    class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> NH&MP </h4>
+                                <div class="product-separator"></div>
+                                <p class="service-desc"> 130 Helpline & Emergency Response Center
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="SMTA.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask1_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask1_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/NCC Quetta Smart City.webp"
+                                    alt="Network Innovation" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> NCC Quetta Smart City </h4>
+                                <div class="product-separator"></div>
+                                <p class="service-desc">
+                                    Feasibility & Implementation Plan
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="NHA.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask5_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask5_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 - Site Monitoring -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Punjab Prisons( PCO Call Shop).webp"
+                                    alt="Cyber Defense Strategies" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Punjab Prisons </h4>
+                                <!-- <p class="service-desc">asa </p> -->
+                                <div class="product-separator"></div>
+                                <p class="service-desc">
+                                    PCO Call Shop
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="ZTBL.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask0_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 - Smart Surveillance System -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Punjab Prisons( Complaint Management System).webp"
+                                    alt="AI Infrastructure" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Punjab Prisons </h4>
+                                <div class="product-separator"></div>
+                                <p class="service-desc">
+                                    Complaint Management System
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="punjab-provision.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask2_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask2_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 - Calls Management -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Lahore Safe City.webp"
+                                    alt="Smart Transportation" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Lahore Safe City </h4>
+                                <div class="product-separator"></div>
+                                <p class="service-desc">
+                                    ANPR Cameras Integration
+                                </p>
+                                <div style="display: flex">
+                                    <a href="SafeCityLahore.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask3_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask3_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 - Emergency & Response System -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Board of Secondary Education Karachi (BSEK).webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Board of Secondary Education Karachi (BSEK)</h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc" style="margin-bottom: -5px;">
+                                    ERP & Online Management System
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="flagship-projects.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Building Management System -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Building Management System.webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title">
+                                    National Bank of Pakistan
+                                </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc">
+                                    Building Management System
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="BuildingManagementSystem.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Karachi BRT -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Karachi BRT.webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Karachi BRT </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc">
+                                    Intelligent Integrated Transport System (IITS)
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="karachi-brt.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  Citizen Complaint Information System -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Citizen Complaint Information System.webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Citizen Complaint Information System </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc">
+                                    KMC 1339
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="citizen-complaint.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rescue 1299  -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Rescue 1299.webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Rescue 1299 </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc">
+                                    Complaint Management System
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="rescue-1299.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IDEAS PAKISTAN -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/IDEAS Pakistan.webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> IDEAS Pakistan </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc">
+                                    Security & Surveillance Operations
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="ideas-pak.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  Pakistan Reinsurance Company Limited -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Pakistan Reinsurance Company.webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Pakistan Reinsurance Company Limited </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc" style="margin-bottom: -5px;">
+                                    Data Center & Disaster Recovery Migration
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="pakistan-reinstance-company.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  Habib Bank Limited -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Habib Bank Limited.webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Habib Bank Limited </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc">
+                                    CCTV & Access Control Solution
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="habib-bank-cctv.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  Karachi Metropolitan Corporation (KMC) -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Karachi Metropolitan Corporation (KMC).webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Karachi Metropolitan Corporation (KMC) </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc" style="margin-bottom: -5px;">
+                                    Upgradation of Hardware Infrastructure for Payroll
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="Karachi-Metropolitan-Corporation.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--State Bank Of Pakistan  -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/State Bank Of Pakistan.webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> State Bank Of Pakistan </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc" style="margin-bottom: 25px;">
+                                    CCTV Surveillance & Security System
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="State-Bank-Pakistan.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Karachi Metropolitan Corporation (KMC)  -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Karachi Metropolitan Corporation (KMC) (2).webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Karachi Metropolitan Corporation (KMC) </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc" style="margin-bottom: -2px;">
+                                    Establishment of Disaster Recovery Site – IT
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="Karachi-Corporation.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  IMARAT & Graana Group of Companies -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/IMARAT & Graana Group of Companies.webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> IMARAT & Graana Group of Companies </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc" style="margin-bottom: 25px;">
+                                    Implementation of 3CX Enterprise PBX System
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="IMARAT-GRAANA.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  Habib Bank Limited -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/Habib Bank Limited (2).webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> Habib Bank Limited </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc" style="margin-bottom: 25px;">
+                                    Security & Surveillance Infrastructure
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="Habib-Bank-Security.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KDA -->
+                    <div class="swiper-slide">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../assets/images/projects-img/projects-img/1x/KDA.webp"
+                                    alt="Advanced Security" class="img-fluid">
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-title"> KDA </h4>
+                                <!-- <div class="product-separator"></div> -->
+                                <p class="service-desc" style="margin-bottom: 25px;">
+                                    Land Management System
+                                </p>
+                                <div style="display: flex;">
+                                    <a href="KDA.html" class="product-link">
+                                        Read More <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask4_668_225" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="21">
+                                                <rect x="-6.10352e-05" y="0.100098" width="20.8084" height="20.8084"
+                                                    fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask4_668_225)">
+                                                <path
+                                                    d="M5.54894 15.7065L4.33511 14.4927L12.6585 6.16934H5.20213V4.4353H15.6063V14.8395H13.8723V7.38316L5.54894 15.7065Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Swiper('.project-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                }
+            });
+        });
+    </script>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <!-- Logo Section (First Line) -->
+            <div class="footer-logo-section">
+                <img src="../assets/images/Global Connect Synergy-logo.webp" alt="Global Connect Synergy Logo" class="footer-logo">
+            </div>
+
+            <!-- Footer Content Columns (Second Line) -->
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <h5 class="footer-title">Head Office</h5>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <img src="../assets/images/footer-icon/loc.svg" alt="Location Icon" class="contact-icon">
+                            <span>J-47 Block 6, PECHS Razi Road, Karachi, Pakistan.</span>
+                        </div>
+                        <div class="contact-item">
+                            <img src="../assets/images/footer-icon/call.svg" alt="Phone Icon" class="contact-icon">
+                            <span>+92 (21) 3431-2453</span>
+                        </div>
+                        <div class="contact-item">
+                            <img src="../assets/images/footer-icon/fax.svg" alt="Fax Icon" class="contact-icon">
+                            <span>+92 (21) 3431-2454</span>
+                        </div>
+                        <div class="contact-item">
+                            <img src="../assets/images/footer-icon/email.svg" alt="Email Icon" class="contact-icon">
+                            <span>contact-us@Global Connect Synergypvt.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Offices -->
+                <div class="footer-offices">
+                    <h5 class="footer-title">Other Offices</h5>
+                    <ul class="footer-links">
+                        <li><a href="../pages/contactUs.html" class="has-arrow">Lahore Office</a></li>
+                        <li><a href="../pages/contactUs.html" class="has-arrow">Islamabad Office</a></li>
+                        <li><a href="../pages/contactUs.html" class="has-arrow">Peshawar Office</a></li>
+                        <li><a href="../pages/contactUs.html" class="has-arrow">Quetta Office</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-quick-links">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="../pages/about-Us.html">About Global Connect Synergy</a></li>
+                        <li><a href="../pages/smart-surveillance.html">Services & Solutions</a></li>
+                        <li><a href="../pages/enterprise.html">Software & Consultancy</a></li>
+                        <li><a href="../pages/AI-powered-smart-challan.html">Products</a></li>
+                        <li><a href="../pages/career.html">Careers</a></li>
+                        <li><a href="../pages/contactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us & Newsletter -->
+                <div class="footer-social-newsletter">
+                    <h5 class="newsletter-section-title">Subscribe To Our Newsletter</h5>
+                    <form class="footer-newsletter">
+                        <input type="email" class="footer-newsletter-input" placeholder="your email address here"
+                            required>
+                        <button class="footer-newsletter-btn" id="footer-newsletter-btn"
+                            type="submit">Subscribe</button>
+                    </form>
+                    <h5 class="footer-title">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="">
+                            <img src="../assets/images/social-icon/fb.svg" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="#" class="">
+                            <img src="../assets/images/social-icon/linkedin.svg" alt="Twitter" class="social-icon">
+                        </a>
+                        <a href="#" class="">
+                            <img src="../assets/images/social-icon/insta-icon.svg" alt="Instagram" class="social-icon">
+                        </a>
+                        <!-- <a href="#" class="">
+                            <img src="../assets/images/social-icon/linkedin.svg" alt="LinkedIn" class="social-icon">
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 Global Connect Synergy Pvt. Ltd. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+
+    <button id="backToTop" class="back-to-top">
+        <svg class="progress-ring">
+            <circle class="progress-ring__circle"></circle>
+            <circle class="progress-ring__progress" id="progressCircle"></circle>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="white" class="bi bi-arrow-up-short"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
+        </svg>
+    </button>
+
+    <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const sidebarLinks = document.querySelectorAll('.services-list a');
+
+    sidebarLinks.forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault(); // prevent page reload
+            sidebarLinks.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+});
+</script> -->
+
+    <script src="assets/js/nav-active.js"></script>
+</body>
+
+</html>

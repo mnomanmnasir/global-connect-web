@@ -21,135 +21,14 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- <link rel="stylesheet" href="assets/css/banner-styles.css"> -->
   <link rel="stylesheet" href="assets/css/banner-image-fix.css">
-  <style>
-    .stats-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      /* gap: 30px; */
-      max-width: 1297px;
-      margin: 0 auto;
-      /* padding: 40px 20px; */
-      /* justify-content: space-between; */
-    }
+  <link rel="stylesheet" href="assets/css/mobile-dropdown.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    .stat-card {
-      color: white;
-      border-radius: 12px;
-      padding: 20px 30px;
-      width: 260px;
-      text-align: center;
-      /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
-      transition: transform 0.3s ease;
-    }
-
-    .stat-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .feature-item:hover {
-      transform: translateY(-5px);
-      transition: all 0.3s ease;
-      /* Add transition to the normal state */
-      /* transition property is not needed here since it's already defined on the normal state */
-    }
-
-    .stat-value {
-      font-size: 32px;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 15px;
-      line-height: 1;
-    }
-
-    .stat-title {
-      font-size: 14px;
-      color: #fff;
-      font-weight: 450;
-      margin-bottom: 8px;
-      line-height: 1.4;
-    }
-
-    .stat-description {
-      font-size: 15px;
-      color: #fff;
-      line-height: 1;
-    }
-
-    /* .stat-card::after {
-      content: '';
-      display: block;
-      width: 60px;
-      height: 3px;
-      background: linear-gradient(90deg, #e63946, #f1faee);
-      margin: 20px auto 0;
-      border-radius: 3px;
-    } */
-
-    @media (max-width: 768px) {
-      .stat-card {
-        width: 100%;
-        max-width: 350px;
-      }
-    }
-
-    /* Custom Arrow Navigation Styles */
-    .services-section {
-      position: relative;
-    }
-
-    .custom-nav-arrows {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      display: flex;
-      gap: 10px;
-      z-index: 10;
-    }
-
-    .custom-arrow {
-      width: 60px;
-      height: 60px;
-      /* border: 2px solid #e63946; */
-      /* background: rgba(255, 255, 255, 0.9); */
-      /* border-radius: 50%; */
-      display: flex;
-      flex: end;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      color: #e63946;
-      font-size: 20px;
-    }
-
-    .custom-arrow:hover {
-      /* background: #; */
-      color: #091d3e;
-      transform: translateY(-2px);
-      /* box-shadow: 0 5px 15px rgba (230, 57, 70, 0.3); */
-    }
-
-    .custom-arrow:active {
-      transform: translateY(0);
-    }
-
-    @media (max-width: 768px) {
-      .custom-nav-arrows {
-        top: 10px;
-        right: 10px;
-      }
-
-      .custom-arrow {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
-      }
-    }
-  </style>
 </head>
 
+
 <body>
+
   <div class="wrapper">
     <div class="preloader">
       <div class="loading"><span></span><span></span><span></span><span></span></div>
@@ -162,7 +41,7 @@
       <!-- <nav class="navbar navbar-expand-lg sticky-navbar mobile-navbar"> -->
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
             <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
           </a>
@@ -178,23 +57,24 @@
                 </a>
               </div>
 
+
               <!-- Mobile Logo -->
               <!-- Only visible on mobile -->
               <!-- Mobile logo -->
               <!-- <nav class="mobile-navbar transparent">
                 <div class="d-block d-lg-none" style="padding: 5px 15px; text-align: center;">
                   <a href="#">
-                    <img id="mobile-logo" src="assets/images/logo/logo-dark.png" alt="Mobile Logo"
                       style="max-width: 150px;" />
                   </a>
                 </div>
               </nav> -->
 
 
-              <!-- Mobile Menu Items yahan aayenge -->
+
+              <!-- Mobile Menu Items -->
               <li class="nav__item has-dropdown">
                 <!-- <a href="#" class="dropdown-toggle nav__item-link active d-none d-lg-block">Home</a> -->
-                <a href="#" class="dropdown-toggle nav__item-link active">Home</a>
+                <a href="index.html" class="dropdown-toggle nav__item-link">Home</a>
                 <!-- <hr class="mobile-divider"> -->
 
                 <!-- <ul class="dropdown-menu"> -->
@@ -218,125 +98,238 @@
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About Us</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
-                    <a href="#" class="nav__item-link">About</a>
+                    <a href="about-us.html" class="nav__item-link">About</a>
                   </li>
                   <!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="#" class="nav__item-link">About CEO</a>
+                    <a href="about-ceo.html" class="nav__item-link">About CEO</a>
                   </li>
                   <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="#" class="nav__item-link">Awards & Achievements</a>
-                  </li>
+                  <!-- /.nav-item -->
+                  <!-- <li class="nav__item">
+                    <a href="awards.html" class="nav__item-link">Awards & Achievements</a>
+                  </li> -->
                   <!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="#" class="nav__item-link">Projects</a>
+                    <a href="projects.html" class="nav__item-link">Projects</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__item-link">Major Clients</a>
+                    <a href="major-clients.html" class="nav__item-link">Major Clients</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__item-link">Strategic Partners</a>
+                    <a href="strategic-partners.html" class="nav__item-link">Strategic Partners</a>
                   </li>
                   <!-- /.nav-item -->
-                  <!-- <li class="nav__item"> -->
-                  <!-- <a href="pricing.html" class="nav__item-link">Major Clients</a> -->
+                  <!-- <li class="nav__item">
+                    <a href="awards.html" class="nav__item-link">Awards & Achievements</a>
+                  </li> -->
+                </ul>
+                <!-- <li class="nav__item"> -->
+                <!-- <a href="pricing.html" class="nav__item-link">Major Clients</a> -->
               </li>
+
+              <li class="nav__item has-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Services</a>
+                <ul class="dropdown-menu wide-dropdown-menu">
+                  <li class="nav__item">
+                    <div class="row">
+                      <div class="col-sm-6 dropdown-menu-col">
+                        <!-- <a href="it-solutions.html" class="nav__item-link dropdown-menu-title">IT Solutions</a> -->
+                        <ul class="nav flex-column">
+                          <li class="nav__item"><a class="nav__item-link" href="co-location.html">Co
+                              Location</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="data-connectivity.html">Data
+                              Connectivity</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="GIS.html">GIS</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="internet.html">Internet</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="security-surveillance.html">Security and
+                              Surveillance</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="coverage-network.html">Coverage and
+                              Network</a>
+                          </li>
+                          <li class="nav__item"><a class="nav__item-link"
+                              href="intelligent-transportation.html">Intelligent Transportation System</a></li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="fibre-optics.html">Fibre
+                              Optics</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6 dropdown-menu-col">
+                        <!-- <a href="industries.html" class="nav__item-link dropdown-menu-title">Industries</a> -->
+                        <ul class="nav flex-column">
+                          <li class="nav__item"><a class="nav__item-link" href="smart-surveillance.html">Smart
+                              Surveillance</a></li>
+                          <!-- /.nav-item -->
+                          <!-- <li class="nav__item"><a class="nav__item-link"
+                              href="industries-single-industry.html">Smart Grid</a></li> -->
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="smart-city.html">Smart
+                              City</a></li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="IOT.html">Internet of Things</a></li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="cybersecurity.html">Cybersecurity</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="cloud-services.html">Cloud
+                              Services</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="data-center.html">Data
+                              Center</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="infrastructure.html">Infrastructure</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <!-- <li class="nav__item"><a class="nav__item-link"
+                              href="industries-single-industry.html">Fibre Optics</a>
+                          </li> -->
+                          <!-- /.nav-item -->
+                        </ul>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </li>
+                  <!-- /.nav-item -->
+                </ul>
+                <!-- /.dropdown-menu -->
+              </li>
+
+              <li class="nav__item has-dropdown">
+                <!-- <li class="nav__item has-dropdown"> -->
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Products</a>
+                <!-- <ul class="dropdown-menu"> -->
+                <!-- <li class="nav__item"> -->
+                <!-- <div class="row"> -->
+                <!-- <div class="col-sm-6 dropdown-menu-col"> -->
+                <ul class="dropdown-menu">
+                  <!-- <span class="dropdown-menu-title" style="padding: 10px 10px; cursor: default; color: inherit;">Software Consultancy</span> -->
+
+                  <li class="nav__item"><a class="nav__item-link" href="AI-powered-smart-challan.html">AI Powered Smart
+                      E-Challan <span class="hide-on-mobile">System</span></a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="smart-surveillance-system.html">Smart
+                      Surveillance System</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="safe-cities.html">Safe Cities Solutions</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="smart-city-dev.html">Smart Cities
+                      Development</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="emergency-response.html">Emergengy and Response
+                      System</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="call-management-system.html">Call Management
+                      System</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="AI-Based-Attendance.html">AI Based Attendance
+                      Management <span class="hide-on-mobile">System</span></a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="site-monitoring.html">Site Monitoring System</a>
+                  </li>
+                </ul>
+                <!-- </div> -->
+                <!-- /.col-sm-6 -->
+                <!-- /.col-sm-6 -->
+                <!-- </div> -->
+                <!-- /.row -->
+                <!-- </li> -->
+                <!-- /.nav-item -->
+                <!-- </ul> -->
+                <!-- /.dropdown-menu -->
+              </li>
+
+
+              <li class="nav__item has-dropdown">
+                <!-- <li class="nav__item has-dropdown"> -->
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Consultancy</a>
+                <!-- <ul class="dropdown-menu"> -->
+                <!-- <li class="nav__item"> -->
+                <!-- <div class="row"> -->
+                <!-- <div class="col-sm-6 dropdown-menu-col"> -->
+                <ul class="dropdown-menu">
+                  <!-- <span class="dropdown-menu-title"
+                    style="padding: 10px 10px; cursor: default; color: inherit;">Software Consultancy</span> -->
+
+                  <li class="nav__item"><a class="nav__item-link" href="enterprise-app.html">Enterprise
+                      Applications</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="trake-trace.html">Track and
+                      Trace</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="artifical-intelligance.html">Artifical
+                      Intelligence</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="fintech.html">Fintech</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="analytics-Bi.html">Analytics</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="CRM.html">CRM</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="ERP.html">ERP</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item"><a class="nav__item-link" href="access-control.html">Access
+                      Control</a>
+                  </li>
+                </ul>
+                <!-- </div> -->
+                <!-- /.col-sm-6 -->
+                <!-- /.col-sm-6 -->
+                <!-- </div> -->
+                <!-- /.row -->
+                <!-- </li> -->
+                <!-- /.nav-item -->
+                <!-- </ul> -->
+                <!-- /.dropdown-menu -->
+              </li>
+
+
+
+
+
+
               <!-- /.nav-item -->
 
               <!-- <li class="nav__item"> -->
               <!-- <a href="faqs.html" class="nav__item-link">Support</a> -->
-              </li> <!-- /.nav-item -->
-              <!-- <li class="nav__item"> -->
-              <!-- <a href="careers.html" class="nav__item-link">Careers</a> -->
+              <li class="nav__item has-dropdown">
+                <a href="careers.html" class="dropdown-toggle nav__item-link">Careers</a>
+              <li class="nav__item">
+                <a href="contact-us.html" class="nav__item-link">Contact Us</a>
               </li><!-- /.nav-item -->
             </ul>
             <!-- /.dropdown-menu -->
-            </li><!-- /.nav-item -->
-            <li class="nav__item has-dropdown">
-              <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Services</a>
-              <ul class="dropdown-menu">
-                <li class="nav__item">
-                  <a href="#" class="nav__item-link">Co Location</a>
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item">
-                  <a href="#" class="nav__item-link">Data Connectivity</a>
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item">
-                  <a href="#" class="nav__item-link">GIS</a>
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item">
-                  <a href="#" class="nav__item-link">Internet</a>
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item">
-                  <a href="#" class="nav__item-link">Security & Surveillance</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__item-link">Coverage & Network</a>
-                </li>
 
-                <!-- /.nav-item -->
-              </ul>
-              <!-- /.nav-item -->
-              <!-- </ul> -->
-              <!-- </div> -->
-              <!-- /.col-sm-6 -->
-              <!-- <div class="col-sm-6 dropdown-menu-col">
-                        <a href="industries.html" class="nav__item-link dropdown-menu-title">Industries</a>
-                        <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Education,
-                              Non-Profit</a></li> /.nav-item -->
-              <!-- <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Accounting,
-                              Finance</a></li> -->
-              <!-- /.nav-item -->
-              <!-- <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Government &
-                              Public</a></li> -->
-              <!-- /.nav-item -->
-              <!-- <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Energy
-                              &
-                              Utilities</a></li>  -->
-              <!-- /.nav-item -->
-              <!-- <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Legal,
-                              Law
-                              Firms</a></li>  -->
-              <!-- /.nav-item -->
-              <!-- <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Manufacturing</a>
-                          </li> -->
-              <!-- /.nav-item -->
-              <!-- </ul>
-                      </div> -->
-              <!-- /.col-sm-6 -->
 
-              <!-- <li class="nav__item has-dropdown"> -->
-              <!-- <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Case Studies</a> -->
-              <!-- <ul class="dropdown-menu"> -->
-              <!-- <li class="nav__item"> -->
-              <!-- <a href="case-studies-grid.html" class="nav__item-link">Case Studies Grid</a> -->
-              <!-- </li> -->
-              <!-- /.nav-item -->
-              <!-- <li class="nav__item"> -->
-              <!-- <a href="case-studies-modern.html" class="nav__item-link">Case Studies Modern</a> -->
-              <!-- </li> -->
-              <!-- /.nav-item -->
-              <!-- <li class="nav__item"> -->
-              <!-- <a href="case-studies-classic.html" class="nav__item-link">Case Studies Classic</a> -->
-              <!-- </li> -->
-              <!-- /.nav-item -->
-              <!-- <li class="nav__item"> -->
-              <!-- <a href="case-studies-single.html" class="nav__item-link">Single Case Study</a> -->
-              <!-- </li> -->
-              <!-- /.nav-item -->
-              <!-- </ul> -->
-              <!-- /.dropdown-menu -->
-            </li><!-- /.nav-item -->
+
 
             <!-- <li class="nav__item has-dropdown"> -->
             <!-- <a href="#" class="dropdown-toggle nav__item-link">Support</a> -->
@@ -376,11 +369,7 @@
             <!-- /.dropdown-menu -->
             <!-- </li> -->
             <!-- /.nav-item -->
-            <li class="nav__item has-dropdown">
-              <a href="#" class="dropdown-toggle nav__item-link">Careers</a>
-            <li class="nav__item">
-              <a href="#" class="nav__item-link">Contact Us</a>
-            </li><!-- /.nav-item -->
+
             <!-- Add this inside your mobile menu section (replace the existing social icons div) -->
             <div class="mobile-social-icons fixed-bottom d-block d-lg-none"
               style="position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 15px 0; text-align: center; border-top: 1px solid #eee; z-index: 1000;">
@@ -442,7 +431,7 @@
                     enterprises, and government — keeping your business online
                   </p>
                   <div class="d-flex flex-wrap align-items-center">
-                    <a href="#" class="btn btn__white btn-responsive mr-3 mr-md-4 mr-lg-5">
+                    <a href="co-location.html" class="btn btn__white btn-responsive mr-3 mr-md-4 mr-lg-5">
                       <!-- <a href="#" class="btn btn__white btn-responsive mr-30"> -->
                       <i class="icon-arrow-right"></i>
                       <span>Our Services</span>
@@ -470,7 +459,7 @@
                     mind for your critical operations.
                   </p>
                   <div class="d-flex flex-wrap align-items-center">
-                    <a href="#" class="btn btn__white mr-30">
+                    <a href="co-location.html" class="btn btn__white mr-30">
                       <i class="icon-arrow-right"></i>
                       <span>Our Services</span>
                     </a>
@@ -497,11 +486,12 @@
             <div class="feature-item">
               <div class="feature__icon">
                 <img src="./assets/images/svg/colocation.svg" class="icon-software" style="width: 30%;" />
-                <!-- <i class="fa-solid fa-video"></i> -->
+                <!-- <i
+                  class="fa-solid fa-video"></i> -->
               </div>
               <h4 class="feature__title">Co Location</h4>
               <br>
-              <a href="#" class="btn__link">
+              <a href="co-location.html" class="btn__link">
                 <!-- <i class="icon-arrow-right icon-outlined"></i> -->
                 <i class="icon-arrow-right icon-outlined"></i>
                 <span>Read More</span>
@@ -517,7 +507,7 @@
               </div>
               <h4 class="feature__title">Data Connectivity</h4>
               <br>
-              <a href="#" class="btn__link">
+              <a href="data-connectivity.html" class="btn__link">
                 <i class="icon-arrow-right icon-outlined"></i>
                 <span>Read More</span>
               </a>
@@ -531,7 +521,7 @@
                 <!-- <i class="icon-website"></i> -->
               </div>
               <h4 class="feature__title">Geographical Information System</h4>
-              <a href="#" class="btn__link">
+              <a href="GIS.html" class="btn__link">
                 <i class="icon-arrow-right icon-outlined"></i>
                 <span>Read More</span>
               </a>
@@ -547,7 +537,7 @@
                 <!-- <i class="icon-management"></i> -->
               </div>
               <h4 class="feature__title">Security & Surveillance</h4>
-              <a href="#" class="btn__link">
+              <a href="security-surveillance.html" class="btn__link">
                 <i class="icon-arrow-right icon-outlined"></i>
                 <span>Read More</span>
               </a>
@@ -652,9 +642,7 @@
     =========================== -->
     <section class="services-section">
       <!-- Custom Arrow Navigation -->
-
-
-      <div class="container" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="container">
         <!-- Navigation Arrows -->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
@@ -666,11 +654,11 @@
           <!-- Arrow Navigation positioned in top right -->
           <!-- <div class="custom-nav-arrows"> -->
           <!-- <button class="custom-arrow" id="servicesPrev" title="Previous">
-                  <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="custom-arrow" id="servicesNext" title="Next">
-                  <i class="fas fa-chevron-right"></i>
-                </button> -->
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="custom-arrow" id="servicesNext" title="Next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button> -->
           <!-- </div> -->
         </div><!-- /.row -->
         <div class='container d-flex justify-content-end' style="margin: 0px 30px auto;">
@@ -683,48 +671,49 @@
         </div>
         <div class="row">
           <!-- <button class="custom-arrow" id="servicesPrev" title="Previous">
-                <i class="fas fa-chevron-left"></i>
-              </button>
-              <button class="custom-arrow" id="servicesNext" title="Next">
-                <i class="fas fa-chevron-right"></i>
-              </button> -->
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="custom-arrow" id="servicesNext" title="Next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button> -->
           <div class="col-12" style="border-radius: 8px;">
             <div class="slick-carousel" data-slick='{
-              "slidesToShow": 3,
-              "slidesToScroll": 1,
-              "autoplay": true,
-              "autoplaySpeed": 3000,
-              "pauseOnHover": false,
-              "infinite": true,
-              "pauseOnFocus": false,
-              "arrows": false,
-              "dots": true,
-              "responsive": [
-                  {"breakpoint": 992, "settings": {"slidesToShow": 3}},
-                  {"breakpoint": 767, "settings": {"slidesToShow": 2}},
-                  {"breakpoint": 480, "settings": {"slidesToShow": 1}}
-              ]
-          }'>
+                  "slidesToShow": 3,
+                  "slidesToScroll": 1,
+                  "autoplay": true,
+                  "autoplaySpeed": 3000,
+                  "pauseOnHover": false,
+                  "infinite": true,
+                  "pauseOnFocus": false,
+                  "arrows": false,
+                  "dots": true,
+                  "responsive": [
+                      {"breakpoint": 992, "settings": {"slidesToShow": 3}},
+                      {"breakpoint": 767, "settings": {"slidesToShow": 2}},
+                      {"breakpoint": 480, "settings": {"slidesToShow": 1}}
+                  ]
+              }'>
               <!-- service item #1 -->
               <div class="service-item" style="
-                  background: #ffffff;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  /* padding: 25px;
-                  margin: 10px; */
-                  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-                ">
+                    background: #ffffff;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 8px;
+                    /* padding: 25px;
+                    margin: 10px; */
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                  ">
                 <div class="service__icon">
                   <img src="./assets/images/svg/colocation.svg" class="icon-server" />
                   <!-- <i class="icon-server"></i> -->
                 </div><!-- /.service__icon -->
                 <h4 class="service__title">Co Location <br> Services</h4>
                 <div class="service__content">
-                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
                     tempor
                     incididunt ut labore et dolore magna aliqua.
                   </p>
-                  <a href="#" class="btn btn__primary">
+                  <a href="co-location.html" class="btn btn__primary">
                     <span style="font-weight: 500 !important;">Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
@@ -732,49 +721,50 @@
               </div><!-- /.service-item -->
               <!-- service item #2 -->
               <div class="service-item" style="
-                  background: #ffffff;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  /* padding: 25px;
-                  margin: 10px; */
-                  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-                ">
+                    background: #ffffff;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 8px;
+                    /* padding: 25px;
+                    margin: 10px; */
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                  ">
                 <div class="service__icon">
                   <img src="./assets/images/svg/noun-data-connection-4176089.svg" class="icon-cloud" />
                   <!-- <i class="icon-cloud"></i> -->
                 </div><!-- /.service__icon -->
                 <h4 class="service__title">Data Connectivity<br> Services</h4>
                 <div class="service__content">
-                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
                     tempor
                     incididunt ut labore et dolore magna aliqua. </p>
-                  <a href="#" class="btn btn__primary">
+                  <a href="data-connectivity.html" class="btn btn__primary">
                     <!-- <span>Read More</span> -->
                     <span style="font-weight: 500 !important;">Read More</span>
-
                     <i class="icon-arrow-right"></i>
                   </a>
                 </div><!-- /.service-content -->
               </div><!-- /.service-item -->
               <!-- service item #3 -->
               <div class="service-item" style="
-                  background: #ffffff;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  /* padding: 25px;
-                  margin: 10px; */
-                  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-                ">
+                    background: #ffffff;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 8px;
+                    /* padding: 25px;
+                    margin: 10px; */
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                  ">
                 <div class="service__icon">
                   <img src="./assets/images/svg/GIS.svg" class="icon-hosting" />
                   <!-- <i class="icon-hosting"></i> -->
                 </div><!-- /.service__icon -->
                 <h4 class="service__title">GIS<br> Services</h4>
                 <div class="service__content">
-                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
-                  <a href="#" class="btn btn__primary">
+                  <a href="GIS.html" class="btn btn__primary">
                     <!-- <span>Read More</span> -->
                     <span style="font-weight: 500 !important;">Read More</span>
 
@@ -783,13 +773,13 @@
                 </div><!-- /.service-content -->
               </div><!-- /.service-item -->
               <div class="service-item" style="
-                  background: #ffffff;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  /* padding: 25px;
-                  margin: 10px; */
-                  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-                ">
+                    background: #ffffff;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 8px;
+                    /* padding: 25px;
+                    margin: 10px; */
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                  ">
                 <div class="service__icon">
                   <img src="./assets/images/svg/internet.svg" class="icon-server" />
                   <!-- <i class="icon-server"></i> -->
@@ -797,11 +787,12 @@
                 <h4 class="service__title">Internet</h4>
                 <br>
                 <div class=" service__content">
-                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
                     tempor
                     incididunt ut labore et dolore magna aliqua.
                   </p>
-                  <a href="#" class="btn btn__primary">
+                  <a href="internet.html" class="btn btn__primary">
                     <!-- <span>Read More</span> -->
                     <span style="font-weight: 500 !important;">Read More</span>
 
@@ -811,22 +802,312 @@
               </div><!-- /.service-item -->
               <!-- service item #4 -->
               <div class="service-item" style="
-                  background: #ffffff;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  /* padding: 25px;
-                  margin: 10px; */
-                  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-                ">
+                    background: #ffffff;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 8px;
+                    /* padding: 25px;
+                    margin: 10px; */
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                  ">
                 <div class="service__icon">
                   <img src="./assets/images/svg/camera.svg" class="icon-technician" />
                   <!-- <i class="icon-technician"></i> -->
                 </div><!-- /.service__icon -->
                 <h4 class="service__title">Security & Surveillance <br> Services</h4>
                 <div class="service__content">
-                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#" class="btn btn__primary">
+                  <a href="security-surveillance.html" class="btn btn__primary">
+                    <!-- <span>Read More</span> -->
+                    <span style="font-weight: 500 !important;">Read More</span>
+
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+              </div><!-- /.service-item -->
+
+              <div class="service-item" style="
+                          background: #ffffff;
+                          border: 1px solid #e0e0e0;
+                          border-radius: 8px;
+                          /* padding: 25px;
+                          margin: 10px; */
+                          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                        ">
+                <div class="service__icon">
+                  <img src="./assets/images/svg/internet.svg" class="icon-server" />
+                  <!-- <i class="icon-server"></i> -->
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Coverage and Networks</h4>
+                <br>
+                <div class=" service__content">
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="coverage-network.html" class="btn btn__primary">
+                    <!-- <span>Read More</span> -->
+                    <span style="font-weight: 500 !important;">Read More</span>
+
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+              </div><!-- /.service-item -->
+
+
+              <div class="service-item" style="
+                          background: #ffffff;
+                          border: 1px solid #e0e0e0;
+                          border-radius: 8px;
+                          /* padding: 25px;
+                          margin: 10px; */
+                          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                        ">
+                <div class="service__icon">
+                  <img src="./assets/images/svg/internet.svg" class="icon-server" />
+                  <!-- <i class="icon-server"></i> -->
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Smart Surveillance</h4>
+                <br>
+                <div class=" service__content">
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="smart-surveillance.html" class="btn btn__primary">
+                    <!-- <span>Read More</span> -->
+                    <span style="font-weight: 500 !important;">Read More</span>
+
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+              </div><!-- /.service-item -->
+              <div class="service-item" style="
+                                background: #ffffff;
+                                border: 1px solid #e0e0e0;
+                                border-radius: 8px;
+                                /* padding: 25px;
+                                margin: 10px; */
+                                box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                              ">
+                <div class="service__icon">
+                  <img src="./assets/images/svg/camera.svg" class="icon-technician" />
+                  <!-- <i class="icon-technician"></i> -->
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Intelligent Transportation <br> System</h4>
+                <div class="service__content">
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="intelligent-transportation.html" class="btn btn__primary">
+                    <!-- <span>Read More</span> -->
+                    <span style="font-weight: 500 !important;">Read More</span>
+
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+              </div><!-- /.service-item -->
+
+              <div class="service-item" style="
+                                      background: #ffffff;
+                                      border: 1px solid #e0e0e0;
+                                      border-radius: 8px;
+                                      /* padding: 25px;
+                                      margin: 10px; */
+                                      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                                    ">
+                <div class="service__icon">
+                  <img src="./assets/images/svg/internet.svg" class="icon-server" />
+                  <!-- <i class="icon-server"></i> -->
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Smart City</h4>
+                <br>
+                <div class=" service__content">
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="smart-city.html" class="btn btn__primary">
+                    <!-- <span>Read More</span> -->
+                    <span style="font-weight: 500 !important;">Read More</span>
+
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+              </div><!-- /.service-item -->
+
+              <div class="service-item" style="
+                                            background: #ffffff;
+                                            border: 1px solid #e0e0e0;
+                                            border-radius: 8px;
+                                            /* padding: 25px;
+                                            margin: 10px; */
+                                            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                                          ">
+                <div class="service__icon">
+                  <img src="./assets/images/svg/internet.svg" class="icon-server" />
+                  <!-- <i class="icon-server"></i> -->
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Internet of Things</h4>
+                <br>
+                <div class=" service__content">
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="IOT.html" class="btn btn__primary">
+                    <!-- <span>Read More</span> -->
+                    <span style="font-weight: 500 !important;">Read More</span>
+
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+              </div><!-- /.service-item -->
+
+              <div class="service-item" style="
+                                            background: #ffffff;
+                                            border: 1px solid #e0e0e0;
+                                            border-radius: 8px;
+                                            /* padding: 25px;
+                                            margin: 10px; */
+                                            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                                          ">
+                <div class="service__icon">
+                  <img src="./assets/images/svg/internet.svg" class="icon-server" />
+                  <!-- <i class="icon-server"></i> -->
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Cybersecurity</h4>
+                <br>
+                <div class=" service__content">
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="cybersecurity.html" class="btn btn__primary">
+                    <!-- <span>Read More</span> -->
+                    <span style="font-weight: 500 !important;">Read More</span>
+
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+              </div><!-- /.service-item -->
+
+              <div class="service-item" style="
+                          background: #ffffff;
+                          border: 1px solid #e0e0e0;
+                          border-radius: 8px;
+                          /* padding: 25px;
+                          margin: 10px; */
+                          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                        ">
+                <div class="service__icon">
+                  <img src="./assets/images/svg/internet.svg" class="icon-server" />
+                  <!-- <i class="icon-server"></i> -->
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Cloud Service</h4>
+                <br>
+                <div class=" service__content">
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="cloud-services.html" class="btn btn__primary">
+                    <!-- <span>Read More</span> -->
+                    <span style="font-weight: 500 !important;">Read More</span>
+
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+              </div><!-- /.service-item -->
+
+
+              <div class="service-item" style="
+                          background: #ffffff;
+                          border: 1px solid #e0e0e0;
+                          border-radius: 8px;
+                          /* padding: 25px;
+                          margin: 10px; */
+                          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                        ">
+                <div class="service__icon">
+                  <img src="./assets/images/svg/internet.svg" class="icon-server" />
+                  <!-- <i class="icon-server"></i> -->
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Data Center</h4>
+                <br>
+                <div class=" service__content">
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="data-center.html" class="btn btn__primary">
+                    <!-- <span>Read More</span> -->
+                    <span style="font-weight: 500 !important;">Read More</span>
+
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+              </div><!-- /.service-item -->
+
+
+              <div class="service-item" style="
+                          background: #ffffff;
+                          border: 1px solid #e0e0e0;
+                          border-radius: 8px;
+                          /* padding: 25px;
+                          margin: 10px; */
+                          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                        ">
+                <div class="service__icon">
+                  <img src="./assets/images/svg/internet.svg" class="icon-server" />
+                  <!-- <i class="icon-server"></i> -->
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Infrastructure</h4>
+                <br>
+                <div class=" service__content">
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="infrastructure.html" class="btn btn__primary">
+                    <!-- <span>Read More</span> -->
+                    <span style="font-weight: 500 !important;">Read More</span>
+
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.service-content -->
+              </div><!-- /.service-item -->
+
+              <div class="service-item" style="
+                          background: #ffffff;
+                          border: 1px solid #e0e0e0;
+                          border-radius: 8px;
+                          /* padding: 25px;
+                          margin: 10px; */
+                          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                        ">
+                <div class="service__icon">
+                  <img src="./assets/images/svg/internet.svg" class="icon-server" />
+                  <!-- <i class="icon-server"></i> -->
+                </div><!-- /.service__icon -->
+                <h4 class="service__title">Fibre Optics</h4>
+                <br>
+                <div class=" service__content">
+                  <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="fibre-optics.html" class="btn btn__primary">
                     <!-- <span>Read More</span> -->
                     <span style="font-weight: 500 !important;">Read More</span>
 
@@ -836,36 +1117,36 @@
               </div><!-- /.service-item -->
               <!-- service item #5 -->
               <!-- <div class="service-item">
-                    <div class="service__icon">
-                      <i class="icon-programming"></i>
-                    </div> -->
+                      <div class="service__icon">
+                        <i class="icon-programming"></i>
+                      </div> -->
               <!-- /.service__icon -->
               <!-- <h4 class="service__title">Software Dev<br> Services</h4>
-                    <div class="service__content">
-                      <p class="service__desc">With shorter product cycles, rapid innovation, and mergers contributing to
-                        constant change, you are faced with making business decisions every day to advance your mission.
-                      </p>
-                      <a href="it-solutions-single.html" class="btn btn__primary">
-                        <span>Read More</span>
-                        <i class="icon-arrow-right"></i>
-                      </a>
-                    </div></.service-content -->
+                      <div class="service__content">
+                        <p class="service__desc">With shorter product cycles, rapid innovation, and mergers contributing to
+                          constant change, you are faced with making business decisions every day to advance your mission.
+                        </p>
+                        <a href="it-solutions-single.html" class="btn btn__primary">
+                          <span>Read More</span>
+                          <i class="icon-arrow-right"></i>
+                        </a>
+                      </div></.service-content -->
 
               <!-- </div> -->
               <!-- /.service-item -->
               <!-- service item #6 -->
               <!-- <div class="service-item">
-                    <div class="service__icon">
-                      <i class="icon-programming"></i>
-                    </div> /.service__icon -->
+                      <div class="service__icon">
+                        <i class="icon-programming"></i>
+                      </div> /.service__icon -->
               <!-- <h4 class="service__title">Backup & Recovery<br> Services</h4>
-                    <div class="service__content">
-                      <p class="service__desc">While you can’t predict unexpected events, we’ll ensure the right
-                        precautions
-                        are in place to minimize downtime and keep you moving in the right direction.</p>
-                      <a href="it-solutions-single.html" class="btn btn__primary">
-                        <span>Read More</span>
-                        <i class="icon-arrow-right"></i> -->
+                      <div class="service__content">
+                        <p class="service__desc">While you can’t predict unexpected events, we’ll ensure the right
+                          precautions
+                          are in place to minimize downtime and keep you moving in the right direction.</p>
+                        <a href="it-solutions-single.html" class="btn btn__primary">
+                          <span>Read More</span>
+                          <i class="icon-arrow-right"></i> -->
               <!-- </a> -->
               <!-- </div> -->
               <!-- /.service-content -->
@@ -877,14 +1158,15 @@
 
       <div class="row">
         <div class="col-12 text-center">
-          <p class="text__link mt-4 mb-0"> <a href="#" class="btn btn__secondary btn__link mx-1">
-              <span>Explore All Services</span> <i class="icon-arrow-right icon-outlined"></i>
+          <p class="text__link mt-4 mb-50"> <a href="#" class="btn btn__secondary btn__link mx-1">
+              <!-- <span>Explore All Services</span> <i class="icon-arrow-right icon-outlined"></i> -->
             </a>
           </p>
         </div><!-- /.col-lg-6 -->
       </div>
   </div><!-- /.container -->
   </section><!-- /.Services Layout 1 -->
+  <!-- /.Services Layout 1 -->
 
   <!-- =========================
        Banner layout 2
@@ -912,9 +1194,9 @@
                     <h4 class="fancybox__title">24/7 <br> Network Monitoring</h4>
                     <p class="fancybox__desc">Our dedicated Network Operations Center (NOC) ensures proactive issue
                       detection, rapid response, and continuous uptime for all clients.</p>
-                    <a href="#" class="read-more-link"><i class="icon-arrow-right icon-outlined"></i>
+                    <!-- <a href="#" class="read-more-link"><i class="icon-arrow-right icon-outlined"></i>
                       <span>Read More</span>
-                    </a>
+                    </a> -->
                   </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
               </div><!-- /.col-sm-6 -->
@@ -937,9 +1219,9 @@
                       From fiber deployment to security systems, we tailor every service to your
                       operational needs — for businesses, ISPs, and government.
                     </p>
-                    <a href="#" class="read-more-link"><i class="icon-arrow-right icon-outlined"></i>
+                    <!-- <a href="#" class="read-more-link"><i class="icon-arrow-right icon-outlined"></i>
                       <span>Read More</span>
-                    </a>
+                    </a> -->
                   </div><!-- /.fancybox-content -->
                 </div><!-- /.fancybox-item -->
               </div><!-- /.col-sm-6 -->
@@ -1485,42 +1767,52 @@
         </div>
       </div>
 
-      <div class='container d-flex justify-content-end' style="margin: 0px 30px auto;">
-        <button class="custom-arrow" id="servicesPrev" title="Previous">
+      <!-- <div class='container d-flex justify-content-end' style="margin: 0px 30px auto;">
+        <button class="custom-arrow me-2" id="blogPrev" title="Previous">
           <i class="fas fa-chevron-left"></i>
         </button>
-        <button class="custom-arrow" id="servicesNext" title="Next">
+        <button class="custom-arrow" id="blogNext" title="Next">
           <i class="fas fa-chevron-right"></i>
         </button>
-      </div>
+      </div> -->
 
-      <!-- Auto-scrolling Slider Container -->
       <div class="row">
-        <div class="col-12" style="background-color: #f2f2f2; border-radius: 8px;">
-          <div class="slick-carousel" data-slick='{
-  "slidesToShow": 3,
-  "slidesToScroll": 1,
-  "autoplay": true,
-  "pauseOnHover": false,
-  "infinite": true,
-  "pauseOnFocus": false,
-  "arrows": false,
-  "dots": false,
-  "responsive": [
-    {
-      "breakpoint": 992,
-      "settings": {
-        "slidesToShow": 2
-      }
-    },
-    {
-      "breakpoint": 768,
-      "settings": {
-        "slidesToShow": 1
-      }
-    }
-  ]
-}'>
+        <!-- <button class="custom-arrow" id="servicesPrev" title="Previous">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="custom-arrow" id="servicesNext" title="Next">
+                <i class="fas fa-chevron-right"></i>
+              </button> -->
+        <div class="col-12" style="border-radius: 8px;">
+          <!-- <div class="slick-carousel" data-slick='{
+              "slidesToShow": 3,
+              "slidesToScroll": 1,
+              "autoplay": true,
+              "autoplaySpeed": 3000,
+              "pauseOnHover": false,
+              "infinite": true,
+              "pauseOnFocus": false,
+              "arrows": false,
+              "dots": true,
+              "responsive": [
+                  {"breakpoint": 992, "settings": {"slidesToShow": 3}},
+                  {"breakpoint": 767, "settings": {"slidesToShow": 2}},
+                  {"breakpoint": 480, "settings": {"slidesToShow": 1}}
+              ]
+          }'> -->
+          <div class="slick-carousel blog-post-carousel" data-slick='{
+            "slidesToShow": 3,
+            "slidesToScroll": 1,
+            "autoplay": false,
+            "infinite": true,
+            "arrows": false,
+            "dots": false,
+            "responsive": [
+              {"breakpoint": 1200, "settings": {"slidesToShow": 3}},
+              {"breakpoint": 992, "settings": {"slidesToShow": 2}},
+              {"breakpoint": 768, "settings": {"slidesToShow": 1}}
+            ]
+          }'>
 
             <!-- Blog Item #1 -->
             <div class="post-item"
@@ -1538,7 +1830,7 @@
                 </div>
                 <p class="post__desc" style="color: #666; margin-bottom: 15px;">Lorem ipsum dolor sit amet, consectetur
                   adipiscing elit...</p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link"
+                <a href="#" class="btn btn__secondary btn__link"
                   style="display: inline-flex; align-items: center; color: #e63946; text-decoration: none;">
                   <span style="font-weight: 500 !important">Read More</span>
                   <i class="icon-arrow-right" style="margin-left: 5px;"></i>
@@ -1593,6 +1885,79 @@
                 </a>
               </div>
             </div>
+
+            <!-- Blog Item #1 -->
+            <div class="post-item"
+              style="background: white; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; margin: 0 10px;">
+              <div class="post__img">
+                <a href="#">
+                  <img src="assets/images/blog/grid/1.jpg" alt="blog image" style="width: 100%;">
+                </a>
+              </div>
+              <div class="post__body" style="padding: 20px;">
+                <h4 class="post__title"><a href="#" style="color: #333; text-decoration: none;">Revolutionizing Karachi:
+                    Inside Our 900 KM Fiber Network</a></h4>
+                <div class="post__meta" style="margin: 10px 0;">
+                  <span class="post__meta-date" style="color: #666; font-size: 14px;">Jan 30, 2025</span>
+                </div>
+                <p class="post__desc" style="color: #666; margin-bottom: 15px;">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit...</p>
+                <a href="#" class="btn btn__secondary btn__link"
+                  style="display: inline-flex; align-items: center; color: #e63946; text-decoration: none;">
+                  <span style="font-weight: 500 !important">Read More</span>
+                  <i class="icon-arrow-right" style="margin-left: 5px;"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Blog Item #2 -->
+            <div class="post-item"
+              style="background: white; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; margin: 0 10px;">
+              <div class="post__img">
+                <a href="#">
+                  <img src="assets/images/blog/grid/2.jpg" alt="blog image" style="width: 100%;">
+                </a>
+              </div>
+              <div class="post__body" style="padding: 20px;">
+                <h4 class="post__title"><a href="#" style="color: #333; text-decoration: none;">Why Carrier-Neutral Data
+                    Centers Are the Future</a></h4>
+                <div class="post__meta" style="margin: 10px 0;">
+                  <span class="post__meta-date" style="color: #666; font-size: 14px;">Jan 30, 2025</span>
+                </div>
+                <p class="post__desc" style="color: #666; margin-bottom: 15px;">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit...</p>
+                <a href="#" class="btn btn__secondary btn__link"
+                  style="display: inline-flex; align-items: center; color: #e63946; text-decoration: none;">
+                  <span style="font-weight: 500 !important">Read More</span>
+                  <i class="icon-arrow-right" style="margin-left: 5px;"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Blog Item #3 -->
+            <div class="post-item"
+              style="background: white; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; margin: 0 10px;">
+              <div class="post__img">
+                <a href="#">
+                  <img src="assets/images/blog/grid/3.jpg" alt="blog image" style="width: 100%;">
+                </a>
+              </div>
+              <div class="post__body" style="padding: 20px;">
+                <h4 class="post__title"><a href="#" style="color: #333; text-decoration: none;">GPON vs Leased Lines:
+                    Internet Solutions</a></h4>
+                <div class="post__meta" style="margin: 10px 0;">
+                  <span class="post__meta-date" style="color: #666; font-size: 14px;">Jan 30, 2025</span>
+                </div>
+                <p class="post__desc" style="color: #666; margin-bottom: 15px;">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit...</p>
+                <a href="#" class="btn btn__secondary btn__link"
+                  style="display: inline-flex; align-items: center; color: #e63946; text-decoration: none;">
+                  <span style="font-weight: 500 !important">Read More</span>
+                  <i class="icon-arrow-right" style="margin-left: 5px;"></i>
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -1600,34 +1965,39 @@
   </section>
 
   <!-- /.clients -->
-  <section class="clients border-top pt-50 pb-50">
-    <h2 class="text-center clients">Strategic Partners</h2>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12">
-          <div class="slick-carousel"
-            data-slick='{"slidesToShow": 6, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 767, "settings": {"slidesToShow": 3}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
-            <div class="client">
-              <img src="assets/images/clients/ptcl.png" alt="PTCL">
-              <img src="assets/images/clients/ptcl.png" alt="PTCL">
-            </div>
-            <div class="client">
-              <img src="assets/images/clients/satcomm.png" alt="SATCOMM">
-              <img src="assets/images/clients/satcomm.png" alt="SATCOMM">
-            </div>
-            <div class="client">
-              <img src="assets/images/clients/netsat.png" alt="NETSAT">
-              <img src="assets/images/clients/netsat.png" alt="NETSAT">
-            </div>
-            <div class="client">
-              <img src="assets/images/clients/comsats.png" alt="COMSATS">
-              <img src="assets/images/clients/comsats.png" alt="COMSATS">
+  <div>
+
+    <section class="clients border-top pt-50 pb-50">
+      <h2 class="text-center clients">Strategic Partners</h2>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="slick-carousel"
+              data-slick='{"slidesToShow": 6, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 767, "settings": {"slidesToShow": 3}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
+              <div class="client">
+                <img src="assets/images/clients/ptcl.png" alt="PTCL">
+                <img src="assets/images/clients/ptcl.png" alt="PTCL">
+              </div>
+              <div class="client">
+                <img src="assets/images/clients/satcomm.png" alt="SATCOMM">
+                <img src="assets/images/clients/satcomm.png" alt="SATCOMM">
+              </div>
+              <div class="client">
+                <img src="assets/images/clients/netsat.png" alt="NETSAT">
+                <img src="assets/images/clients/netsat.png" alt="NETSAT">
+              </div>
+              <div class="client">
+                <img src="assets/images/clients/comsats.png" alt="COMSATS">
+                <img src="assets/images/clients/comsats.png" alt="COMSATS">
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </div>
+
   <!-- =========================
        Banner layout 1
       =========================== -->
@@ -1678,6 +2048,7 @@
                 <!-- <h6 class="footer-widget__title">Quick Contact</h6> -->
                 <ul class="contact-list list-unstyled">
                   <!-- <img src="assets/images/logo/logo-light.png" alt="logo" class="mt-4 mb-30" style="margin-left: -5%;"> -->
+
                   <img src="assets/images/logo/logo-light.png" alt="logo" class="footer-logo mt-4 mb-30"
                     style="margin-left: -5px;">
                   <!-- <li class="color-gray">If you have any questions or need help, feel free to contact with our team.
@@ -1732,9 +2103,9 @@
             <div class="footer-widget__content">
               <nav>
                 <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">Data Connectivity</a></li>
-                  <li><a href="#" class="text-white">Internet</a></li>
-                  <li><a href="#" class="text-white">Co-Location</a></li>
+                  <li><a href="data-connectivity.html" class="text-white">Data Connectivity</a></li>
+                  <li><a href="internet.html" class="text-white">Internet</a></li>
+                  <li><a href="co-location.html" class="text-white">Co-Location</a></li>
                   <!-- <li><a href="projects-grid.html">Case Studies</a></li>
                   <li><a href="contacs.html">Contacts</a></li>
                   <li><a href="#">Investors</a></li> -->
@@ -1764,10 +2135,10 @@
             <div class="footer-widget__content">
               <nav>
                 <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">About Us</a></li>
-                  <li><a href="#" class="text-white">Coverage & Network</a></li>
-                  <li><a href="#" class="text-white">Major Clients</a></li>
-                  <li><a href="#" class="text-white">Strategic Partners</a></li>
+                  <li><a href="about-us.html" class="text-white">About Us</a></li>
+                  <li><a href="coverage-network.html" class="text-white">Coverage & Network</a></li>
+                  <li><a href="major-clients.html" class="text-white">Major Clients</a></li>
+                  <li><a href="strategic-partners.html" class="text-white">Strategic Partners</a></li>
                   <!-- <li><a href="#">Site map</a></li> -->
                 </ul>
               </nav>
@@ -1804,6 +2175,7 @@
         <!-- /.row -->
       </div><!-- /.container -->
   </footer><!-- /.Footer -->
+
   <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button>
   <div class="login-popup" id="login-popup">
     <div class="login-popup-wrapper">
@@ -2128,10 +2500,391 @@
       });
     });
   </script>
+  <script>
+    $(document).ready(function () {
+      // Initialize blog carousel
+      const $blogCarousel = $('.blog-carousel');
+
+      // Remove any existing initialization and reinitialize
+      if ($blogCarousel.hasClass('slick-initialized')) {
+        $blogCarousel.slick('unslick');
+      }
+
+      $blogCarousel.slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
+      // Navigation handlers
+      $('#blogPrev').on('click', function (e) {
+        e.preventDefault();
+        $('.blog-carousel').slick('slickPrev');
+      });
+
+      $('#blogNext').on('click', function (e) {
+        e.preventDefault();
+        $('.blog-carousel').slick('slickNext');
+      });
+    });
+  </script>
   <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Initialize blog posts carousel
+      $('.blog-posts-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 3 } },
+          { breakpoint: 992, settings: { slidesToShow: 2 } },
+          { breakpoint: 768, settings: { slidesToShow: 1 } }
+        ]
+      });
+
+      // Navigation for blog carousel
+      $('#blogPrev').on('click', function (e) {
+        e.preventDefault();
+        $('.blog-posts-carousel').slick('slickPrev');
+      });
+
+      $('#blogNext').on('click', function (e) {
+        e.preventDefault();
+        $('.blog-posts-carousel').slick('slickNext');
+      });
+    });
 
 
+    // Navigation Active State Management
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all navigation links
+      const navLinks = document.querySelectorAll('.navbar .nav__item-link');
+      const currentPath = window.location.pathname;
+      const currentPage = currentPath.split('/').pop() || 'index.html';
 
+      // Function to set active link
+      function setActiveLink(clickedLink) {
+        // Remove active class from all links
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+
+        // Add active class to clicked link
+        clickedLink.classList.add('active');
+
+        // If this is a dropdown item, also activate parent
+        const parentDropdown = clickedLink.closest('.dropdown-menu');
+        if (parentDropdown) {
+          const parentNavItem = parentDropdown.closest('.has-dropdown');
+          if (parentNavItem) {
+            const parentLink = parentNavItem.querySelector('.dropdown-toggle');
+            if (parentLink) {
+              parentLink.classList.add('active');
+            }
+          }
+        }
+
+        // Save to localStorage
+        if (clickedLink.getAttribute('href')) {
+          localStorage.setItem('activeNavLink', clickedLink.getAttribute('href'));
+        }
+      }
+
+      // Set initial active state based on current page
+      navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+        const linkPath = linkHref ? linkHref.split('?')[0] : '';
+        const linkPage = linkPath.split('/').pop() || 'index.html';
+
+        // Check if this link's page matches current page
+        const isCurrentPage = linkPage === currentPage ||
+          (currentPage === '' && linkPage === 'index.html') ||
+          (currentPage.endsWith('/') && linkPage === 'index.html') ||
+          (currentPage === '' && linkHref === 'index.html');
+
+        // Check if this link was previously saved as active
+        const savedLink = localStorage.getItem('activeNavLink');
+        const isSavedLink = savedLink &&
+          (savedLink === linkHref ||
+            savedLink === linkPath ||
+            (savedLink.endsWith('index.html') && linkPage === 'index.html'));
+
+        // Set initial active state
+        if (isCurrentPage || isSavedLink) {
+          setActiveLink(link);
+        }
+
+        // Add click event to update active state
+        link.addEventListener('click', function (e) {
+          const isDropdownToggle = this.classList.contains('dropdown-toggle') ||
+            (this.closest('.has-dropdown')?.querySelector('.dropdown-toggle') === this);
+
+          if (!isDropdownToggle) {
+            setActiveLink(this);
+          }
+        });
+      });
+
+      // Add CSS for active state
+      const style = document.createElement('style');
+      style.textContent = `
+        .navbar .nav__item-link.active {
+            color: #BF3646 !important;
+            font-weight: 600;
+            position: relative;
+        }
+        .navbar .nav__item-link.active:after {
+            content: '';
+            position: absolute;
+            // bottom: -5px;
+            // left: 0;
+            // width: 100%;
+            // height: 2px;
+            background-color: #BF3646;
+        }
+        .dropdown-menu .nav__item-link.active {
+            color: #BF3646 !important;
+            font-weight: 600;
+        }
+        .navbar .nav__item-link:hover {
+            color: #BF3646 !important;
+        }
+    `;
+      document.head.appendChild(style);
+    });
+  </script>
+  <script src="assets/js/nav-active.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Initialize blog posts carousel
+      $('.blog-posts-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 3 } },
+          { breakpoint: 992, settings: { slidesToShow: 2 } },
+          { breakpoint: 768, settings: { slidesToShow: 1 } }
+        ]
+      });
+
+      // Navigation for blog carousel
+      $('#blogPrev').on('click', function (e) {
+        e.preventDefault();
+        $('.blog-posts-carousel').slick('slickPrev');
+      });
+
+      $('#blogNext').on('click', function (e) {
+        e.preventDefault();
+        $('.blog-posts-carousel').slick('slickNext');
+      });
+    });
+
+
+    // Navigation Active State Management
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all navigation links
+      const navLinks = document.querySelectorAll('.navbar .nav__item-link');
+      const currentPath = window.location.pathname;
+      const currentPage = currentPath.split('/').pop() || 'index.html';
+
+      // Function to set active link
+      function setActiveLink(clickedLink) {
+        // Remove active class from all links
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+
+        // Add active class to clicked link
+        clickedLink.classList.add('active');
+
+        // If this is a dropdown item, also activate parent
+        const parentDropdown = clickedLink.closest('.dropdown-menu');
+        if (parentDropdown) {
+          const parentNavItem = parentDropdown.closest('.has-dropdown');
+          if (parentNavItem) {
+            const parentLink = parentNavItem.querySelector('.dropdown-toggle');
+            if (parentLink) {
+              parentLink.classList.add('active');
+            }
+          }
+        }
+
+        // Save to localStorage
+        if (clickedLink.getAttribute('href')) {
+          localStorage.setItem('activeNavLink', clickedLink.getAttribute('href'));
+        }
+      }
+
+      // Set initial active state based on current page
+      navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+        const linkPath = linkHref ? linkHref.split('?')[0] : '';
+        const linkPage = linkPath.split('/').pop() || 'index.html';
+
+        // Check if this link's page matches current page
+        const isCurrentPage = linkPage === currentPage ||
+          (currentPage === '' && linkPage === 'index.html') ||
+          (currentPage.endsWith('/') && linkPage === 'index.html') ||
+          (currentPage === '' && linkHref === 'index.html');
+
+        // Check if this link was previously saved as active
+        const savedLink = localStorage.getItem('activeNavLink');
+        const isSavedLink = savedLink &&
+          (savedLink === linkHref ||
+            savedLink === linkPath ||
+            (savedLink.endsWith('index.html') && linkPage === 'index.html'));
+
+        // Set initial active state
+        if (isCurrentPage || isSavedLink) {
+          setActiveLink(link);
+        }
+
+        // Add click event to update active state
+        link.addEventListener('click', function (e) {
+          const isDropdownToggle = this.classList.contains('dropdown-toggle') ||
+            (this.closest('.has-dropdown')?.querySelector('.dropdown-toggle') === this);
+
+          if (!isDropdownToggle) {
+            setActiveLink(this);
+          }
+        });
+      });
+
+      // Add CSS for active state
+      const style = document.createElement('style');
+      style.textContent = `
+        .navbar .nav__item-link.active {
+            color: #BF3646 !important;
+            font-weight: 600;
+            position: relative;
+        }
+        .navbar .nav__item-link.active:after {
+            content: '';
+            position: absolute;
+            // bottom: -5px;
+            // left: 0;
+            // width: 100%;
+            // height: 2px;
+            background-color: #BF3646;
+        }
+        .dropdown-menu .nav__item-link.active {
+            color: #BF3646 !important;
+            font-weight: 600;
+        }
+        .navbar .nav__item-link:hover {
+            color: #BF3646 !important;
+        }
+    `;
+      document.head.appendChild(style);
+    });
+
+    // In the setActiveLink function, update the mobile section:
+    if (window.innerWidth <= mobileBreakpoint) {
+      const parentNavItem = clickedLink.closest('.has-dropdown');
+      if (parentNavItem) {
+        parentNavItem.classList.add('open', 'has-active-child');
+        const menu = parentNavItem.querySelector('.dropdown-menu');
+        if (menu) {
+          menu.style.maxHeight = menu.scrollHeight + 'px';
+          menu.style.opacity = '1';
+        }
+
+        // Ensure the parent link remains visible and clickable
+        const parentLink = parentNavItem.querySelector('.dropdown-toggle');
+        if (parentLink) {
+          parentLink.style.pointerEvents = 'auto';
+        }
+      }
+    }
+
+    // Update the CSS in the style tag:
+    style.textContent = `
+    @media (max-width: 991px) {
+        .has-dropdown {
+            position: relative;
+        }
+        
+        .has-dropdown > .dropdown-toggle {
+            position: relative;
+            padding-right: 30px !important; /* Ensure space for arrow */
+        }
+        
+        .has-dropdown > .dropdown-toggle:after {
+            content: "\\f107" !important; /* Force show the arrow */
+            font-family: 'Font Awesome 5 Free' !important;
+            font-weight: 900 !important;
+            border: none !important;
+            position: absolute !important;
+            right: 10px !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+            transition: transform 0.3s ease !important;
+            display: inline-block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        
+        .has-dropdown.open > .dropdown-toggle:after,
+        .has-dropdown.has-active-child > .dropdown-toggle:after {
+            transform: translateY(-50%) rotate(180deg) !important;
+        }
+        
+        .dropdown-menu {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            display: block !important;
+        }
+        
+        .has-dropdown.open > .dropdown-menu,
+        .has-dropdown.has-active-child > .dropdown-menu {
+            max-height: 1000px !important;
+            opacity: 1 !important;
+            display: block !important;
+        }
+        
+        /* Make sure the arrow is always visible on mobile */
+        @media (max-width: 991px) {
+            .has-dropdown > .dropdown-toggle:after {
+                display: inline-block !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+        }
+    }
+`;
+  </script>
+  <!-- <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button> -->
+
+  <script src="assets/js/nav-active.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,112 @@
+/* Mobile Dropdown Styles */
+@media (max-width: 991px) {
+    /* Dropdown arrow styling */
+    .dropdown-arrow {
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+        margin-left: 8px;
+        font-size: 1em;
+        color: #f5a623;
+        font-weight: bold;
+        transform: rotate(0deg);
+    }
+    
+    .has-dropdown.active .dropdown-arrow {
+        transform: rotate(180deg);
+        color: #ffffff;
+        background-color: #f5a623;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    
+    .dropdown-menu {
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(5px);
+        display: block !important;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 15px;
+        margin: 5px 0 0 15px;
+        border-left: 2px solid #f5a623;
+    }
+    
+    .dropdown-menu.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        max-height: 1000px;
+        padding: 10px 15px;
+    }
+    
+    /* Active state for parent items */
+    .has-dropdown.active > .dropdown-toggle {
+        font-weight: 600;
+        color: #f5a623;
+    }
+    
+    /* Make dropdown items more touch-friendly */
+    .dropdown-menu .nav__item {
+        padding: 8px 0;
+    }
+    
+    .dropdown-menu .nav__item-link {
+        padding: 5px 10px;
+        display: block;
+        transition: all 0.2s ease;
+    }
+    
+    .dropdown-menu .nav__item-link:hover {
+        background-color: rgba(245, 166, 35, 0.1);
+        padding-left: 15px;
+    }
+    
+    /* Improve mobile menu toggler */
+    .mobile-nav-toggler {
+        z-index: 1001;
+    }
+    
+    /* Ensure mobile menu stays on top */
+    .mobile-nav-container {
+        z-index: 1000;
+    }
+}
+
+/* Desktop Hover Effect */
+@media (min-width: 992px) {
+    .dropdown-arrow {
+        display: none; /* Hide arrows on desktop if not needed */
+    }
+    
+    .has-dropdown:hover > .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        display: block !important;
+        transform: translateY(0);
+        display: block;
+    }
+    
+    .dropdown-menu {
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        display: block;
+    }
+    
+    .dropdown-toggle .dropdown-arrow {
+        display: inline-block;
+        transition: transform 0.3s ease-in-out;
+        margin-left: 5px;
+    }
+    
+    .has-dropdown:hover > .dropdown-toggle .dropdown-arrow {
+        transform: rotate(180deg);
+    }
+}
