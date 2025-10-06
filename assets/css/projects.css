@@ -221,7 +221,7 @@
 .product-separator {
     width: 50px;
     height: 3px;
-    background-color: #C94050;
+    background-color: #091d3e;
     margin: 10px 0 15px;
 }
 
@@ -236,7 +236,7 @@
 .product-link {
     display: inline-flex;
     align-items: center;
-    color: #C94050;
+    color: #091d3e;
     font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -248,7 +248,7 @@
 }
 
 .product-link:hover {
-    color: #a83542;
+    color: #091d3e;
     text-decoration: none;
 }
 

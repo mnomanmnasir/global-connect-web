@@ -4614,7 +4614,7 @@ input[type=radio] {
 }
 
 .slick-dots li.slick-active button {
-  border-color: #e93038;
+  border-color: #091d3e;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
@@ -9178,7 +9178,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #e63946;
+  color: #091d3e;
   font-size: 20px;
 }
 
