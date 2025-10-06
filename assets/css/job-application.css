@@ -83,14 +83,14 @@
 }
 
 .progress-steps .step.active .step-number {
-    border-color: #C94050;
-    color: #dc3545;
+    border-color: #1f314f;
+    color: #1f314f;
     transform: scale(1.1);
     /* background-color: #f0f7ff; */
 }
 
 .progress-steps .step.completed .step-number {
-    background: #C94050;
+    background: #1f314f;
     border-color: #e9ecef;
     color: #fff;
 }
@@ -109,7 +109,7 @@
 
 .progress-steps .step.active .step-label,
 .progress-steps .step.completed .step-label {
-    color: #C94050;
+    color: #1f314f;
     font-weight: 600;
 }
 
@@ -289,11 +289,11 @@
     display: inline-block;
     margin: 0;
     padding: 0;
-    color: #C94050;
+    color: #1f314f;
 }
 
 .form-navigation .btn-prev:hover {
-    color: #b13745 !important;
+    color: #1f314f !important;
     text-decoration: none !important;
     background: none !important;
 }
@@ -357,20 +357,20 @@
 }
 
 .btn-next {
-    background-color: #C94050;
+    background-color: #1f314f;
     color: white;
-    border: 1px solid #C94050;
+    border: 1px solid #1f314f   ;
 }
 
 .btn-next:hover {
-    background-color: #b13745;
-    border-color: #b13745;
+    background-color: #1f314f;
+    border-color: #1f314f;
     color: white;
 }
 
 .btn-prev {
     /* background-color: #f8f9fa; */
-    color: #C94050;
+    color: #1f314f;
     /* border: 1px solid #dee2e6; */
 }
 
@@ -380,9 +380,9 @@
 }
 
 .btn-submit {
-    background-color: #C94050;
+    background-color: #1f314f;
     color: white;
-    border: 1px solid #C94050;
+    border: 1px solid #1f314f;
 }
 
 .btn-submit:hover {
@@ -750,7 +750,7 @@ input[type="file"] {
 }
 
 .btn-primary {
-    background-color: #C94050;
+    background-color: #1f314f;
     border: none;
     padding: 10px 30px;
     border-radius: 6px;
@@ -759,7 +759,7 @@ input[type="file"] {
 }
 
 .btn-primary:hover {
-    background-color: #A02E3A;
+    background-color: #1f314f;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(233, 78, 78, 0.3);
 }
