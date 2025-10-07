@@ -1531,26 +1531,26 @@
         });
 
         // Add this JavaScript to limit visible dots
-        $('.slick-carousel').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-            const $dots = $(this).find('.slick-dots li');
-            const dotsToShow = 4; // Number of dots to show
-            const totalDots = $dots.length;
+        // $('.slick-carousel').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        //     const $dots = $(this).find('.slick-dots li');
+        //     const dotsToShow = 4; // Number of dots to show
+        //     const totalDots = $dots.length;
 
-            if (totalDots <= dotsToShow) return; // If total dots are less than or equal to dotsToShow, do nothing
+        //     if (totalDots <= dotsToShow) return; // If total dots are less than or equal to dotsToShow, do nothing
 
-            const currentSlideIndex = currentSlide || 0;
-            let startIndex = Math.max(0, currentSlideIndex - Math.floor(dotsToShow / 2));
-            const endIndex = Math.min(totalDots - 1, startIndex + dotsToShow - 1);
+        //     const currentSlideIndex = currentSlide || 0;
+        //     let startIndex = Math.max(0, currentSlideIndex - Math.floor(dotsToShow / 2));
+        //     const endIndex = Math.min(totalDots - 1, startIndex + dotsToShow - 1);
 
-            if (endIndex - startIndex + 1 < dotsToShow) {
-                startIndex = Math.max(0, endIndex - dotsToShow + 1);
-            }
+        //     if (endIndex - startIndex + 1 < dotsToShow) {
+        //         startIndex = Math.max(0, endIndex - dotsToShow + 1);
+        //     }
 
-            $dots.hide();
-            for (let i = startIndex; i <= endIndex; i++) {
-                $($dots[i]).show();
-            }
-        });
+        //     $dots.hide();
+        //     for (let i = startIndex; i <= endIndex; i++) {
+        //         $($dots[i]).show();
+        //     }
+        // });
     </script>
     <script src="assets/js/nav-active.js"></script>
 </body>

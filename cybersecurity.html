@@ -232,9 +232,10 @@
                                 <ul class="dropdown-menu">
                                     <!-- <span class="dropdown-menu-title" style="padding: 10px 10px; cursor: default; color: inherit;">Software Consultancy</span> -->
 
-                                    <li class="nav__item"><a class="nav__item-link" href="AI-powered-smart-challan.html">AI Powered Smart
-                      E-Challan <span class="hide-on-mobile">System</span></a>
-                  </li>
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="AI-powered-smart-challan.html">AI Powered Smart
+                                            E-Challan <span class="hide-on-mobile">System</span></a>
+                                    </li>
                                     <!-- /.nav-item -->
                                     <li class="nav__item"><a class="nav__item-link"
                                             href="smart-surveillance-system.html">Smart
@@ -451,7 +452,9 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
                         <div class="about__img mb-40">
-                            <img src="assets/images/services images/cyber security/2.webp" alt="about">
+                            <img src="assets/images/services images/cyber security/2.webp" alt="about"
+                            style="width: 550px; height: 200px; object-fit: cover;"
+                            >
                             <!-- <blockquote class="blockquote mb-0">
                                 <h4 class="blockquote__title">You are helping to lead the charge; we can help you build
                                     on your past successes and prepare for your great future.
@@ -485,9 +488,9 @@
                                     safe and secure in today’s digital world. That’s why we offer a wide range of
                                     cybersecurity services to help protect your organization from cyber threats.
                                 </p>
-                                <p>
+                                <!-- <p>
                                     Our team of experts is highly skilled in identifying, assessing and
-                                </p>
+                                </p> -->
                             </div>
                             <!-- <a href="#" class="btn btn__primary btn__icon mt-30">
                                 <span>Schedule An Appointment</span><i class="icon-arrow-right"></i>
@@ -510,8 +513,9 @@
                                 </h4>
                                 <span class="blockquote__author">John Peter, Founder</span>
                             </blockquote> -->
-                            <p>
-                                mitigating cyber threats, ensuring that your business is protected from the latest
+                            <p class="mt-20">
+                                Our team of experts is highly skilled in identifying, assessing and mitigating cyber
+                                threats, ensuring that your business is protected from the latest
                                 security threats.
                             </p>
                             <p>
@@ -1407,109 +1411,109 @@
     </script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-<script>
-    $(document).ready(function () {
-      // Initialize blog posts carousel
-      $('.blog-posts-carousel').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrows: false,
-        dots: false,
-        infinite: true,
-        responsive: [
-          { breakpoint: 1200, settings: { slidesToShow: 3 } },
-          { breakpoint: 992, settings: { slidesToShow: 2 } },
-          { breakpoint: 768, settings: { slidesToShow: 1 } }
-        ]
-      });
+    <script>
+        $(document).ready(function () {
+            // Initialize blog posts carousel
+            $('.blog-posts-carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: false,
+                dots: false,
+                infinite: true,
+                responsive: [
+                    { breakpoint: 1200, settings: { slidesToShow: 3 } },
+                    { breakpoint: 992, settings: { slidesToShow: 2 } },
+                    { breakpoint: 768, settings: { slidesToShow: 1 } }
+                ]
+            });
 
-      // Navigation for blog carousel
-      $('#blogPrev').on('click', function (e) {
-        e.preventDefault();
-        $('.blog-posts-carousel').slick('slickPrev');
-      });
+            // Navigation for blog carousel
+            $('#blogPrev').on('click', function (e) {
+                e.preventDefault();
+                $('.blog-posts-carousel').slick('slickPrev');
+            });
 
-      $('#blogNext').on('click', function (e) {
-        e.preventDefault();
-        $('.blog-posts-carousel').slick('slickNext');
-      });
-    });
-
-
-    // Navigation Active State Management
-    document.addEventListener('DOMContentLoaded', function () {
-      // Get all navigation links
-      const navLinks = document.querySelectorAll('.navbar .nav__item-link');
-      const currentPath = window.location.pathname;
-      const currentPage = currentPath.split('/').pop() || 'index.html';
-
-      // Function to set active link
-      function setActiveLink(clickedLink) {
-        // Remove active class from all links
-        navLinks.forEach(link => {
-          link.classList.remove('active');
+            $('#blogNext').on('click', function (e) {
+                e.preventDefault();
+                $('.blog-posts-carousel').slick('slickNext');
+            });
         });
 
-        // Add active class to clicked link
-        clickedLink.classList.add('active');
 
-        // If this is a dropdown item, also activate parent
-        const parentDropdown = clickedLink.closest('.dropdown-menu');
-        if (parentDropdown) {
-          const parentNavItem = parentDropdown.closest('.has-dropdown');
-          if (parentNavItem) {
-            const parentLink = parentNavItem.querySelector('.dropdown-toggle');
-            if (parentLink) {
-              parentLink.classList.add('active');
+        // Navigation Active State Management
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all navigation links
+            const navLinks = document.querySelectorAll('.navbar .nav__item-link');
+            const currentPath = window.location.pathname;
+            const currentPage = currentPath.split('/').pop() || 'index.html';
+
+            // Function to set active link
+            function setActiveLink(clickedLink) {
+                // Remove active class from all links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                // Add active class to clicked link
+                clickedLink.classList.add('active');
+
+                // If this is a dropdown item, also activate parent
+                const parentDropdown = clickedLink.closest('.dropdown-menu');
+                if (parentDropdown) {
+                    const parentNavItem = parentDropdown.closest('.has-dropdown');
+                    if (parentNavItem) {
+                        const parentLink = parentNavItem.querySelector('.dropdown-toggle');
+                        if (parentLink) {
+                            parentLink.classList.add('active');
+                        }
+                    }
+                }
+
+                // Save to localStorage
+                if (clickedLink.getAttribute('href')) {
+                    localStorage.setItem('activeNavLink', clickedLink.getAttribute('href'));
+                }
             }
-          }
-        }
 
-        // Save to localStorage
-        if (clickedLink.getAttribute('href')) {
-          localStorage.setItem('activeNavLink', clickedLink.getAttribute('href'));
-        }
-      }
+            // Set initial active state based on current page
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                const linkPath = linkHref ? linkHref.split('?')[0] : '';
+                const linkPage = linkPath.split('/').pop() || 'index.html';
 
-      // Set initial active state based on current page
-      navLinks.forEach(link => {
-        const linkHref = link.getAttribute('href');
-        const linkPath = linkHref ? linkHref.split('?')[0] : '';
-        const linkPage = linkPath.split('/').pop() || 'index.html';
+                // Check if this link's page matches current page
+                const isCurrentPage = linkPage === currentPage ||
+                    (currentPage === '' && linkPage === 'index.html') ||
+                    (currentPage.endsWith('/') && linkPage === 'index.html') ||
+                    (currentPage === '' && linkHref === 'index.html');
 
-        // Check if this link's page matches current page
-        const isCurrentPage = linkPage === currentPage ||
-          (currentPage === '' && linkPage === 'index.html') ||
-          (currentPage.endsWith('/') && linkPage === 'index.html') ||
-          (currentPage === '' && linkHref === 'index.html');
+                // Check if this link was previously saved as active
+                const savedLink = localStorage.getItem('activeNavLink');
+                const isSavedLink = savedLink &&
+                    (savedLink === linkHref ||
+                        savedLink === linkPath ||
+                        (savedLink.endsWith('index.html') && linkPage === 'index.html'));
 
-        // Check if this link was previously saved as active
-        const savedLink = localStorage.getItem('activeNavLink');
-        const isSavedLink = savedLink &&
-          (savedLink === linkHref ||
-            savedLink === linkPath ||
-            (savedLink.endsWith('index.html') && linkPage === 'index.html'));
+                // Set initial active state
+                if (isCurrentPage || isSavedLink) {
+                    setActiveLink(link);
+                }
 
-        // Set initial active state
-        if (isCurrentPage || isSavedLink) {
-          setActiveLink(link);
-        }
+                // Add click event to update active state
+                link.addEventListener('click', function (e) {
+                    const isDropdownToggle = this.classList.contains('dropdown-toggle') ||
+                        (this.closest('.has-dropdown')?.querySelector('.dropdown-toggle') === this);
 
-        // Add click event to update active state
-        link.addEventListener('click', function (e) {
-          const isDropdownToggle = this.classList.contains('dropdown-toggle') ||
-            (this.closest('.has-dropdown')?.querySelector('.dropdown-toggle') === this);
+                    if (!isDropdownToggle) {
+                        setActiveLink(this);
+                    }
+                });
+            });
 
-          if (!isDropdownToggle) {
-            setActiveLink(this);
-          }
-        });
-      });
-
-      // Add CSS for active state
-      const style = document.createElement('style');
-      style.textContent = `
+            // Add CSS for active state
+            const style = document.createElement('style');
+            style.textContent = `
         .navbar .nav__item-link.active {
             color: #BF3646 !important;
             font-weight: 600;
@@ -1532,9 +1536,9 @@
             color: #BF3646 !important;
         }
     `;
-      document.head.appendChild(style);
-    });
-  </script>
+            document.head.appendChild(style);
+        });
+    </script>
 
     <!-- =========================
             Footer
@@ -1645,14 +1649,14 @@
                     <div class="col-sm-6 col-md-6 col-lg-3 footer-widget footer-widget-nav"
                         style="margin-top: 8.5%; margin-left: 5px;">
                         <h6 class="footer-widget__title">Consultancy</h6>
-                            <div class="footer-widget__content">
-                                <nav>
-                                    <ul class="list-unstyled">
-                                        <li><a href="enterprise-app.html" class="text-white">Enterprise Applications</a>
-                                        </li>
-                                        <li><a href="trake-trace.html" class="text-white">Track and Trace</a></li>
-                                        <li><a href="artifical-intelligance.html" class="text-white">Artifical
-                                                Intelligence</a></li>
+                        <div class="footer-widget__content">
+                            <nav>
+                                <ul class="list-unstyled">
+                                    <li><a href="enterprise-app.html" class="text-white">Enterprise Applications</a>
+                                    </li>
+                                    <li><a href="trake-trace.html" class="text-white">Track and Trace</a></li>
+                                    <li><a href="artifical-intelligance.html" class="text-white">Artifical
+                                            Intelligence</a></li>
                                     <!-- <li><a href="#">IT Consulting</a></li>
                       <li><a href="#">Software Dev</a></li>
                       <li>  <a href="#">IT Support</a></li> -->
@@ -1768,26 +1772,26 @@
         });
 
         // Add this JavaScript to limit visible dots
-        $('.slick-carousel').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-            const $dots = $(this).find('.slick-dots li');
-            const dotsToShow = 4; // Number of dots to show
-            const totalDots = $dots.length;
+        // $('.slick-carousel').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        //     const $dots = $(this).find('.slick-dots li');
+        //     const dotsToShow = 4; // Number of dots to show
+        //     const totalDots = $dots.length;
 
-            if (totalDots <= dotsToShow) return; // If total dots are less than or equal to dotsToShow, do nothing
+        //     if (totalDots <= dotsToShow) return; // If total dots are less than or equal to dotsToShow, do nothing
 
-            const currentSlideIndex = currentSlide || 0;
-            let startIndex = Math.max(0, currentSlideIndex - Math.floor(dotsToShow / 2));
-            const endIndex = Math.min(totalDots - 1, startIndex + dotsToShow - 1);
+        //     const currentSlideIndex = currentSlide || 0;
+        //     let startIndex = Math.max(0, currentSlideIndex - Math.floor(dotsToShow / 2));
+        //     const endIndex = Math.min(totalDots - 1, startIndex + dotsToShow - 1);
 
-            if (endIndex - startIndex + 1 < dotsToShow) {
-                startIndex = Math.max(0, endIndex - dotsToShow + 1);
-            }
+        //     if (endIndex - startIndex + 1 < dotsToShow) {
+        //         startIndex = Math.max(0, endIndex - dotsToShow + 1);
+        //     }
 
-            $dots.hide();
-            for (let i = startIndex; i <= endIndex; i++) {
-                $($dots[i]).show();
-            }
-        });
+        //     $dots.hide();
+        //     for (let i = startIndex; i <= endIndex; i++) {
+        //         $($dots[i]).show();
+        //     }
+        // });
     </script>
     <script src="assets/js/nav-active.js"></script>
 </body>

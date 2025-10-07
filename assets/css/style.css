@@ -4564,7 +4564,7 @@ input[type=radio] {
 }
 
 .slick-dots li {
-  display: -webkit-inline-box;
+  /* display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
@@ -4572,7 +4572,12 @@ input[type=radio] {
   height: 12px;
   margin: 0 10px;
   -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  transition: all 0.3s linear; */
+  display: inline-block;
+  margin: 0 4px;
+  padding: 0;
+  width: auto;
+  height: auto;
 }
 
 .slick-dots li button {
@@ -4725,7 +4730,7 @@ input[type=radio] {
   margin-left: -17px;
 }
 
-.slider .cta-banner .slick-dots li button {
+.slider .cta-banner .slick-dots li button { 
   border-color: #091d3e;
 }
 

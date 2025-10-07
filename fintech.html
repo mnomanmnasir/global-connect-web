@@ -232,9 +232,10 @@
                                 <ul class="dropdown-menu">
                                     <!-- <span class="dropdown-menu-title" style="padding: 10px 10px; cursor: default; color: inherit;">Software Consultancy</span> -->
 
-                                    <li class="nav__item"><a class="nav__item-link" href="AI-powered-smart-challan.html">AI Powered Smart
-                      E-Challan <span class="hide-on-mobile">System</span></a>
-                  </li>
+                                    <li class="nav__item"><a class="nav__item-link"
+                                            href="AI-powered-smart-challan.html">AI Powered Smart
+                                            E-Challan <span class="hide-on-mobile">System</span></a>
+                                    </li>
                                     <!-- /.nav-item -->
                                     <li class="nav__item"><a class="nav__item-link"
                                             href="smart-surveillance-system.html">Smart
@@ -451,7 +452,9 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
                         <div class="about__img mb-40">
-                            <img src="assets/images/softwarae and consultancy/Fintech/2.614Z.webp" alt="about">
+                            <img src="assets/images/softwarae and consultancy/Fintech/2.614Z.webp" alt="about"
+                            style="width: 550px; height: 250px; object-fit: cover;"
+                            >
                             <!-- <blockquote class="blockquote mb-0">
                                 <h4 class="blockquote__title">You are helping to lead the charge; we can help you build
                                     on your past successes and prepare for your great future.
@@ -488,18 +491,7 @@
                                     financial services industry and make financial services more accessible, convenient,
                                     and user-friendly.
                                 </p>
-                                <p>
-                                    Some of the fintech solutions that we offer include:
-                                </p>
-                                <!-- <ol> -->
-                                <p>
-                                    <span style="font-weight: bold; color: #1f314f; font-size: 24px; margin-top: 25px;">
-                                        1. Mobile and web-based banking: <br /> </span>
-                                    Mobile and web-based banking solutions allow customers to access their financial
-                                    accounts and perform transactions from
-                                    anywhere, at any time. This can include checking account balances, transferring
-                                    funds, paying bills, and more, while seamlessly integrated with AI bots.
-                                </p>
+
 
                                 <!-- <p>
                                     3. Digital wallets – Digital wallets provide a secure and convenient way for
@@ -525,7 +517,18 @@
                                 </h4>
                                 <span class="blockquote__author">John Peter, Founder</span>
                             </blockquote> -->
-
+                            <p class="mt-20">
+                                Some of the fintech solutions that we offer include:
+                            </p>
+                            <!-- <ol> -->
+                            <p>
+                                <span style="font-weight: bold; color: #1f314f; font-size: 24px; margin-top: 25px;">
+                                    1. Mobile and web-based banking: <br /> </span>
+                                Mobile and web-based banking solutions allow customers to access their financial
+                                accounts and perform transactions from
+                                anywhere, at any time. This can include checking account balances, transferring
+                                funds, paying bills, and more, while seamlessly integrated with AI bots.
+                            </p>
                             <p class="mt-4">
                                 <span style="font-weight: bold; color: #1f314f; font-size: 24px; margin-top: 25px;"> 2.
                                     Digital wallets: <br /> </span> Digital wallets provide a secure and convenient way
@@ -1166,14 +1169,14 @@
                     <div class="col-sm-6 col-md-6 col-lg-3 footer-widget footer-widget-nav"
                         style="margin-top: 8.5%; margin-left: 5px;">
                         <h6 class="footer-widget__title">Consultancy</h6>
-                            <div class="footer-widget__content">
-                                <nav>
-                                    <ul class="list-unstyled">
-                                        <li><a href="enterprise-app.html" class="text-white">Enterprise Applications</a>
-                                        </li>
-                                        <li><a href="trake-trace.html" class="text-white">Track and Trace</a></li>
-                                        <li><a href="artifical-intelligance.html" class="text-white">Artifical
-                                                Intelligence</a></li>
+                        <div class="footer-widget__content">
+                            <nav>
+                                <ul class="list-unstyled">
+                                    <li><a href="enterprise-app.html" class="text-white">Enterprise Applications</a>
+                                    </li>
+                                    <li><a href="trake-trace.html" class="text-white">Track and Trace</a></li>
+                                    <li><a href="artifical-intelligance.html" class="text-white">Artifical
+                                            Intelligence</a></li>
                                     <!-- <li><a href="#">IT Consulting</a></li>
                       <li><a href="#">Software Dev</a></li>
                       <li>  <a href="#">IT Support</a></li> -->
@@ -1479,109 +1482,109 @@
     </script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-<script>
-    $(document).ready(function () {
-      // Initialize blog posts carousel
-      $('.blog-posts-carousel').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrows: false,
-        dots: false,
-        infinite: true,
-        responsive: [
-          { breakpoint: 1200, settings: { slidesToShow: 3 } },
-          { breakpoint: 992, settings: { slidesToShow: 2 } },
-          { breakpoint: 768, settings: { slidesToShow: 1 } }
-        ]
-      });
+    <script>
+        $(document).ready(function () {
+            // Initialize blog posts carousel
+            $('.blog-posts-carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: false,
+                dots: false,
+                infinite: true,
+                responsive: [
+                    { breakpoint: 1200, settings: { slidesToShow: 3 } },
+                    { breakpoint: 992, settings: { slidesToShow: 2 } },
+                    { breakpoint: 768, settings: { slidesToShow: 1 } }
+                ]
+            });
 
-      // Navigation for blog carousel
-      $('#blogPrev').on('click', function (e) {
-        e.preventDefault();
-        $('.blog-posts-carousel').slick('slickPrev');
-      });
+            // Navigation for blog carousel
+            $('#blogPrev').on('click', function (e) {
+                e.preventDefault();
+                $('.blog-posts-carousel').slick('slickPrev');
+            });
 
-      $('#blogNext').on('click', function (e) {
-        e.preventDefault();
-        $('.blog-posts-carousel').slick('slickNext');
-      });
-    });
-
-
-    // Navigation Active State Management
-    document.addEventListener('DOMContentLoaded', function () {
-      // Get all navigation links
-      const navLinks = document.querySelectorAll('.navbar .nav__item-link');
-      const currentPath = window.location.pathname;
-      const currentPage = currentPath.split('/').pop() || 'index.html';
-
-      // Function to set active link
-      function setActiveLink(clickedLink) {
-        // Remove active class from all links
-        navLinks.forEach(link => {
-          link.classList.remove('active');
+            $('#blogNext').on('click', function (e) {
+                e.preventDefault();
+                $('.blog-posts-carousel').slick('slickNext');
+            });
         });
 
-        // Add active class to clicked link
-        clickedLink.classList.add('active');
 
-        // If this is a dropdown item, also activate parent
-        const parentDropdown = clickedLink.closest('.dropdown-menu');
-        if (parentDropdown) {
-          const parentNavItem = parentDropdown.closest('.has-dropdown');
-          if (parentNavItem) {
-            const parentLink = parentNavItem.querySelector('.dropdown-toggle');
-            if (parentLink) {
-              parentLink.classList.add('active');
+        // Navigation Active State Management
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all navigation links
+            const navLinks = document.querySelectorAll('.navbar .nav__item-link');
+            const currentPath = window.location.pathname;
+            const currentPage = currentPath.split('/').pop() || 'index.html';
+
+            // Function to set active link
+            function setActiveLink(clickedLink) {
+                // Remove active class from all links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                // Add active class to clicked link
+                clickedLink.classList.add('active');
+
+                // If this is a dropdown item, also activate parent
+                const parentDropdown = clickedLink.closest('.dropdown-menu');
+                if (parentDropdown) {
+                    const parentNavItem = parentDropdown.closest('.has-dropdown');
+                    if (parentNavItem) {
+                        const parentLink = parentNavItem.querySelector('.dropdown-toggle');
+                        if (parentLink) {
+                            parentLink.classList.add('active');
+                        }
+                    }
+                }
+
+                // Save to localStorage
+                if (clickedLink.getAttribute('href')) {
+                    localStorage.setItem('activeNavLink', clickedLink.getAttribute('href'));
+                }
             }
-          }
-        }
 
-        // Save to localStorage
-        if (clickedLink.getAttribute('href')) {
-          localStorage.setItem('activeNavLink', clickedLink.getAttribute('href'));
-        }
-      }
+            // Set initial active state based on current page
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                const linkPath = linkHref ? linkHref.split('?')[0] : '';
+                const linkPage = linkPath.split('/').pop() || 'index.html';
 
-      // Set initial active state based on current page
-      navLinks.forEach(link => {
-        const linkHref = link.getAttribute('href');
-        const linkPath = linkHref ? linkHref.split('?')[0] : '';
-        const linkPage = linkPath.split('/').pop() || 'index.html';
+                // Check if this link's page matches current page
+                const isCurrentPage = linkPage === currentPage ||
+                    (currentPage === '' && linkPage === 'index.html') ||
+                    (currentPage.endsWith('/') && linkPage === 'index.html') ||
+                    (currentPage === '' && linkHref === 'index.html');
 
-        // Check if this link's page matches current page
-        const isCurrentPage = linkPage === currentPage ||
-          (currentPage === '' && linkPage === 'index.html') ||
-          (currentPage.endsWith('/') && linkPage === 'index.html') ||
-          (currentPage === '' && linkHref === 'index.html');
+                // Check if this link was previously saved as active
+                const savedLink = localStorage.getItem('activeNavLink');
+                const isSavedLink = savedLink &&
+                    (savedLink === linkHref ||
+                        savedLink === linkPath ||
+                        (savedLink.endsWith('index.html') && linkPage === 'index.html'));
 
-        // Check if this link was previously saved as active
-        const savedLink = localStorage.getItem('activeNavLink');
-        const isSavedLink = savedLink &&
-          (savedLink === linkHref ||
-            savedLink === linkPath ||
-            (savedLink.endsWith('index.html') && linkPage === 'index.html'));
+                // Set initial active state
+                if (isCurrentPage || isSavedLink) {
+                    setActiveLink(link);
+                }
 
-        // Set initial active state
-        if (isCurrentPage || isSavedLink) {
-          setActiveLink(link);
-        }
+                // Add click event to update active state
+                link.addEventListener('click', function (e) {
+                    const isDropdownToggle = this.classList.contains('dropdown-toggle') ||
+                        (this.closest('.has-dropdown')?.querySelector('.dropdown-toggle') === this);
 
-        // Add click event to update active state
-        link.addEventListener('click', function (e) {
-          const isDropdownToggle = this.classList.contains('dropdown-toggle') ||
-            (this.closest('.has-dropdown')?.querySelector('.dropdown-toggle') === this);
+                    if (!isDropdownToggle) {
+                        setActiveLink(this);
+                    }
+                });
+            });
 
-          if (!isDropdownToggle) {
-            setActiveLink(this);
-          }
-        });
-      });
-
-      // Add CSS for active state
-      const style = document.createElement('style');
-      style.textContent = `
+            // Add CSS for active state
+            const style = document.createElement('style');
+            style.textContent = `
         .navbar .nav__item-link.active {
             color: #BF3646 !important;
             font-weight: 600;
@@ -1604,9 +1607,9 @@
             color: #BF3646 !important;
         }
     `;
-      document.head.appendChild(style);
-    });
-  </script>
+            document.head.appendChild(style);
+        });
+    </script>
 
 
     <!-- Scroll Top Button -->

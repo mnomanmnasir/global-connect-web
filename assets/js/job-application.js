@@ -407,19 +407,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 jobContent.innerHTML = `
                       <div class="job-section">
                           <h3>Job Description</h3>
-                          <div class='text-black job-description'>${formattedDescription}</div>
+                          <div class='job-description'>${formattedDescription}</div>
                       </div>
                       
                       <div class="job-section">
                           <h3>Qualifications</h3>
-                          <div class="text-black job-detail-content">
+                          <div class="job-detail-content">
                               ${jobDetails.qualifications ? createListItems(jobDetails.qualifications) : '<p>No specific qualifications mentioned.</p>'}
                           </div>
                       </div>
 
                       <div class="job-section">
                           <h3>Application Instructions</h3>
-                          <div class="text-black job-detail-content">
+                          <div class="job-detail-content">
                               ${jobDetails.applicationInstructions ? createListItems(jobDetails.applicationInstructions) : '<p>No specific application instructions provided.</p>'}
                           </div>
                       </div>

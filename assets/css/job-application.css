@@ -7,16 +7,16 @@
 }
 
 /* Job Detail Page */
-.job-description,
+/* .job-description, */
 .job-requirements,
 .job-overview,
 .how-to-apply,
 .job-section h3,
 .job-tag,
 .job-overview p,
-.job-detail-content,
+/* .job-detail-content, */
 .job-overview h6 {
-    color: #373737 !important;
+    color: #091d3e !important;
 }
 
 
@@ -598,7 +598,7 @@ input[type="file"] {
 }
 
 .job-title {
-    color: #2D2D2D;
+    color: #091d3e !important;
     margin-bottom: 15px;
 }
 
