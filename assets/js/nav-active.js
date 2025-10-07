@@ -357,7 +357,7 @@ function handleDesktopHover(e) {
 // Helper function to check if this is the home link
 function isHomeLink(link) {
     // Don't activate home link if we're on a project page, SafeCitylahore page, or not on home page
-    if (currentPath.includes('/projects/') || currentPath.endsWith('project/SafeCitylahore.html') || !isHomePage) {
+    if (currentPath.includes('/projects/') || currentPath.endsWith('project/lahoreSafeCity.html') || !isHomePage) {
         return false;
     }
 
@@ -426,7 +426,7 @@ function isCareersLink(link) {
 
 function isLinkActive(link) {
     // Don't activate any links on project pages
-    if (currentPath.includes('/projects/') || currentPath.endsWith('project/SafeCitylahore.html') ||
+    if (currentPath.includes('/projects/') || currentPath.endsWith('project/lahoreSafeCity.html') ||
         currentPath.includes('/projects/')) {
         return false;
     }
