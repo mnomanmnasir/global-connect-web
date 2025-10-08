@@ -135,8 +135,7 @@
                                                 <!-- <a href="it-solutions.html" class="nav__item-link dropdown-menu-title">IT Solutions</a> -->
                                                 <ul class="nav flex-column">
                                                     <li class="nav__item"><a class="nav__item-link"
-                                                            href="co-location.html">Co
-                                                            Location</a>
+                                                            href="Co-Location.html">Co-Location</a>
                                                     </li>
                                                     <!-- /.nav-item -->
                                                     <li class="nav__item"><a class="nav__item-link"
@@ -530,12 +529,12 @@
     <!-- =========================
             Features
     =========================== -->
-    <section class="history-timeline pt-60 pb-60">
-        <div class="bg-img"><img src="assets/images/backgrounds/2.jpg" alt="background"></div>
+    <div class="history-timeline" style="margin-bottom: 2%;">
+        <!-- <div class="bg-img"><img src="assets/images/backgrounds/2.jpg" alt="background"></div> -->
         <div class="container" style="padding-left: 2.5%;">
-            <h3 class="heading__title color-white">Key Features: </h3>
+            <h3 class="heading__title">Key Features: </h3>
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <!-- <h2 class="heading__subtitle color-primary">Explore Our Great History!!</h2> -->
 
                     <div class="timeline-item d-flex">
@@ -551,19 +550,28 @@
                             Automated alerts for violations such as over speeding and red light jumping
                         </p>
                     </div>
-                    <!-- /.timeline-item -->
-                    <!-- timeline Item #3 -->
+
+                    <!-- <img src="assets/images/services images/GIS/banner.304Z.webp" alt="about"> -->
+                </div>
+
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+
                     <div class="timeline-item d-flex">
                         <h4 class="timeline__year"></h4>
                         <p class="timeline__desc">Facial recognition and third-party database integration
                         </p>
                     </div>
 
+                    <div class="timeline-item d-flex">
+                        <h4 class="timeline__year"></h4>
+                        <p class="timeline__desc">Interactive dashboards with site mapping
+                        </p>
+                    </div>
                     <!-- <img src="assets/images/services images/GIS/banner.304Z.webp" alt="about"> -->
                 </div>
-
                 <!-- /.col-lg-6 -->
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div>
 
                         <!-- /.timeline-item -->
@@ -597,7 +605,7 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
-    </section>
+    </div>
 
 
     <section class="services-section">
@@ -667,14 +675,14 @@
                                 <img src="./assets/images/svg/colocation.svg" class="icon-server" />
                                 <!-- <i class="icon-server"></i> -->
                             </div><!-- /.service__icon -->
-                            <h4 class="service__title">Co Location <br> Services</h4>
+                            <h4 class="service__title">Co-Location <br> Services</h4>
                             <div class="service__content">
                                 <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod
                                     tempor
                                     incididunt ut labore et dolore magna aliqua.
                                 </p>
-                                <a href="co-location.html" class="btn btn__primary">
+                                <a href="Co-Location.html" class="btn btn__primary">
                                     <span style="font-weight: 500 !important;">Read More</span>
                                     <i class="icon-arrow-right"></i>
                                 </a>
@@ -1377,109 +1385,109 @@
     </script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-<script>
-    $(document).ready(function () {
-      // Initialize blog posts carousel
-      $('.blog-posts-carousel').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrows: false,
-        dots: false,
-        infinite: true,
-        responsive: [
-          { breakpoint: 1200, settings: { slidesToShow: 3 } },
-          { breakpoint: 992, settings: { slidesToShow: 2 } },
-          { breakpoint: 768, settings: { slidesToShow: 1 } }
-        ]
-      });
+    <script>
+        $(document).ready(function () {
+            // Initialize blog posts carousel
+            $('.blog-posts-carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: false,
+                dots: false,
+                infinite: true,
+                responsive: [
+                    { breakpoint: 1200, settings: { slidesToShow: 3 } },
+                    { breakpoint: 992, settings: { slidesToShow: 2 } },
+                    { breakpoint: 768, settings: { slidesToShow: 1 } }
+                ]
+            });
 
-      // Navigation for blog carousel
-      $('#blogPrev').on('click', function (e) {
-        e.preventDefault();
-        $('.blog-posts-carousel').slick('slickPrev');
-      });
+            // Navigation for blog carousel
+            $('#blogPrev').on('click', function (e) {
+                e.preventDefault();
+                $('.blog-posts-carousel').slick('slickPrev');
+            });
 
-      $('#blogNext').on('click', function (e) {
-        e.preventDefault();
-        $('.blog-posts-carousel').slick('slickNext');
-      });
-    });
-
-
-    // Navigation Active State Management
-    document.addEventListener('DOMContentLoaded', function () {
-      // Get all navigation links
-      const navLinks = document.querySelectorAll('.navbar .nav__item-link');
-      const currentPath = window.location.pathname;
-      const currentPage = currentPath.split('/').pop() || 'index.html';
-
-      // Function to set active link
-      function setActiveLink(clickedLink) {
-        // Remove active class from all links
-        navLinks.forEach(link => {
-          link.classList.remove('active');
+            $('#blogNext').on('click', function (e) {
+                e.preventDefault();
+                $('.blog-posts-carousel').slick('slickNext');
+            });
         });
 
-        // Add active class to clicked link
-        clickedLink.classList.add('active');
 
-        // If this is a dropdown item, also activate parent
-        const parentDropdown = clickedLink.closest('.dropdown-menu');
-        if (parentDropdown) {
-          const parentNavItem = parentDropdown.closest('.has-dropdown');
-          if (parentNavItem) {
-            const parentLink = parentNavItem.querySelector('.dropdown-toggle');
-            if (parentLink) {
-              parentLink.classList.add('active');
+        // Navigation Active State Management
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all navigation links
+            const navLinks = document.querySelectorAll('.navbar .nav__item-link');
+            const currentPath = window.location.pathname;
+            const currentPage = currentPath.split('/').pop() || 'index.html';
+
+            // Function to set active link
+            function setActiveLink(clickedLink) {
+                // Remove active class from all links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                // Add active class to clicked link
+                clickedLink.classList.add('active');
+
+                // If this is a dropdown item, also activate parent
+                const parentDropdown = clickedLink.closest('.dropdown-menu');
+                if (parentDropdown) {
+                    const parentNavItem = parentDropdown.closest('.has-dropdown');
+                    if (parentNavItem) {
+                        const parentLink = parentNavItem.querySelector('.dropdown-toggle');
+                        if (parentLink) {
+                            parentLink.classList.add('active');
+                        }
+                    }
+                }
+
+                // Save to localStorage
+                if (clickedLink.getAttribute('href')) {
+                    localStorage.setItem('activeNavLink', clickedLink.getAttribute('href'));
+                }
             }
-          }
-        }
 
-        // Save to localStorage
-        if (clickedLink.getAttribute('href')) {
-          localStorage.setItem('activeNavLink', clickedLink.getAttribute('href'));
-        }
-      }
+            // Set initial active state based on current page
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                const linkPath = linkHref ? linkHref.split('?')[0] : '';
+                const linkPage = linkPath.split('/').pop() || 'index.html';
 
-      // Set initial active state based on current page
-      navLinks.forEach(link => {
-        const linkHref = link.getAttribute('href');
-        const linkPath = linkHref ? linkHref.split('?')[0] : '';
-        const linkPage = linkPath.split('/').pop() || 'index.html';
+                // Check if this link's page matches current page
+                const isCurrentPage = linkPage === currentPage ||
+                    (currentPage === '' && linkPage === 'index.html') ||
+                    (currentPage.endsWith('/') && linkPage === 'index.html') ||
+                    (currentPage === '' && linkHref === 'index.html');
 
-        // Check if this link's page matches current page
-        const isCurrentPage = linkPage === currentPage ||
-          (currentPage === '' && linkPage === 'index.html') ||
-          (currentPage.endsWith('/') && linkPage === 'index.html') ||
-          (currentPage === '' && linkHref === 'index.html');
+                // Check if this link was previously saved as active
+                const savedLink = localStorage.getItem('activeNavLink');
+                const isSavedLink = savedLink &&
+                    (savedLink === linkHref ||
+                        savedLink === linkPath ||
+                        (savedLink.endsWith('index.html') && linkPage === 'index.html'));
 
-        // Check if this link was previously saved as active
-        const savedLink = localStorage.getItem('activeNavLink');
-        const isSavedLink = savedLink &&
-          (savedLink === linkHref ||
-            savedLink === linkPath ||
-            (savedLink.endsWith('index.html') && linkPage === 'index.html'));
+                // Set initial active state
+                if (isCurrentPage || isSavedLink) {
+                    setActiveLink(link);
+                }
 
-        // Set initial active state
-        if (isCurrentPage || isSavedLink) {
-          setActiveLink(link);
-        }
+                // Add click event to update active state
+                link.addEventListener('click', function (e) {
+                    const isDropdownToggle = this.classList.contains('dropdown-toggle') ||
+                        (this.closest('.has-dropdown')?.querySelector('.dropdown-toggle') === this);
 
-        // Add click event to update active state
-        link.addEventListener('click', function (e) {
-          const isDropdownToggle = this.classList.contains('dropdown-toggle') ||
-            (this.closest('.has-dropdown')?.querySelector('.dropdown-toggle') === this);
+                    if (!isDropdownToggle) {
+                        setActiveLink(this);
+                    }
+                });
+            });
 
-          if (!isDropdownToggle) {
-            setActiveLink(this);
-          }
-        });
-      });
-
-      // Add CSS for active state
-      const style = document.createElement('style');
-      style.textContent = `
+            // Add CSS for active state
+            const style = document.createElement('style');
+            style.textContent = `
         .navbar .nav__item-link.active {
             color: #BF3646 !important;
             font-weight: 600;
@@ -1502,9 +1510,9 @@
             color: #BF3646 !important;
         }
     `;
-      document.head.appendChild(style);
-    });
-  </script>
+            document.head.appendChild(style);
+        });
+    </script>
 
     <!-- =========================
             Footer
@@ -1604,7 +1612,7 @@
                                 <ul class="list-unstyled">
                                     <li><a href="data-connectivity.html" class="text-white">Data Connectivity</a></li>
                                     <li><a href="internet.html" class="text-white">Internet</a></li>
-                                    <li><a href="co-location.html" class="text-white">Co-Location</a></li>
+                                    <li><a href="Co-Location.html" class="text-white">Co-Location</a></li>
                                     <!-- <li><a href="projects-grid.html">Case Studies</a></li>
                       <li><a href="contacs.html">Contacts</a></li>
                       <li><a href="#">Investors</a></li> -->
@@ -1615,14 +1623,14 @@
                     <div class="col-sm-6 col-md-6 col-lg-3 footer-widget footer-widget-nav"
                         style="margin-top: 8.5%; margin-left: 5px;">
                         <h6 class="footer-widget__title">Consultancy</h6>
-                            <div class="footer-widget__content">
-                                <nav>
-                                    <ul class="list-unstyled">
-                                        <li><a href="enterprise-app.html" class="text-white">Enterprise Applications</a>
-                                        </li>
-                                        <li><a href="trake-trace.html" class="text-white">Track and Trace</a></li>
-                                        <li><a href="artifical-intelligance.html" class="text-white">Artifical
-                                                Intelligence</a></li>
+                        <div class="footer-widget__content">
+                            <nav>
+                                <ul class="list-unstyled">
+                                    <li><a href="enterprise-app.html" class="text-white">Enterprise Applications</a>
+                                    </li>
+                                    <li><a href="trake-trace.html" class="text-white">Track and Trace</a></li>
+                                    <li><a href="artifical-intelligance.html" class="text-white">Artifical
+                                            Intelligence</a></li>
                                     <!-- <li><a href="#">IT Consulting</a></li>
                       <li><a href="#">Software Dev</a></li>
                       <li>  <a href="#">IT Support</a></li> -->
