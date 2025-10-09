@@ -9294,7 +9294,7 @@ body {
 /* all page hero section background with inner text */
 #image-hero-section {
   position: relative;
-  height: 60vh;
+  height: 50vh;
   /* default height for desktop */
   /* min-height: 300px; */
   display: flex;
@@ -9669,3 +9669,4 @@ body {
     /* font-weight: bold !important; */
   }
 }
+
