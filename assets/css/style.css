@@ -161,7 +161,7 @@ select {
 }
 
 .inner-padding {
-  padding: 20px 30px 30px 50px;
+  /* padding: 20px 30px 30px 50px; */
   /* padding-top: -35%; */
   /* margin-top: -35%;
   margin-bottom: -25%; */
@@ -4269,7 +4269,7 @@ input[type=radio] {
   font-size: 15px;
   font-weight: 700;
   text-transform: capitalize;
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
 }
 
 .footer .contact-list li {
@@ -8063,8 +8063,8 @@ input[type=radio] {
   font-weight: 600;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 110px;
-  flex: 0 0 110px;
-  max-width: 110px;
+  flex: 0 0 300px;
+  max-width: 400px;
   margin-bottom: 0;
 }
 
@@ -9391,16 +9391,16 @@ body {
 }
 
 .slick-dots li {
-  /* margin: 0 5px;
+  display: inline-block;
+  margin: 0 5px;
   display: none;
   opacity: 0.5;
-  transition: all 0.3s ease; */
+  transition: all 0.3s ease;
 
-  display: inline-block;
-  margin: 0 4px;
+  /* margin: 0 4px;
   padding: 0;
   width: auto;
-  height: auto;
+  height: auto; */
 
 }
 
