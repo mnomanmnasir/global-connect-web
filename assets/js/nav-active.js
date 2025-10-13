@@ -214,10 +214,10 @@ function setupActiveStates() {
     function setActiveLink(link) {
         // Remove active class from all links first
         navLinks.forEach(l => l.classList.remove('active'));
-        
+
         // Add active class to the clicked link
         link.classList.add('active');
-        
+
         // If this is a dropdown item, also activate parent
         const parentDropdown = link.closest('.dropdown-menu');
         if (parentDropdown) {
@@ -229,7 +229,7 @@ function setupActiveStates() {
                 }
             }
         }
-        
+
         // Save to localStorage
         localStorage.setItem('activeNavLink', link.getAttribute('href'));
     }
@@ -239,7 +239,7 @@ function setupActiveStates() {
         if (link.closest('.dropdown-menu')) {
             const dropdownItem = link.closest('.nav__item');
             if (dropdownItem) {
-                link.addEventListener('mouseenter', function() {
+                link.addEventListener('mouseenter', function () {
                     const menu = this.closest('.dropdown-menu');
                     if (menu) menu.classList.add('show');
                     const parentDropdown = this.closest('.has-dropdown');
@@ -248,7 +248,7 @@ function setupActiveStates() {
                     }
                 });
 
-                link.addEventListener('mouseleave', function() {
+                link.addEventListener('mouseleave', function () {
                     const parentDropdown = this.closest('.has-dropdown');
                     if (parentDropdown && !parentDropdown.classList.contains('active')) {
                         const menu = this.closest('.dropdown-menu');
@@ -264,31 +264,31 @@ function setupActiveStates() {
         if (linkHref) {
             const linkPath = linkHref.split('?')[0];
             const savedLink = localStorage.getItem('activeNavLink');
-            
+
             // Check if current page matches the link or matches saved link
             const isCurrentPage = (!isHomePage && linkPath === currentPath) ||
-                                (isHomePage && (linkPath === 'index.html' || linkPath === '' || linkPath === '/'));
-            
-            const isSavedLink = savedLink && (savedLink === linkHref || 
-                             (isHomePage && (savedLink === 'index.html' || savedLink === '' || savedLink === '/')));
-            
+                (isHomePage && (linkPath === 'index.html' || linkPath === '' || linkPath === '/'));
+
+            const isSavedLink = savedLink && (savedLink === linkHref ||
+                (isHomePage && (savedLink === 'index.html' || savedLink === '' || savedLink === '/')));
+
             if (isCurrentPage || isSavedLink) {
                 setActiveLink(link);
             }
         }
 
         // Update active state on click
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             const isDropdownToggle = this.classList.contains('dropdown-toggle') ||
                 this.closest('.has-dropdown')?.querySelector('.dropdown-toggle') === this;
-            
+
             if (!isDropdownToggle) {
                 // Remove active class from all links first
                 document.querySelectorAll('.navbar .nav__item-link').forEach(l => l.classList.remove('active'));
-                
+
                 // Add active class to clicked link
                 this.classList.add('active');
-                
+
                 // If this is a dropdown item, also activate parent
                 const parentDropdown = this.closest('.dropdown-menu');
                 if (parentDropdown) {
@@ -300,7 +300,7 @@ function setupActiveStates() {
                         }
                     }
                 }
-                
+
                 // Save to localStorage
                 localStorage.setItem('activeNavLink', this.getAttribute('href'));
             }
@@ -558,7 +558,7 @@ navLinks.forEach(link => {
 
 
 // Navigation Active State Management
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.navbar .nav__item-link');
     const dropdownToggles = document.querySelectorAll('.has-dropdown > .dropdown-toggle');
     const mobileBreakpoint = 991;
@@ -567,10 +567,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function setActiveLink(clickedLink) {
         // Remove active class from all links
         navLinks.forEach(link => link.classList.remove('active'));
-        
+
         // Add active class to clicked link
         clickedLink.classList.add('active');
-        
+
         // If this is a dropdown item, also activate parent
         const parentDropdown = clickedLink.closest('.dropdown-menu');
         if (parentDropdown) {
@@ -591,7 +591,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
-        
+
         // Save to localStorage
         if (clickedLink.getAttribute('href')) {
             localStorage.setItem('activeNavLink', clickedLink.getAttribute('href'));
@@ -602,7 +602,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleDropdown(button) {
         const parent = button.closest('.has-dropdown');
         const menu = parent.querySelector('.dropdown-menu');
-        
+
         if (window.innerWidth <= mobileBreakpoint) {
             if (menu.style.maxHeight && !parent.classList.contains('has-active-child')) {
                 // Close dropdown only if it doesn't have an active child
@@ -622,7 +622,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 });
-                
+
                 // Open this dropdown
                 menu.style.maxHeight = menu.scrollHeight + 'px';
                 menu.style.opacity = '1';
@@ -633,7 +633,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle dropdown toggle clicks
     dropdownToggles.forEach(toggle => {
-        toggle.addEventListener('click', function(e) {
+        toggle.addEventListener('click', function (e) {
             if (window.innerWidth <= mobileBreakpoint) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -644,7 +644,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle submenu item clicks
     document.querySelectorAll('.dropdown-menu .nav__item-link').forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             if (window.innerWidth <= mobileBreakpoint) {
                 const parentDropdown = this.closest('.has-dropdown');
                 if (parentDropdown) {
@@ -656,7 +656,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Close dropdowns when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (window.innerWidth <= mobileBreakpoint) {
             if (!e.target.closest('.has-dropdown')) {
                 document.querySelectorAll('.has-dropdown').forEach(dropdown => {
@@ -673,7 +673,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Handle window resize
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
         if (window.innerWidth > mobileBreakpoint) {
             // Reset all dropdowns on desktop
             document.querySelectorAll('.dropdown-menu').forEach(menu => {
@@ -790,14 +790,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Handle dropdown toggle clicks
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
     const toggle = e.target.closest('.dropdown-toggle');
     if (toggle && window.innerWidth <= 991) {
         e.preventDefault();
         const parent = toggle.closest('.has-dropdown');
         if (parent) {
             const wasOpen = parent.classList.contains('open');
-            
+
             // Close all other dropdowns
             document.querySelectorAll('.has-dropdown').forEach(dropdown => {
                 if (dropdown !== parent) {
@@ -812,7 +812,7 @@ document.addEventListener('click', function(e) {
                     }
                 }
             });
-            
+
             // Toggle current dropdown
             if (!wasOpen) {
                 parent.classList.add('open');
@@ -841,7 +841,7 @@ document.addEventListener('click', function(e) {
 
 // Handle submenu item clicks
 document.querySelectorAll('.dropdown-menu a').forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
         if (window.innerWidth <= 991) {
             const parentNav = this.closest('.has-dropdown');
             if (parentNav) {

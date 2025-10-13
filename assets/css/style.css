@@ -8044,7 +8044,84 @@ input[type=radio] {
 /*-------------------------
    Timeline
 -------------------------*/
-.timeline-item .timeline__year {
+.timeline-item-about {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item-about:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e93038;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.timeline-item-about:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  bottom: 5px;
+  left: -17px;
+  width: 2px;
+  background-color: #e93038;
+}
+
+.timeline-item3:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e93038;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.timeline-item3:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  bottom: 5px;
+  left: -17px;
+  width: 2px;
+  background-color: #e93038;
+}
+
+.timeline-item-about:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e93038;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.timeline-item-about:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  bottom: 5px;
+  left: -17px;
+  width: 2px;
+  background-color: #e93038;
+}
+
+.timeline-item .timeline__year2 {
   position: relative;
   color: #ffffff;
   font-size: 18px;
@@ -8069,17 +8146,42 @@ input[type=radio] {
 }
 
 
+
+
+.timeline-item-about .timeline__year2 {
+  position: relative;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 110px;
+  flex: 0 0 100px;
+  max-width: 200px;
+  margin-bottom: 0;
+}
+
+
 .timeline-item .timeline__year:before {
   content: '';
   position: absolute;
-  top: 4px;
-  right: -10px;
+  top: 9px;
+  left: 2px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #e93038;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+}
+
+.timeline-item .timeline__year:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  bottom: 5px;
+  left: 5px;
+  width: 2px;
+  background-color: #e93038;
 }
 
 .timeline-item .timeline__year1:before {
@@ -8096,16 +8198,6 @@ input[type=radio] {
 }
 
 .timeline-item .timeline__year1:after {
-  content: '';
-  position: absolute;
-  top: 22px;
-  bottom: 5px;
-  right: -7px;
-  width: 2px;
-  background-color: #e93038;
-}
-
-.timeline-item .timeline__year:after {
   content: '';
   position: absolute;
   top: 22px;
