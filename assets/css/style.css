@@ -2910,7 +2910,7 @@ input[type=radio] {
 }
 
 .navbar .dropdown-menu .nav__item {
-  padding: 0 40px;
+  padding: 0 25px;
   margin-right: 0;
 }
 
@@ -3761,7 +3761,7 @@ input[type=radio] {
   }
 
   .navbar .dropdown-menu .dropdown-menu-col .nav__item {
-    padding: 0;
+    padding: 5px;
   }
 
   .navbar .nav__item.dropdown-submenu>.dropdown-menu.show {
@@ -7424,6 +7424,10 @@ input[type=radio] {
   border-radius: 3px;
 }
 
+img {
+  border-radius: 3px;
+}
+
 .about__Text p {
   font-size: 15px;
 }
@@ -8044,6 +8048,11 @@ input[type=radio] {
 /*-------------------------
    Timeline
 -------------------------*/
+.history-timeline{
+    background-color: #f2f2f2;
+    padding: 2% 2%;
+
+}
 .timeline-item-about {
   position: relative;
 }
