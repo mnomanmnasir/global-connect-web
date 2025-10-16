@@ -410,10 +410,19 @@ document.addEventListener('DOMContentLoaded', function () {
                           <div class='job-description'>${formattedDescription}</div>
                       </div>
                       
-                      <div class="job-section">
+                     <div class="job-section" style="${jobDetails.title === 'PROCUREMENT EXECUTIVE' ? 'display: none;' : ''}">
                           <h3>Qualifications</h3>
                           <div class="job-detail-content">
                               ${jobDetails.qualifications ? createListItems(jobDetails.qualifications) : '<p>No specific qualifications mentioned.</p>'}
+                          </div>
+                      </div>
+
+                      <div class="job-section">
+                     <div class="job-section" style="${jobDetails.title === 'PROCUREMENT EXECUTIVE' ? 'display: none;' : ''}">
+
+                          <h3>Education & Work Experience</h3>
+                          <div class="job-detail-content">
+                              ${jobDetails.educationWorkExperience ? createListItems(jobDetails.educationWorkExperience) : '<p>No specific education & work experience mentioned.</p>'}
                           </div>
                       </div>
 
@@ -731,76 +740,104 @@ document.addEventListener('DOMContentLoaded', function () {
     // Set up job content
     document.getElementById('jobContent').innerHTML = `
           <div class="job-section">
-              <h3>Job Description</h3>
+              <h3 style= "font-size: 24px;">Job Description</h3>
               <div class='text-black job-description'>${formattedDescription}</div>
           </div>
           
-           <div class="job-section">
-              <h3>Key Responsibilities</h3>
-              <h6 class="text-black" ${Array.isArray(jobDetails.benefits) && typeof jobDetails.benefits[0] === 'object' ? '' : 'style="display: none"'}>
-                  ${Array.isArray(jobDetails.benefits) && typeof jobDetails.benefits[0] === 'object' ? (jobDetails.benefits[0].title || jobDetails.benefits[0].shortDescription || '') : ''}
-              </h6>
-             
-              <div class="text-black job-detail-content">
+          <div class="job-section">
+    <h3 style= "font-size: 24px;">RESPONSIBILITIES & REQUIREMENTS</h3>
+    <div class="text-black job-detail-content">
+           <h6 class="text-black" ${Array.isArray(jobDetails.benefits) && typeof jobDetails.benefits[0] === 'object' ? '' : 'style="display: none"'}>
+             ${Array.isArray(jobDetails.benefits) && typeof jobDetails.benefits[0] === 'object' ? (jobDetails.benefits[0].title || jobDetails.benefits[0].shortDescription || '') : ''}
+         </h6>
                   ${Array.isArray(jobDetails.benefits)
             ? (typeof jobDetails.benefits[0] === 'object' ? createListItems(jobDetails.benefits.slice(1)) : createListItems(jobDetails.benefits))
-            : '<p>Benefits information not available.</p>'}
+            : ''}
               </div>
-              <h6 class="text-black" ${Array.isArray(jobDetails.benefits2) && typeof jobDetails.benefits2[0] === 'object' ? '' : 'style="display: none"'}>
-                  ${Array.isArray(jobDetails.benefits2) && typeof jobDetails.benefits2[0] === 'object' ? (jobDetails.benefits2[0].title || jobDetails.benefits2[0].shortDescription || '') : ''}
-              </h6>
-             
-              <div class="text-black job-detail-content">
+    </div>
+
+<div class="job-section">
+   <div class="text-black job-detail-content">
+           <h6 class="text-black" ${Array.isArray(jobDetails.benefits2) && typeof jobDetails.benefits2[0] === 'object' ? '' : 'style="display: none"'}>
+             ${Array.isArray(jobDetails.benefits2) && typeof jobDetails.benefits2[0] === 'object' ? (jobDetails.benefits2[0].title || jobDetails.benefits2[0].shortDescription || '') : ''}
+         </h6>
                   ${Array.isArray(jobDetails.benefits2)
             ? (typeof jobDetails.benefits2[0] === 'object' ? createListItems(jobDetails.benefits2.slice(1)) : createListItems(jobDetails.benefits2))
-            : '<p>Benefits information not available.</p>'}
+            : ''}
               </div>
-              <h6 class="text-black" ${Array.isArray(jobDetails.benefits3) && typeof jobDetails.benefits3[0] === 'object' ? '' : 'style="display: none"'}>
-                  ${Array.isArray(jobDetails.benefits3) && typeof jobDetails.benefits3[0] === 'object' ? (jobDetails.benefits3[0].title || jobDetails.benefits3[0].shortDescription || '') : ''}
-              </h6>
-             
-              <div class="text-black job-detail-content">
+</div>
+
+<div class="job-section">
+  <div class="text-black job-detail-content">
+           <h6 class="text-black" ${Array.isArray(jobDetails.benefits3) && typeof jobDetails.benefits3[0] === 'object' ? '' : 'style="display: none"'}>
+             ${Array.isArray(jobDetails.benefits3) && typeof jobDetails.benefits3[0] === 'object' ? (jobDetails.benefits3[0].title || jobDetails.benefits3[0].shortDescription || '') : ''}
+         </h6>
                   ${Array.isArray(jobDetails.benefits3)
             ? (typeof jobDetails.benefits3[0] === 'object' ? createListItems(jobDetails.benefits3.slice(1)) : createListItems(jobDetails.benefits3))
-            : '<p>Benefits information not available.</p>'}
+            : ''}
               </div>
+</div>
 
-               <h6 class="text-black" ${Array.isArray(jobDetails.benefits4) && typeof jobDetails.benefits4[0] === 'object' ? '' : 'style="display: none"'}>
-                  ${Array.isArray(jobDetails.benefits4) && typeof jobDetails.benefits4[0] === 'object' ? (jobDetails.benefits4[0].title || jobDetails.benefits4[0].shortDescription || '') : ''}
-              </h6>
-             
-              <div class="text-black job-detail-content">
+
+<div class="job-section">
+ <div class="text-black job-detail-content">
+           <h6 class="text-black" ${Array.isArray(jobDetails.benefits4) && typeof jobDetails.benefits4[0] === 'object' ? '' : 'style="display: none"'}>
+             ${Array.isArray(jobDetails.benefits4) && typeof jobDetails.benefits4[0] === 'object' ? (jobDetails.benefits4[0].title || jobDetails.benefits4[0].shortDescription || '') : ''}
+         </h6>
                   ${Array.isArray(jobDetails.benefits4)
             ? (typeof jobDetails.benefits4[0] === 'object' ? createListItems(jobDetails.benefits4.slice(1)) : createListItems(jobDetails.benefits4))
-            : '<p>Benefits information not available.</p>'}
+            : ''}
               </div>
+</div>
 
-              <h6 class="text-black" ${Array.isArray(jobDetails.benefits5) && typeof jobDetails.benefits5[0] === 'object' ? '' : 'style="display: none"'}>
-                  ${Array.isArray(jobDetails.benefits5) && typeof jobDetails.benefits5[0] === 'object' ? (jobDetails.benefits5[0].title || jobDetails.benefits5[0].shortDescription || '') : ''}
-              </h6>
-             
-              <div class="text-black job-detail-content">
+<div class="job-section">
+  <div class="text-black job-detail-content">
+           <h6 class="text-black" ${Array.isArray(jobDetails.benefits5) && typeof jobDetails.benefits5[0] === 'object' ? '' : 'style="display: none"'}>
+             ${Array.isArray(jobDetails.benefits5) && typeof jobDetails.benefits5[0] === 'object' ? (jobDetails.benefits5[0].title || jobDetails.benefits5[0].shortDescription || '') : ''}
+         </h6>
                   ${Array.isArray(jobDetails.benefits5)
             ? (typeof jobDetails.benefits5[0] === 'object' ? createListItems(jobDetails.benefits5.slice(1)) : createListItems(jobDetails.benefits5))
             : ''}
               </div>
+</div>
 
-                <h6 class="text-black" ${Array.isArray(jobDetails.benefits6) && typeof jobDetails.benefits6[0] === 'object' ? '' : 'style="display: none"'}>
-                  ${Array.isArray(jobDetails.benefits6) && typeof jobDetails.benefits6[0] === 'object' ? (jobDetails.benefits6[0].title || jobDetails.benefits6[0].shortDescription || '') : ''}
-              </h6>
-             
-              <div class="text-black job-detail-content">
+<div class="job-section">
+          <div class="text-black job-detail-content">
+           <h6 class="text-black" ${Array.isArray(jobDetails.benefits6) && typeof jobDetails.benefits6[0] === 'object' ? '' : 'style="display: none"'}>
+             ${Array.isArray(jobDetails.benefits6) && typeof jobDetails.benefits6[0] === 'object' ? (jobDetails.benefits6[0].title || jobDetails.benefits6[0].shortDescription || '') : ''}
+         </h6>
                   ${Array.isArray(jobDetails.benefits6)
             ? (typeof jobDetails.benefits6[0] === 'object' ? createListItems(jobDetails.benefits6.slice(1)) : createListItems(jobDetails.benefits6))
             : ''}
               </div>
+</div>
 
+
+           <div class="job-section">
+
+           
+           <div class="text-black job-detail-content">
+           <h6 class="text-black" ${Array.isArray(jobDetails.benefits7) && typeof jobDetails.benefits7[0] === 'object' ? '' : 'style="display: none"'}>
+             ${Array.isArray(jobDetails.benefits7) && typeof jobDetails.benefits7[0] === 'object' ? (jobDetails.benefits7[0].title || jobDetails.benefits7[0].shortDescription || '') : ''}
+         </h6>
+                  ${Array.isArray(jobDetails.benefits7)
+            ? (typeof jobDetails.benefits7[0] === 'object' ? createListItems(jobDetails.benefits7.slice(1)) : createListItems(jobDetails.benefits7))
+            : ''}
+              </div>
               
           </div>
 
+<div class="job-section" style="${!jobDetails.salary ? 'display: none;' : ''}">
+              <h3 style= "font-size: 24px;">Salary</h3>
+              <div class="text-black job-detail-content">
+                  ${jobDetails.salary ? createListItems(jobDetails.salary) : '<p>Salary information not available.</p>'}
+              </div>
+          </div>
+
+  
+
           <div class="job-section">
-              <h3>Qualifications & Skills</h3>
-            
+<h3 style="font-size: 24px;">${(jobDetails.title === 'PROCUREMENT EXECUTIVE' || jobDetails.title === 'JR. NETWORK SUPPORT ENGINEER' || jobDetails.title === 'NOC ENGINEER') ? 'Education and Work Experience' : 'Benefits'}</h3>
            <h6 class="text-black" ${Array.isArray(jobDetails.qualifications) && typeof jobDetails.qualifications[0] === 'object' ? '' : 'style="display: none"'}>
                   ${Array.isArray(jobDetails.qualifications) && typeof jobDetails.qualifications[0] === 'object' ? (jobDetails.qualifications[0].title || jobDetails.qualifications[0].shortDescription || '') : ''}
               </h6>
@@ -816,8 +853,8 @@ document.addEventListener('DOMContentLoaded', function () {
             
              <div class="text-black job-detail-content">
                  ${Array.isArray(jobDetails.experience)
-           ? (typeof jobDetails.experience[0] === 'object' ? createListItems(jobDetails.experience.slice(1)) : createListItems(jobDetails.experience))
-           : ''}
+            ? (typeof jobDetails.experience[0] === 'object' ? createListItems(jobDetails.experience.slice(1)) : createListItems(jobDetails.experience))
+            : ''}
              </div>
 
              <h6 class="text-black" ${Array.isArray(jobDetails.technicalSkills) && typeof jobDetails.technicalSkills[0] === 'object' ? '' : 'style="display: none"'}>
@@ -826,8 +863,8 @@ document.addEventListener('DOMContentLoaded', function () {
             
              <div class="text-black job-detail-content">
                  ${Array.isArray(jobDetails.technicalSkills)
-           ? (typeof jobDetails.technicalSkills[0] === 'object' ? createListItems(jobDetails.technicalSkills.slice(1)) : createListItems(jobDetails.technicalSkills))
-           : ''}
+            ? (typeof jobDetails.technicalSkills[0] === 'object' ? createListItems(jobDetails.technicalSkills.slice(1)) : createListItems(jobDetails.technicalSkills))
+            : ''}
              </div>
 
              <h6 class="text-black" ${Array.isArray(jobDetails.softSkills) && typeof jobDetails.softSkills[0] === 'object' ? '' : 'style="display: none"'}>
@@ -836,8 +873,8 @@ document.addEventListener('DOMContentLoaded', function () {
             
              <div class="text-black job-detail-content">
                  ${Array.isArray(jobDetails.softSkills)
-           ? (typeof jobDetails.softSkills[0] === 'object' ? createListItems(jobDetails.softSkills.slice(1)) : createListItems(jobDetails.softSkills))
-           : ''}
+            ? (typeof jobDetails.softSkills[0] === 'object' ? createListItems(jobDetails.softSkills.slice(1)) : createListItems(jobDetails.softSkills))
+            : ''}
              </div>
 
              <h6 class="text-black" ${Array.isArray(jobDetails.workEnvironment) && typeof jobDetails.workEnvironment[0] === 'object' ? '' : 'style="display: none"'}>
@@ -846,13 +883,21 @@ document.addEventListener('DOMContentLoaded', function () {
             
              <div class="text-black job-detail-content">
                  ${Array.isArray(jobDetails.workEnvironment)
-           ? (typeof jobDetails.workEnvironment[0] === 'object' ? createListItems(jobDetails.workEnvironment.slice(1)) : createListItems(jobDetails.workEnvironment))
-           : ''}
+            ? (typeof jobDetails.workEnvironment[0] === 'object' ? createListItems(jobDetails.workEnvironment.slice(1)) : createListItems(jobDetails.workEnvironment))
+            : ''}
              </div>
           </div>
+                  
+         <div class="job-section" style="${!jobDetails.WORKING__DAYS ? 'display: none;' : ''}">
+              <h3 style= "font-size: 24px;">WORKING DAYS & WORKING HOURS: </h3>
+              <div class="text-black job-detail-content">
+                  ${jobDetails.WORKING__DAYS ? createListItems(jobDetails.WORKING__DAYS) : '<p>Salary information not available.</p>'}
+              </div>
+          </div>
+
 
           <div class="job-section">
-              <h3>Report To</h3>
+          <h3 style="font-size: 24px;">${jobDetails.title === 'PROCUREMENT EXECUTIVE' ? 'KNOWLEDGE, SKILLS & ABILITIES REQUIRED' : 'EDUCATION, WORK EXPERIENCE & SKILLS REQUIRED:'}</h3>
               <div class="text-black job-detail-content">
                   ${jobDetails.reportTingTo ? createListItems(jobDetails.reportTingTo) : '<p>Report To information not available.</p>'}
               </div>
